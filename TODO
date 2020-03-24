@@ -1,0 +1,35 @@
+
+Todo:
+  ✔ Do not download image if it already exists @done(20-03-24 22:10)
+  ✔ Do not host the images ourselves, load them from twitter @done(20-03-24 22:10)
+  ☐ Add a way to remove non relevant images
+  ☐ Add RT and FAV count
+  ☐ update listing to only include avatar @username
+  ☐ click on drawing = drawing page
+  ☐ Do not host the text ourselves, dispay the embedded tweet in the drawing page
+  ☐ meta information for every page (different per page)
+  ☐ share buttons on all pages
+  ☐ black/white button + print button on drawing page
+  ☐ add page "Je veux participer !"
+  ☐ add page "À propos"
+  ☐ Update findDrawings to handle from/to syncing from database and last sync
+  ☐ Rename findDrawings to twitterSync
+  ☐ Rename prepareDatabase to prepareData
+  ☐ Add number of drawings in total and per day
+  ☐ Rename twitter-drawings.json to twitter-sync.json
+  ☐ Remove twitter-cache.json
+  ✔ git ignore db.json @done(20-03-24 21:25)
+  ☐ add instructions on how to run it yourself
+  findDrawings: update to store directly by date arrays (drawings["2020-03-20"].push ...)
+  findDrawings: update with luxon for sync dates to ensure we can run it easily
+Maybe next features:
+  ☐ "better" UI
+Archive:
+  ✘ sqlite + cache @cancelled(20-03-23 09:28) @project(Todo)
+    using lowdb as a simple json database
+  ✔ generate all days @done(20-03-24 21:18) @project(Todo)
+  ✔ day by day navigation @done(20-03-24 21:20) @project(Todo)
+  ✘ add a script that takes in input a tweet id and add it to the database @cancelled(20-03-24 21:24) @project(Todo)
+    let's wait for the need
+  ✘ show avatar, twitter username, date and time, text excerpt @cancelled(20-03-24 21:24) @project(Todo)
+    done diferently

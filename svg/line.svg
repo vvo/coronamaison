@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" viewBox="0 0 770 8">
+  <defs>
+    <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+      <path d="M-40-486h1406v904H-40z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#cp1)">
+    <path d="M585.97 2.64c-66.98-.05-133.94-.75-200.9-1.28C257.8.35 128.93-.11 3.22 5.74c-4.55.21-2.77 2.08 1.77 1.92C134.27 2.99 264.26 3.52 394.5 4.58c63.75.52 127.49 1.13 191.28 1.24 59.55.11 119-1.15 178.5-.93 7.51.02 7.72-3.2.19-3.23-59.48-.2-118.96 1.02-178.5.98z"/>
+  </g>
+</svg>

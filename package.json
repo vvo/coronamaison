@@ -1,15 +1,100 @@
 {
-  "name": "corona.home",
+  "name": "coronomaison",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "dev": "next dev",
+    "findDrawings": "babel-node --presets @babel/preset-env findDrawings.js",
+    "format": "prettier --write '**/*.*' && eslint . --fix",
+    "generateSitemap": "babel-node --presets @babel/preset-env generateSitemap.js",
+    "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",
+    "prepareData": "babel-node --presets @babel/preset-env prepareData.js",
+    "start": "next start",
+    "test": "yarn lint"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "16.3.0"
+      }
+    },
+    "plugins": [
+      "react",
+      "react-hooks"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "warn",
+      "react-hooks/rules-of-hooks": "error"
+    }
   },
   "dependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.8.7",
+    "@fullhuman/postcss-purgecss": "2.1.0",
+    "@next/bundle-analyzer": "9.3.1",
+    "@prettier/plugin-xml": "0.7.2",
+    "async": "^3.2.0",
+    "got": "10.6.0",
+    "image-trace-loader": "1.0.2",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-svgo": "7.1.0",
+    "lowdb": "1.0.0",
+    "luxon": "1.22.0",
+    "mkdirp": "^1.0.3",
     "next": "9.3.1",
+    "next-compose-plugins": "2.2.0",
+    "next-optimized-images": "2.5.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-progressive-graceful-image": "0.6.11",
+    "react-share": "4.1.0",
+    "svg-sprite-loader": "4.1.3",
+    "tailwindcss": "1.2.0"
+  },
+  "devDependencies": {
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@types/luxon": "1.22.0",
+    "autoprefixer": "9.7.4",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
+    "postcss-import": "12.0.1",
+    "prettier": "1.19.1",
+    "prettier-plugin-packagejson": "2.0.10",
+    "prop-types": "15.7.2",
+    "sitemap": "6.1.0"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "yarn": "1.22.4"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-app"
+    ]
   }
 }
