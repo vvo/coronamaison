@@ -10,7 +10,7 @@ db.defaults({
   },
 }).write();
 
-export default function(req, res) {
+export default function (req, res) {
   if (process.env.NODE_ENV !== "development") {
     res.send("no use in production");
     return;

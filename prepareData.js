@@ -48,7 +48,7 @@ async function run() {
 
   fs.writeFileSync(
     path.join(dataFolder, "top20Drawings.json"),
-    JSON.stringify(top20Drawings, null, 2),
+    JSON.stringify(top20Drawings, null, 2)
   );
 
   // reformat and download images
@@ -56,7 +56,7 @@ async function run() {
     const extension = path.extname(formattedDrawing.image);
 
     const formattedDate = DateTime.fromISO(formattedDrawing.date).toFormat(
-      "yyyy-LL-dd",
+      "yyyy-LL-dd"
     );
 
     const drawingsFolder = path.join(__dirname, "drawings", formattedDate);
@@ -114,7 +114,7 @@ async function run() {
     const drawingsByDateArray = Object.entries(drawingsByDate).sort(
       ([dateA], [dateB]) => {
         return dateA > dateB ? -1 : 1;
-      },
+      }
     );
 
     drawingsByDateArray.forEach(([date, drawings]) => {
@@ -125,8 +125,8 @@ async function run() {
             return a.likes > b.likes ? -1 : 1;
           }),
           null,
-          2,
-        ),
+          2
+        )
       );
     });
 
@@ -136,12 +136,12 @@ async function run() {
         acc.push({ year, month, day, nbDrawings: drawingsForDay.length });
         return acc;
       },
-      [],
+      []
     );
 
     fs.writeFileSync(
       path.join(dataFolder, "allDates.json"),
-      JSON.stringify(allDates, null, 2),
+      JSON.stringify(allDates, null, 2)
     );
 
     const now = DateTime.local().setLocale("fr");
@@ -153,8 +153,8 @@ async function run() {
           nbDrawings: drawings.length,
         },
         null,
-        2,
-      ),
+        2
+      )
     );
   });
 }

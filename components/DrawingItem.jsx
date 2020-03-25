@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import ProgressiveImage from "react-progressive-graceful-image";
-import TwitterIcon from "svg/twitter.svg?sprite";
-import Line from "svg/line.svg?sprite";
+import TwitterIcon from "svg/twitter.svg";
+import Line from "svg/line.svg";
 
 export default function DrawingItem({ id, source, username, image }) {
-  const DrawingThumbnail = require(`public/thumbnails/${source}-${id}.svg?original`);
+  const drawingThumbnailSrc = `/thumbnails/${source}-${id}.svg`;
   const url = `https://twitter.com/${username}/status/${id}`;
 
   return (
@@ -17,11 +17,11 @@ export default function DrawingItem({ id, source, username, image }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <ProgressiveImage delay={400} placeholder="" src={image}>
+        <ProgressiveImage delay={300} placeholder="" src={image}>
           {(src, loading) => {
             if (loading) {
               // return <img style={{ height: "10rem" }} src={image} />;
-              return <img src={DrawingThumbnail} />;
+              return <img src={drawingThumbnailSrc} />;
             }
 
             if (src) {

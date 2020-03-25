@@ -57,7 +57,7 @@ async function run() {
               extended_entities: tweet.extended_tweet?.extended_entities,
               source: "twitter",
             }
-          : { ...tweet, source: "twitter" },
+          : { ...tweet, source: "twitter" }
       )
       .filter((tweet) => {
         if (tweet.retweeted_status !== undefined) {
