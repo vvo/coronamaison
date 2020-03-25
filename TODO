@@ -1,20 +1,21 @@
 
 Todo:
   Data:
-    ☐ move db.json => data/drawings.json and git ignore
-    ☐ Update findDrawings to handle from/to syncing from database and last sync
-    ☐ Rename findDrawings to twitterSync
-    ☐ Add number of drawings in total (title)
-    ☐ Remove twitter-cache.json
-    ☐ Update RT count: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
+    ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
+      Today it requires manual editing
+    ✔ Add number of drawings in total (title) @done(20-03-25 23:11)
+    ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
-    ☐ Index page => most popular ones
     ☐ <meta> information for every page (different per page)
+    ☐ Add active on menu items
+    ☐ Add mobile menu
     ☐ share buttons on all pages
     ☐ add page "Je veux participer !" (explains how to do it)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
-  ☐ Show avatar and username at the top of drawings instead of below
-  ☐ Click on drawing = drawing page
+    ☐ create and add favicon (like an emoji 🎨)
+    ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
+    ☐ Show avatar and username at the top of drawings instead of below
+    ☐ Click on drawing = drawing page
   Drawing page:
     ☐ Has drawing in full
     ☐ Displays original tweet using embedded tweet
@@ -27,6 +28,10 @@ Maybe next features:
   ☐ Add transition between pixel and real version
   ☐ Random image button
 Archive:
+  ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
+  ✘ Rename findDrawings to twitterSync @cancelled(20-03-25 22:40) @project(Todo.Data)
+  ✔ Remove twitter-cache.json @done(20-03-25 22:40) @project(Todo.Data)
+  ✔ Index page => most popular ones @done(20-03-25 22:41) @project(Todo.Website)
   ✘ Rename twitter-drawings.json to twitter-sync.json @cancelled(20-03-25 18:02) @project(Todo.Data)
     file not used
   ✔ Add a way to remove non relevant images @done(20-03-25 17:52) @project(Todo)

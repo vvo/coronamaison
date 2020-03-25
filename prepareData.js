@@ -14,7 +14,7 @@ import sqip from "sqip";
 
 const pipeline = promisify(stream.pipeline);
 
-const adapter = new FileSync("db.json");
+const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
 const deletes = require("./data/deletes.json").deleted.twitter;
 
@@ -25,24 +25,39 @@ async function run() {
     .value();
 
   const drawingsByDate = {};
+  const dataFolder = path.join(__dirname, "data");
 
-  const worker = async.asyncify(async (drawing) => {
+  const formattedDrawings = drawings.map((drawing) => {
     const date = DateTime.fromJSDate(new Date(drawing.created_at));
-    const formattedDrawing = {
+
+    return {
       source: "twitter",
       id: drawing.id_str,
       username: drawing.user.screen_name,
-      text: drawing.text,
       likes: drawing.retweet_count + drawing.favorite_count,
       image: drawing.extended_entities.media[0].media_url_https,
       date: date.toISO(),
     };
+  });
 
-    const extension = path.extname(
-      drawing.extended_entities.media[0].media_url_https,
+  const top20Drawings = formattedDrawings
+    .sort((a, b) => {
+      return a.likes > b.likes ? -1 : 1;
+    })
+    .slice(0, 20);
+
+  fs.writeFileSync(
+    path.join(dataFolder, "top20Drawings.json"),
+    JSON.stringify(top20Drawings, null, 2),
+  );
+
+  // reformat and download images
+  const worker = async.asyncify(async (formattedDrawing) => {
+    const extension = path.extname(formattedDrawing.image);
+
+    const formattedDate = DateTime.fromISO(formattedDrawing.date).toFormat(
+      "yyyy-LL-dd",
     );
-
-    const formattedDate = date.toFormat("yyyy-LL-dd");
 
     const drawingsFolder = path.join(__dirname, "drawings", formattedDate);
     const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
@@ -90,13 +105,17 @@ async function run() {
     return true;
   });
 
-  async.eachLimit(drawings, 4, worker, (err) => {
+  async.eachLimit(formattedDrawings, 4, worker, (err) => {
     if (err) {
       throw err;
     }
 
-    const drawingsByDateArray = Object.entries(drawingsByDate);
-    const dataFolder = path.join(__dirname, "data");
+    // reorder to get most recent dates at the top
+    const drawingsByDateArray = Object.entries(drawingsByDate).sort(
+      ([dateA], [dateB]) => {
+        return dateA > dateB ? -1 : 1;
+      },
+    );
 
     drawingsByDateArray.forEach(([date, drawings]) => {
       fs.writeFileSync(
@@ -111,15 +130,31 @@ async function run() {
       );
     });
 
-    const allDates = drawingsByDateArray.reduce((acc, [date, drawings]) => {
-      const [year, month, day] = date.split("-");
-      acc.push({ year, month, day, nbDrawings: drawings.length });
-      return acc;
-    }, []);
+    const allDates = drawingsByDateArray.reduce(
+      (acc, [date, drawingsForDay]) => {
+        const [year, month, day] = date.split("-");
+        acc.push({ year, month, day, nbDrawings: drawingsForDay.length });
+        return acc;
+      },
+      [],
+    );
 
     fs.writeFileSync(
       path.join(dataFolder, "allDates.json"),
       JSON.stringify(allDates, null, 2),
+    );
+
+    const now = DateTime.local().setLocale("fr");
+    fs.writeFileSync(
+      path.join(dataFolder, "state.json"),
+      JSON.stringify(
+        {
+          lastUpdate: `${now.toLocaleString(DateTime.DATETIME_MED)}`,
+          nbDrawings: drawings.length,
+        },
+        null,
+        2,
+      ),
     );
   });
 }
@@ -134,5 +169,3 @@ async function fileExists(filePath) {
 }
 
 run();
-
-// <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>

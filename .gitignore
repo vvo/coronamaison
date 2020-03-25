@@ -27,6 +27,5 @@ yarn-error.log*
 .now
 .overmind.sock
 
-db.json
+data/drawings.json
 drawings/
-pages/api

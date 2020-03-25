@@ -10,6 +10,5 @@
 !*.tsx
 !*.yml
 !*.svg
-db.json
 data/*.json
 public/thumbnails

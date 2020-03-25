@@ -2,7 +2,7 @@ import low from "lowdb";
 import FileSync from "lowdb/adapters/FileSync";
 import got from "got";
 
-const adapter = new FileSync("db.json");
+const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
 
 const bearerToken = process.env.SECRET_TWITTER_BEARER_TOKEN;
