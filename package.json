@@ -73,7 +73,7 @@
     "next-optimized-images": "2.5.5",
     "postcss-import": "12.0.1",
     "prettier": "1.19.1",
-    "prettier-plugin-packagejson": "2.0.10",
+    "prettier-plugin-packagejson": "2.1.2",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
