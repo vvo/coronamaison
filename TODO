@@ -5,7 +5,6 @@ Todo:
     ☐ Update findDrawings to handle from/to syncing from database and last sync
     ☐ Rename findDrawings to twitterSync
     ☐ Add number of drawings in total (title)
-    ☐ Rename twitter-drawings.json to twitter-sync.json
     ☐ Remove twitter-cache.json
     ☐ Update RT count: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
@@ -28,6 +27,8 @@ Maybe next features:
   ☐ Add transition between pixel and real version
   ☐ Random image button
 Archive:
+  ✘ Rename twitter-drawings.json to twitter-sync.json @cancelled(20-03-25 18:02) @project(Todo.Data)
+    file not used
   ✔ Add a way to remove non relevant images @done(20-03-25 17:52) @project(Todo)
   ✔ Add RT and FAV count to data as likes @done(20-03-25 17:52) @project(Todo)
   ✘ Do not host the text ourselves, dispay the embedded tweet in the drawing page @cancelled(20-03-25 17:53) @project(Todo)
