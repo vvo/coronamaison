@@ -8,3 +8,12 @@
 body {
   background-image: url("/ricepaper.png");
 }
+
+.drawing-appear {
+  opacity: 0.01;
+}
+
+.drawing-appear.appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

@@ -1,4 +1,56 @@
 [
-  "2020-03-23",
-  "2020-03-22"
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "23",
+    "nbDrawings": 3
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "22",
+    "nbDrawings": 71
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "21",
+    "nbDrawings": 79
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "20",
+    "nbDrawings": 68
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "19",
+    "nbDrawings": 89
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "18",
+    "nbDrawings": 88
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "17",
+    "nbDrawings": 110
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "16",
+    "nbDrawings": 63
+  },
+  {
+    "year": "2020",
+    "month": "03",
+    "day": "15",
+    "nbDrawings": 33
+  }
 ]

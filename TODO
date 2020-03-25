@@ -1,30 +1,50 @@
 
 Todo:
-  ✔ Do not download image if it already exists @done(20-03-24 22:10)
-  ✔ Do not host the images ourselves, load them from twitter @done(20-03-24 22:10)
-  ☐ Add a way to remove non relevant images
-  ☐ Add RT and FAV count
-  ☐ update listing to only include avatar @username
-  ☐ click on drawing = drawing page
-  ☐ Do not host the text ourselves, dispay the embedded tweet in the drawing page
-  ☐ meta information for every page (different per page)
-  ☐ share buttons on all pages
-  ☐ black/white button + print button on drawing page
-  ☐ add page "Je veux participer !"
-  ☐ add page "À propos"
-  ☐ Update findDrawings to handle from/to syncing from database and last sync
-  ☐ Rename findDrawings to twitterSync
-  ☐ Rename prepareDatabase to prepareData
-  ☐ Add number of drawings in total and per day
-  ☐ Rename twitter-drawings.json to twitter-sync.json
-  ☐ Remove twitter-cache.json
-  ✔ git ignore db.json @done(20-03-24 21:25)
-  ☐ add instructions on how to run it yourself
-  findDrawings: update to store directly by date arrays (drawings["2020-03-20"].push ...)
-  findDrawings: update with luxon for sync dates to ensure we can run it easily
+  Data:
+    ☐ move db.json => data/drawings.json and git ignore
+    ☐ Update findDrawings to handle from/to syncing from database and last sync
+    ☐ Rename findDrawings to twitterSync
+    ☐ Add number of drawings in total (title)
+    ☐ Rename twitter-drawings.json to twitter-sync.json
+    ☐ Remove twitter-cache.json
+    ☐ Update RT count: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
+  Website:
+    ☐ Index page => most popular ones
+    ☐ <meta> information for every page (different per page)
+    ☐ share buttons on all pages
+    ☐ add page "Je veux participer !" (explains how to do it)
+    ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
+  ☐ Show avatar and username at the top of drawings instead of below
+  ☐ Click on drawing = drawing page
+  Drawing page:
+    ☐ Has drawing in full
+    ☐ Displays original tweet using embedded tweet
+    ☐ Has a feature to turn the drawing into full black/white for colouring page
+    ☐ Has a feature to print the drawing/colouring page
+  Project:
+    ☐ README add instructions on how to run it yourself
 Maybe next features:
   ☐ "better" UI
+  ☐ Add transition between pixel and real version
+  ☐ Random image button
 Archive:
+  ✔ Add a way to remove non relevant images @done(20-03-25 17:52) @project(Todo)
+  ✔ Add RT and FAV count to data as likes @done(20-03-25 17:52) @project(Todo)
+  ✘ Do not host the text ourselves, dispay the embedded tweet in the drawing page @cancelled(20-03-25 17:53) @project(Todo)
+  ✔ Rename prepareDatabase to prepareData @done(20-03-25 17:55) @project(Todo)
+  ✔ Add number of drawings per day @done(20-03-25 17:55) @project(Todo)
+  ✘ findDrawings: update to store directly by date arrays (drawings["2020-03-20"].push ...) @cancelled(20-03-25 17:56) @project(Todo)
+  ✘ findDrawings: update with luxon for sync dates to ensure we can run it easily @cancelled(20-03-25 17:56) @project(Todo)
+  ✔ Do not download image if it already exists @done(20-03-24 22:10) @project(Todo)
+  ✔ Do not host the images ourselves, load them from twitter @done(20-03-24 22:10) @project(Todo)
+  ✔ Generate menu and add navigation with real routes @done(20-03-24 22:45) @project(Todo)
+  ✔ Add number of drawings on the date object @done(20-03-24 22:56) @project(Todo)
+  ✔ Add number of drawings on the day page (xx dessins le ...) @done(20-03-24 22:56) @project(Todo)
+  ✔ stop using traces @done(20-03-25 17:51) @project(Todo)
+  ✔ generate image trace with sqip at prepareData @done(20-03-25 17:51) @project(Todo)
+  ✔ store previews in public @done(20-03-25 17:51) @project(Todo)
+  ✔ use react progressive to load them @done(20-03-25 17:51) @project(Todo)
+  ✔ git ignore db.json @done(20-03-24 21:25) @project(Todo)
   ✘ sqlite + cache @cancelled(20-03-23 09:28) @project(Todo)
     using lowdb as a simple json database
   ✔ generate all days @done(20-03-24 21:18) @project(Todo)
