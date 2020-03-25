@@ -27,6 +27,8 @@ Maybe next features:
   ☐ "better" UI
   ☐ Add transition between pixel and real version
   ☐ Random image button
+  ☐ Cache images locally and turn into webp
+  ☐ Manage to inline SVGs into pages without blowing out the build output size
 Archive:
   ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
   ✘ Rename findDrawings to twitterSync @cancelled(20-03-25 22:40) @project(Todo.Data)
