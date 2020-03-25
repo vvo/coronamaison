@@ -72,7 +72,7 @@
     "next-compose-plugins": "2.2.0",
     "next-optimized-images": "2.5.5",
     "postcss-import": "12.0.1",
-    "prettier": "1.19.1",
+    "prettier": "2.0.2",
     "prettier-plugin-packagejson": "2.0.10",
     "prop-types": "15.7.2",
     "react": "16.13.1",
