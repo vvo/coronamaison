@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
@@ -13,6 +13,14 @@ export default function Menu({ allDates }) {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    if (!isSidebarOpen) {
+      document.body.classList.remove("overflow-hidden");
+    } else {
+      document.body.classList.add("overflow-hidden");
+    }
+  }, [isSidebarOpen]);
+
   return (
     <>
       {(isSidebarOpen && (
@@ -21,7 +29,7 @@ export default function Menu({ allDates }) {
             onClick={toggleSidebar}
             className="absolute inset-0 bg-gray-600 opacity-75"
           ></div>
-          <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900">
+          <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
             <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
           </div>
           <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>

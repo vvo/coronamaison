@@ -5,7 +5,6 @@ Todo:
     ☐ Share to linkedin
     ☐ Share to facebook
   Before launch:
-    ☐ scroll on menu
     ☐ host images locally in webp
     ☐ <meta> information for every page (different per page)
   Data:
@@ -38,6 +37,7 @@ Maybe next features:
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ disable scroll on body when menu is opened (portrait mode has this issue) @done(20-03-27 00:18) @project(Todo.Before launch)
   ✔ Add active on menu items @done(20-03-27 00:01) @project(Todo.Before launch)
   ✔ Add simple analytics @done(20-03-26 21:47) @project(Todo.Before launch)
   ✔ Menu on desktop should not be so far @done(20-03-26 21:47) @project(Todo.Before launch)
