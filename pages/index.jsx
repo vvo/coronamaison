@@ -11,7 +11,7 @@ export default function Home({ top20Drawings, nbDrawings }) {
         <title>#coronamaison ({nbDrawings})</title>
       </Head>
 
-      <main className="lg:col-span-10">
+      <main className="xl:col-span-10">
         <h2 className="text-underline text-3xl font-cursive text-center">
           #coronamaisons les plus partagées
         </h2>
