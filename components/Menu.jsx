@@ -17,7 +17,10 @@ export default function Menu({ allDates }) {
     <>
       {(isSidebarOpen && (
         <div className="xl:hidden fixed inset-0 z-10">
-          <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
+          <div
+            onClick={toggleSidebar}
+            className="absolute inset-0 bg-gray-600 opacity-75"
+          ></div>
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900">
             <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
           </div>
@@ -59,6 +62,12 @@ function Nav({ allDates, toggleSidebar }) {
           Les plus partagées
         </a>
       </Link>
+      <a
+        href="https://simpleanalytics.com/coronamaison.now.sh"
+        className="block text-xl text-blue-800 font-cursive"
+      >
+        Statistiques
+      </a>
       <h2 className="text-underline text-3xl font-cursive">Jours :</h2>
       {allDates.map((date) => (
         <MenuItem
