@@ -8,16 +8,22 @@ const { nbDrawings, lastUpdate } = require("data/state.json");
 export default function Layout({ children }) {
   return (
     <div className="container mx-auto mt-5">
-      <h1 className="font-cursive text-4xl lg:text-6xl text-center text-blue-800">
-        <a href="/">#coronamaison ({nbDrawings})</a>
-      </h1>
-      <p className="text-center italic">Dernière mise à jour: {lastUpdate}</p>
+      <div className="lg:grid lg:grid-cols-12 lg:gap-2">
+        <div className="lg:col-span-10 lg:col-start-3">
+          <h1 className="font-cursive text-4xl lg:text-6xl text-center text-blue-800">
+            <a href="/">#coronamaison ({nbDrawings})</a>
+          </h1>
+          <p className="text-center italic">
+            Dernière mise à jour: {lastUpdate}
+          </p>
+        </div>
 
-      <Menu allDates={allDates} />
+        <Menu allDates={allDates} />
 
-      <main className="w-5/6 mx-auto">{children}</main>
+        <main className="lg:col-span-10 lg:px-5">{children}</main>
 
-      <footer></footer>
+        <footer className="lg:col-start-3 lg:col-span-10"></footer>
+      </div>
     </div>
   );
 }

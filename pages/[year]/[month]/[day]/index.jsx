@@ -13,11 +13,13 @@ export default function DrawingsForDay({ drawingsForDay, date }) {
         </title>
       </Head>
 
-      <h2 className="text-underline text-3xl font-cursive text-center">
-        {drawingsForDay.length} dessins le {date.day}/{date.month}/{date.year}
-      </h2>
+      <main className="lg:col-span-10">
+        <h2 className="text-underline text-3xl font-cursive text-center">
+          {drawingsForDay.length} dessins le {date.day}/{date.month}/{date.year}
+        </h2>
 
-      <DrawingsList drawings={drawingsForDay} />
+        <DrawingsList drawings={drawingsForDay} />
+      </main>
     </>
   );
 }
