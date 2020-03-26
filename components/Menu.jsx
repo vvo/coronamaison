@@ -19,7 +19,7 @@ export default function Menu({ allDates }) {
         <div className="fixed inset-0 z-10">
           <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900">
-            <Nav allDates={allDates} />
+            <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
           </div>
           <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>
             <button
@@ -44,18 +44,25 @@ export default function Menu({ allDates }) {
   );
 }
 
-function Nav({ allDates }) {
+function Nav({ allDates, toggleSidebar }) {
   return (
     <nav className="px-3">
       <h2 className="text-underline text-3xl font-cursive">Menu :</h2>
       <Link href="/">
-        <a className="block text-xl text-blue-800 font-cursive">
+        <a
+          onClick={toggleSidebar}
+          className="block text-xl text-blue-800 font-cursive"
+        >
           Les plus partagées
         </a>
       </Link>
       <h2 className="text-underline text-3xl font-cursive">Jours :</h2>
       {allDates.map((date) => (
-        <MenuItem date={date} key={JSON.stringify(date)} />
+        <MenuItem
+          date={date}
+          key={JSON.stringify(date)}
+          toggleSidebar={toggleSidebar}
+        />
       ))}
     </nav>
   );
@@ -63,6 +70,7 @@ function Nav({ allDates }) {
 
 Nav.propTypes = {
   allDates: PropTypes.arrayOf(PropTypes.object),
+  toggleSidebar: PropTypes.func,
 };
 
 Menu.propTypes = {

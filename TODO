@@ -3,6 +3,7 @@ Todo:
   Before launch:
     ☐ <meta> information for every page (different per page)
     ☐ Add active on menu items
+    ☐ Add simple analytics
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
