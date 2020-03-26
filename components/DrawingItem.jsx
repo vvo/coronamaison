@@ -52,7 +52,10 @@ export default function DrawingItem({ id, source, username, image }) {
         delete
       </button> */}
 
-      <Line className="text-yellow-700 h-2 opacity-50 my-6 mx-auto" />
+      <Line
+        className="text-yellow-700 h-2 opacity-50 my-6 mx-auto"
+        style={{ maxWidth: "80%" }}
+      />
     </>
   );
 }

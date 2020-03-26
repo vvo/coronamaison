@@ -5,7 +5,7 @@
 
 @import "tailwindcss/utilities";
 
-body {
+.rice {
   background-image: url("/ricepaper.png");
 }
 

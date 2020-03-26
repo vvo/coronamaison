@@ -1,13 +1,13 @@
 
 Todo:
+  Before launch:
+    ☐ <meta> information for every page (different per page)
+    ☐ Add active on menu items
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
     ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
-    ☐ <meta> information for every page (different per page)
-    ☐ Add active on menu items
-    ☐ Add mobile menu
     ☐ share buttons on all pages
     ☐ add page "Je veux participer !" (explains how to do it)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
@@ -31,6 +31,7 @@ Maybe next features:
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ Add mobile menu @done(20-03-26 15:20) @project(Todo.Before launch)
   ✔ Add number of drawings in total (title) @done(20-03-25 23:11) @project(Todo.Data)
   ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
   ✘ Rename findDrawings to twitterSync @cancelled(20-03-25 22:40) @project(Todo.Data)
