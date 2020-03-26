@@ -34,7 +34,7 @@ export default function Menu({ allDates }) {
         <div className="fixed top-0 left-0 lg:hidden">
           <button
             onClick={toggleSidebar}
-            className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white"
+            className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white opacity-75"
           >
             <MenuIcon className="h-6 w-6" />
           </button>
