@@ -3,7 +3,6 @@ Todo:
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
-    ✔ Add number of drawings in total (title) @done(20-03-25 23:11)
     ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
     ☐ <meta> information for every page (different per page)
@@ -30,6 +29,7 @@ Maybe next features:
   ☐ Cache images locally and turn into webp
   ☐ Manage to inline SVGs into pages without blowing out the build output size
 Archive:
+  ✔ Add number of drawings in total (title) @done(20-03-25 23:11) @project(Todo.Data)
   ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
   ✘ Rename findDrawings to twitterSync @cancelled(20-03-25 22:40) @project(Todo.Data)
   ✔ Remove twitter-cache.json @done(20-03-25 22:40) @project(Todo.Data)
