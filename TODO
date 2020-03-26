@@ -1,10 +1,13 @@
 
 Todo:
+  Launch:
+    ☐ Share to websites publishing stories about that
+    ☐ Share to linkedin
+    ☐ Share to facebook
   Before launch:
+    ☐ scroll on menu
+    ☐ host images locally in webp
     ☐ <meta> information for every page (different per page)
-    ☐ Add active on menu items
-    ☐ Add simple analytics
-    ☐ Menu on desktop should not be so far
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
@@ -13,6 +16,8 @@ Todo:
     ☐ share buttons on all pages
     ☐ add page "Je veux participer !" (explains how to do it)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
+      ☐ Je trouve pas mon dessin
+      ☐ Et Instagram?
     ☐ create and add favicon (like an emoji 🎨)
     ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
     ☐ Show avatar and username at the top of drawings instead of below
@@ -33,6 +38,11 @@ Maybe next features:
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ Add active on menu items @done(20-03-27 00:01) @project(Todo.Before launch)
+  ✔ Add simple analytics @done(20-03-26 21:47) @project(Todo.Before launch)
+  ✔ Menu on desktop should not be so far @done(20-03-26 21:47) @project(Todo.Before launch)
+  ✘ Instagram API @cancelled(20-03-26 23:28)
+    There's no way we can use the Instagram API, they completely locked down their data (24 hours max)
   ✔ Add mobile menu @done(20-03-26 15:20) @project(Todo.Before launch)
   ✔ Add number of drawings in total (title) @done(20-03-25 23:11) @project(Todo.Data)
   ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
