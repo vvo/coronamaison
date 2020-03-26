@@ -16,7 +16,7 @@ export default function Menu({ allDates }) {
   return (
     <>
       {(isSidebarOpen && (
-        <div className="lg:hidden fixed inset-0 z-10">
+        <div className="fixed inset-0 z-10">
           <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900">
             <Nav allDates={allDates} />
@@ -31,7 +31,7 @@ export default function Menu({ allDates }) {
           </div>
         </div>
       )) || (
-        <div className="fixed top-0 left-0 lg:hidden">
+        <div className="fixed top-0 left-0">
           <button
             onClick={toggleSidebar}
             className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white opacity-75"
@@ -40,9 +40,6 @@ export default function Menu({ allDates }) {
           </button>
         </div>
       )}
-      <div className="hidden lg:col-span-2 lg:block">
-        <Nav allDates={allDates} />
-      </div>
     </>
   );
 }
