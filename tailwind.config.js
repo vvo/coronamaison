@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
-        cursive: ["Gochi Hand", "cursive"],
+        cursive: ["Gochi Hand", "Comic Sans MS", "cursive", "sans-serif"],
       },
       colors: {
         yellow: {
