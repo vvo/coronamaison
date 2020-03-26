@@ -1425,10 +1425,10 @@
   dependencies:
     webpack-bundle-analyzer "3.6.1"
 
-"@next/polyfill-nomodule@9.3.2-canary.6":
-  version "9.3.2-canary.6"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.6.tgz#687163b0c298005324b2d11d5bc92fa7aa6dcbd2"
-  integrity sha512-D5cCemnjD2eVdLODgzd+KZZDz9HuUqvloquMoUGPkWWKkEmIwlFWCcShR9AqcEHub2VtfRw6x9EpVgGqmQJCAQ==
+"@next/polyfill-nomodule@9.3.2-canary.7":
+  version "9.3.2-canary.7"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.7.tgz#dd84e025685d3ea96aac00b7d4ce4f5d1b472688"
+  integrity sha512-T+DvA5AmjtHPLPF4Hz/KfBeiOe9uGmgjQsO9aT3vysNs4jKr7Z5fbwo+xVMx6x5fXn5ysW/FWPvFjf+2JjPChw==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -6541,10 +6541,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@9.3.2-canary.6:
-  version "9.3.2-canary.6"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.6.tgz#7ed214c3a0dee5731b5fa844450b5595cde933ed"
-  integrity sha512-ErZC9RQffC+6JKI0/I//j8HUjNnhUJFdBImyOgpyC9QysYSE2qgXa1swQ0A1GQQR0vZyDX3WViYzqR/eMbj6lQ==
+next@9.3.2-canary.7:
+  version "9.3.2-canary.7"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.7.tgz#4e694b7b00c020ba8e2c8361ae5cb5af6502b5f8"
+  integrity sha512-OVEB59jI5JK5uk7WT4V89cmG9rgqQTsXDnXTqGXuH06VBl6b20xvWp5ghCxFyxUksU59/YYyE0bO50dVizzrFQ==
   dependencies:
     "@ampproject/toolbox-optimizer" "2.0.1"
     "@babel/core" "7.7.2"
@@ -6563,7 +6563,7 @@ next@9.3.2-canary.6:
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
     "@babel/types" "7.7.4"
-    "@next/polyfill-nomodule" "9.3.2-canary.6"
+    "@next/polyfill-nomodule" "9.3.2-canary.7"
     amphtml-validator "1.0.30"
     async-retry "1.2.3"
     async-sema "3.0.0"
