@@ -21,20 +21,20 @@ export default function Menu({ allDates }) {
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900">
             <Nav allDates={allDates} />
           </div>
-          <div className="absolute top-0 p-1" style={{ left: "11rem" }}>
+          <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>
             <button
               onClick={toggleSidebar}
-              className="h-8 w-8 bg-yellow-900 flex items-center justify-center rounded-full text-white"
+              className="h-10 w-10 bg-yellow-900 flex items-center justify-center rounded-full text-white"
             >
-              <CloseOverlayIcon className="h-6 w-6" />
+              <CloseOverlayIcon className="h-8 w-8" />
             </button>
           </div>
         </div>
       )) || (
-        <div className="absolute top-0 left-0 lg:hidden">
+        <div className="fixed top-0 left-0 lg:hidden">
           <button
             onClick={toggleSidebar}
-            className="h-12 w-12 inline-flex items-center justify-center rounded-md text-yellow-900"
+            className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white"
           >
             <MenuIcon className="h-6 w-6" />
           </button>
