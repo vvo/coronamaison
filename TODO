@@ -20,6 +20,7 @@ Todo:
     ☐ Displays original tweet using embedded tweet
     ☐ Has a feature to turn the drawing into full black/white for colouring page
     ☐ Has a feature to print the drawing/colouring page
+    ☐ Has feature to display large image (like https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=large or https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=4096x4096)
   Project:
     ☐ README add instructions on how to run it yourself
 Maybe next features:
@@ -28,6 +29,7 @@ Maybe next features:
   ☐ Random image button
   ☐ Cache images locally and turn into webp
   ☐ Manage to inline SVGs into pages without blowing out the build output size
+  ☐ Add search (to find your own drawing mostly :D)
 Archive:
   ✔ Add number of drawings in total (title) @done(20-03-25 23:11) @project(Todo.Data)
   ✔ move db.json => data/drawings.json and git ignore @done(20-03-25 22:40) @project(Todo.Data)
