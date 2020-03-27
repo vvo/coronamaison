@@ -5,12 +5,29 @@ import Head from "next/head";
 import DrawingsList from "components/DrawingsList";
 
 export default function DrawingsForDay({ drawingsForDay, date }) {
+  const formattedDate = `${date.day}/${date.month}/${date.year}`;
+  const title = `#coronamaison: Tous les dessins du ${formattedDate}`;
+  const description = `Découvrez tous les dessins #coronamaison du ${formattedDate}`;
+  const url = "https://coronamaison.now.sh";
+  const socialImage = `${url}/social.jpg`;
+
   return (
     <>
       <Head>
-        <title>
-          #coronamaison du {date.day}/{date.month}/{date.year}
-        </title>
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={socialImage} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={url} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={socialImage} />
       </Head>
 
       <main className="xl:col-span-10">

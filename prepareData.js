@@ -23,6 +23,7 @@ async function run() {
   const drawingsByDate = {};
   const dataFolder = path.join(__dirname, "data");
 
+  console.log("Formatting drawings objects");
   const formattedDrawings = drawings.map((drawing) => {
     const date = DateTime.fromJSDate(new Date(drawing.created_at));
 
@@ -36,6 +37,7 @@ async function run() {
     };
   });
 
+  console.log("Compiling top20");
   const top20Drawings = formattedDrawings
     .sort((a, b) => {
       return a.likes > b.likes ? -1 : 1;
@@ -53,19 +55,37 @@ async function run() {
       "yyyy-LL-dd",
     );
 
-    const drawingsFolder = path.join(__dirname, "public/drawings");
+    const originalDrawingsFolder = path.join(
+      __dirname,
+      "data/originalDrawings",
+      formattedDate,
+    );
+    const publicDrawingsFolder = path.join(__dirname, "public/drawings");
     const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
     const filename = `${formattedDrawing.source}-${formattedDrawing.id}`;
-    const jpgImagePath = path.join(drawingsFolder, `${filename}.jpg`);
-    const webpImagePath = path.join(drawingsFolder, `${filename}.webp`);
+
+    const jpgOriginalImagePath = path.join(
+      originalDrawingsFolder,
+      `${filename}.jpg`,
+    );
+    const jpgPublicImagePath = path.join(
+      publicDrawingsFolder,
+      `${filename}.jpg`,
+    );
+    const webpPublicImagePath = path.join(
+      publicDrawingsFolder,
+      `${filename}.webp`,
+    );
     const thumbnailPath = path.join(thumbnailsFolder, `${filename}.svg`);
 
-    await mkdirp(drawingsFolder);
+    await mkdirp(originalDrawingsFolder);
+    await mkdirp(publicDrawingsFolder);
     await mkdirp(thumbnailsFolder);
 
     if (
-      !(await fileExists(jpgImagePath)) ||
-      !(await fileExists(webpImagePath))
+      !(await fileExists(jpgOriginalImagePath)) ||
+      !(await fileExists(jpgPublicImagePath)) ||
+      !(await fileExists(webpPublicImagePath))
     ) {
       try {
         const sharpStream = sharp({
@@ -74,9 +94,26 @@ async function run() {
 
         const promises = [];
 
-        promises.push(sharpStream.clone().toFormat("jpg").toFile(jpgImagePath));
         promises.push(
-          sharpStream.clone().toFormat("webp").toFile(webpImagePath),
+          sharpStream
+            .clone()
+            .jpeg({ quality: 100 })
+            .toFile(jpgOriginalImagePath),
+        );
+
+        promises.push(
+          sharpStream
+            .clone()
+            .jpeg({ quality: 80, progressive: true })
+            .toFile(jpgPublicImagePath),
+        );
+        promises.push(
+          sharpStream
+            .clone()
+            .webp({
+              quality: 80,
+            })
+            .toFile(webpPublicImagePath),
         );
         got.stream(formattedDrawing.originalImage).pipe(sharpStream);
 
@@ -84,12 +121,16 @@ async function run() {
       } catch (e) {
         // when there's a 404, image is still created so we delete it and returns
         if (e.name === "HTTPError") {
-          console.error(formattedDrawing);
+          console.error("Drawing in error:", formattedDrawing);
           try {
-            await fs.promises.unlink(jpgImagePath);
-            await fs.promises.unlink(webpImagePath);
+            await fs.promises.unlink(jpgOriginalImagePath);
+            await fs.promises.unlink(jpgPublicImagePath);
+            await fs.promises.unlink(webpPublicImagePath);
           } catch (e) {
-            console.error("Could not delete some files", e);
+            console.error(
+              "Could not delete some files (most probably fine)",
+              e,
+            );
           }
 
           return false;
@@ -102,12 +143,20 @@ async function run() {
     }
 
     if (!(await fileExists(thumbnailPath))) {
-      await sqip({
-        input: jpgImagePath,
-        output: thumbnailPath,
-        width: 0,
-        plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
-      });
+      try {
+        await sqip({
+          input: jpgOriginalImagePath,
+          output: thumbnailPath,
+          width: 0,
+          plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
+        });
+      } catch (e) {
+        console.error(
+          "Could not generate thumbnail for",
+          jpgOriginalImagePath,
+          e,
+        );
+      }
     }
 
     drawingsByDate[formattedDate] = drawingsByDate[formattedDate] || [];
@@ -116,7 +165,8 @@ async function run() {
     return true;
   });
 
-  async.eachLimit(formattedDrawings, 10, worker, (err) => {
+  console.log("Downloading images from twitter");
+  async.eachLimit(formattedDrawings, 4, worker, (err) => {
     if (err) {
       throw err;
     }

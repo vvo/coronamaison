@@ -5,9 +5,9 @@ Todo:
     ☐ Share to linkedin
     ☐ Share to facebook
   Before launch:
-    ✔ host images locally in webp @done(20-03-27 01:51)
     ☐ <meta> information for every page (different per page)
-    ☐ Image size of thumbnails
+    ☐ Image size of thumbnails in html code
+    ☐ ensure images are always stretched to full width
     ☐ Code splitting Next.js + svg inline? search issues or create discussion
     ☐ Why Next.js downloads json files on [day].js? Search issues
     ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
@@ -25,6 +25,8 @@ Todo:
     ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
     ☐ Show avatar and username at the top of drawings instead of below
     ☐ Click on drawing = drawing page
+    ☐ Drawings image should use srcset to only download the right image
+    ☐ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture
   Drawing page:
     ☐ Has drawing in full
     ☐ Displays original tweet using embedded tweet
@@ -41,6 +43,8 @@ Maybe next features:
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ host images locally in webp @done(20-03-27 01:51) @project(Todo.Before launch)
+  ✔ Download drawings in original size and save original file to the project (for archives) @done(20-03-27 11:30) @project(Todo.Website)
   ✔ disable scroll on body when menu is opened (portrait mode has this issue) @done(20-03-27 00:18) @project(Todo.Before launch)
   ✔ Add active on menu items @done(20-03-27 00:01) @project(Todo.Before launch)
   ✔ Add simple analytics @done(20-03-26 21:47) @project(Todo.Before launch)
