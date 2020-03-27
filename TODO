@@ -7,6 +7,10 @@ Todo:
   Before launch:
     ✔ host images locally in webp @done(20-03-27 01:51)
     ☐ <meta> information for every page (different per page)
+    ☐ Image size of thumbnails
+    ☐ Code splitting Next.js + svg inline? search issues or create discussion
+    ☐ Why Next.js downloads json files on [day].js? Search issues
+    ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
