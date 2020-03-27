@@ -9,11 +9,18 @@
   background-image: url("/ricepaper.png");
 }
 
-.drawing-appear {
-  opacity: 0.01;
+.fixed-ratio {
+  display: block;
+  position: relative;
+  /* height: 0;
+  overflow: hidden; */
 }
 
-.drawing-appear.appear-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
+.fixed-ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* max-width: inherit; */
 }

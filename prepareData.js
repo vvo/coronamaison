@@ -12,7 +12,18 @@ import sqip from "sqip";
 
 const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
-const deletes = require("./data/deletes.json").deleted.twitter;
+
+const dbDeletes = low(new FileSync("data/deletes.json"));
+
+dbDeletes
+  .defaults({
+    deleted: {
+      twitter: [],
+    },
+  })
+  .write();
+
+const deletes = dbDeletes.get("deleted.twitter").value();
 
 async function run() {
   const drawings = db
@@ -33,21 +44,10 @@ async function run() {
       username: drawing.user.screen_name,
       likes: drawing.retweet_count + drawing.favorite_count,
       originalImage: drawing.extended_entities.media[0].media_url_https,
+      avatarImage: drawing.user.profile_image_url_https,
       date: date.toISO(),
     };
   });
-
-  console.log("Compiling top20");
-  const top20Drawings = formattedDrawings
-    .sort((a, b) => {
-      return a.likes > b.likes ? -1 : 1;
-    })
-    .slice(0, 20);
-
-  fs.writeFileSync(
-    path.join(dataFolder, "top20Drawings.json"),
-    JSON.stringify(top20Drawings, null, 2),
-  );
 
   // reformat and download images
   const worker = async.asyncify(async (formattedDrawing) => {
@@ -123,6 +123,10 @@ async function run() {
         if (e.name === "HTTPError") {
           console.error("Drawing in error:", formattedDrawing);
           try {
+            if (!dbDeletes.includes(formattedDrawing.id).value()) {
+              dbDeletes.push(formattedDrawing.id).write();
+            }
+
             await fs.promises.unlink(jpgOriginalImagePath);
             await fs.promises.unlink(jpgPublicImagePath);
             await fs.promises.unlink(webpPublicImagePath);
@@ -144,12 +148,15 @@ async function run() {
 
     if (!(await fileExists(thumbnailPath))) {
       try {
-        await sqip({
+        const result = await sqip({
           input: jpgOriginalImagePath,
           output: thumbnailPath,
-          width: 0,
+          width: 0, // keep original width
           plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
         });
+
+        formattedDrawing.imageHeight = result.metadata.height;
+        formattedDrawing.imageWidth = result.metadata.width;
       } catch (e) {
         console.error(
           "Could not generate thumbnail for",
@@ -166,10 +173,22 @@ async function run() {
   });
 
   console.log("Downloading images from twitter");
-  async.eachLimit(formattedDrawings, 4, worker, (err) => {
+  async.eachLimit(formattedDrawings, 10, worker, (err) => {
     if (err) {
       throw err;
     }
+
+    console.log("Compiling top20");
+    const top20Drawings = formattedDrawings
+      .sort((a, b) => {
+        return a.likes > b.likes ? -1 : 1;
+      })
+      .slice(0, 20);
+
+    fs.writeFileSync(
+      path.join(dataFolder, "top20Drawings.json"),
+      JSON.stringify(top20Drawings, null, 2),
+    );
 
     // reorder to get most recent dates at the top
     const drawingsByDateArray = Object.entries(drawingsByDate).sort(

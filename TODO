@@ -6,11 +6,10 @@ Todo:
     ☐ Share to facebook
   Before launch:
     ☐ <meta> information for every page (different per page)
-    ☐ Image size of thumbnails in html code
-    ☐ ensure images are always stretched to full width
     ☐ Code splitting Next.js + svg inline? search issues or create discussion
     ☐ Why Next.js downloads json files on [day].js? Search issues
     ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
+    ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
@@ -23,7 +22,6 @@ Todo:
       ☐ Et Instagram?
     ☐ create and add favicon (like an emoji 🎨)
     ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
-    ☐ Show avatar and username at the top of drawings instead of below
     ☐ Click on drawing = drawing page
     ☐ Drawings image should use srcset to only download the right image
     ☐ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture
@@ -39,10 +37,13 @@ Maybe next features:
   ☐ "better" UI
   ☐ Add transition between pixel and real version
   ☐ Random image button
-  ☐ Cache images locally and turn into webp
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ Image size of thumbnails in html code @done(20-03-27 14:49) @project(Todo.Before launch)
+  ✔ ensure images are always stretched to full width @done(20-03-27 14:49) @project(Todo.Before launch)
+  ✔ Show avatar and username at the top of drawings instead of below @done(20-03-27 14:49) @project(Todo.Website)
+  ✔ Cache images locally and turn into webp @done(20-03-27 14:50) @project(Maybe next features)
   ✔ host images locally in webp @done(20-03-27 01:51) @project(Todo.Before launch)
   ✔ Download drawings in original size and save original file to the project (for archives) @done(20-03-27 11:30) @project(Todo.Website)
   ✔ disable scroll on body when menu is opened (portrait mode has this issue) @done(20-03-27 00:18) @project(Todo.Before launch)

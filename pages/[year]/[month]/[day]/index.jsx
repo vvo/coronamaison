@@ -30,13 +30,11 @@ export default function DrawingsForDay({ drawingsForDay, date }) {
         <meta property="twitter:image" content={socialImage} />
       </Head>
 
-      <main className="xl:col-span-10">
-        <h2 className="text-underline text-3xl font-cursive text-center">
-          {drawingsForDay.length} dessins le {date.day}/{date.month}/{date.year}
-        </h2>
+      <h2 className="text-underline text-3xl font-cursive text-center">
+        {drawingsForDay.length} dessins le {date.day}/{date.month}/{date.year}
+      </h2>
 
-        <DrawingsList drawings={drawingsForDay} />
-      </main>
+      <DrawingsList drawings={drawingsForDay} />
     </>
   );
 }
@@ -52,8 +50,7 @@ DrawingsForDay.propTypes = {
 
 export async function getStaticProps({ params: { year, month, day } }) {
   const date = { year, month, day };
-  const drawingsFolder = `${year}-${month}-${day}`;
-  const drawingsForDay = require(`data/${drawingsFolder}.json`);
+  const drawingsForDay = require(`data/${year}-${month}-${day}.json`);
 
   return {
     props: {

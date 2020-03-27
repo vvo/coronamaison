@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import DrawingsList from "components/DrawingsList";
 import Head from "next/head";
 
-export default function Home({ top20Drawings, nbDrawings }) {
+export default function Home({ top20Drawings }) {
   const title = "#coronamaison: Tous les dessins du hashtag #coronamaison";
   const description =
     "Ce site contient tous les dessins du hashtag #coronamaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
@@ -30,30 +30,25 @@ export default function Home({ top20Drawings, nbDrawings }) {
         <meta property="twitter:image" content={socialImage} />
       </Head>
 
-      <main className="xl:col-span-10">
-        <h2 className="text-underline text-3xl font-cursive text-center">
-          #coronamaisons les plus partagées
-        </h2>
+      <h2 className="text-underline text-3xl font-cursive text-center">
+        #coronamaisons les plus partagées
+      </h2>
 
-        <DrawingsList drawings={top20Drawings} />
-      </main>
+      <DrawingsList drawings={top20Drawings} />
     </>
   );
 }
 
 Home.propTypes = {
   top20Drawings: PropTypes.arrayOf(PropTypes.object),
-  nbDrawings: PropTypes.number,
 };
 
 export async function getStaticProps() {
   const top20Drawings = require("data/top20Drawings.json");
-  const { nbDrawings } = require("data/state.json");
 
   return {
     props: {
       top20Drawings,
-      nbDrawings,
     },
   };
 }
