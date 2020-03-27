@@ -67,7 +67,7 @@ function Nav({ allDates, toggleSidebar }) {
 
       <a
         href="https://simpleanalytics.com/coronamaison.now.sh"
-        className="block text-xl text-blue-800 font-cursive"
+        className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
         Statistiques
       </a>
