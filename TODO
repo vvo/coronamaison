@@ -5,7 +5,7 @@ Todo:
     ☐ Share to linkedin
     ☐ Share to facebook
   Before launch:
-    ☐ host images locally in webp
+    ✔ host images locally in webp @done(20-03-27 01:51)
     ☐ <meta> information for every page (different per page)
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Link from "next/link";
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
@@ -27,7 +26,7 @@ export default function Menu({ allDates }) {
         <div className="xl:hidden fixed inset-0 z-10">
           <div
             onClick={toggleSidebar}
-            className="absolute inset-0 bg-gray-600 opacity-75"
+            className="absolute inset-0 bg-gray-600"
           ></div>
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
             <Nav allDates={allDates} toggleSidebar={toggleSidebar} />

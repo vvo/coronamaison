@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import ProgressiveImage from "react-progressive-graceful-image";
 import TwitterIcon from "svg/twitter.svg";
 import Line from "svg/line.svg";
+import supportsWebP from "supports-webp";
 
-export default function DrawingItem({ id, source, username, image }) {
+export default function DrawingItem({ id, source, username }) {
   const drawingThumbnailSrc = `/thumbnails/${source}-${id}.svg`;
+  const drawingJpgSrc = `/drawings/${source}-${id}.jpg`;
+  const drawingWebpSrc = `/drawings/${source}-${id}.webp`;
   const url = `https://twitter.com/${username}/status/${id}`;
+
+  const [detectingWebp, setDetectingWebp] = useState(true);
+  const [canUseWebp, setCanUseWebp] = useState(false);
+
+  useEffect(() => {
+    supportsWebP.then((supported) => {
+      setCanUseWebp(supported);
+      setDetectingWebp(false);
+    });
+  }, [detectingWebp, canUseWebp]);
+
+  if (detectingWebp) {
+    return null;
+  }
 
   return (
     <>
@@ -17,7 +34,11 @@ export default function DrawingItem({ id, source, username, image }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <ProgressiveImage delay={300} placeholder="" src={image}>
+        <ProgressiveImage
+          delay={300}
+          placeholder=""
+          src={canUseWebp ? drawingWebpSrc : drawingJpgSrc}
+        >
           {(src, loading) => {
             if (loading) {
               // return <img style={{ height: "10rem" }} src={image} />;
@@ -33,7 +54,7 @@ export default function DrawingItem({ id, source, username, image }) {
 
             return (
               <noscript>
-                <img src={image} />
+                <img src={drawingJpgSrc} />
               </noscript>
             );
           }}

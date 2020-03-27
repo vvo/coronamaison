@@ -8,13 +8,7 @@ const regularClasses =
   "block text-xl text-blue-800 font-cursive hover:text-twitter";
 const activeClasses = `${regularClasses} text-twitter underline`;
 
-export default function MenuItem({
-  toggleSidebar,
-  href,
-  as,
-  noLink = false,
-  children,
-}) {
+export default function MenuItem({ toggleSidebar, href, as, children }) {
   const router = useRouter();
 
   return (
@@ -30,11 +24,8 @@ export default function MenuItem({
 }
 
 MenuItem.propTypes = {
-  date: PropTypes.shape({
-    day: PropTypes.string,
-    month: PropTypes.string,
-    year: PropTypes.string,
-    nbDrawings: PropTypes.number,
-  }),
+  as: PropTypes.string,
+  children: PropTypes.node,
+  href: PropTypes.string,
   toggleSidebar: PropTypes.func,
 };

@@ -5,14 +5,10 @@ import async from "async";
 import { DateTime } from "luxon";
 import got from "got";
 import fs from "fs";
-import stream from "stream";
-import { promisify } from "util";
 import mkdirp from "mkdirp";
 import path from "path";
 import sharp from "sharp";
 import sqip from "sqip";
-
-const pipeline = promisify(stream.pipeline);
 
 const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
@@ -31,11 +27,11 @@ async function run() {
     const date = DateTime.fromJSDate(new Date(drawing.created_at));
 
     return {
-      source: "twitter",
+      source: drawing.source,
       id: drawing.id_str,
       username: drawing.user.screen_name,
       likes: drawing.retweet_count + drawing.favorite_count,
-      image: drawing.extended_entities.media[0].media_url_https,
+      originalImage: drawing.extended_entities.media[0].media_url_https,
       date: date.toISO(),
     };
   });
@@ -53,38 +49,53 @@ async function run() {
 
   // reformat and download images
   const worker = async.asyncify(async (formattedDrawing) => {
-    const extension = path.extname(formattedDrawing.image);
-
     const formattedDate = DateTime.fromISO(formattedDrawing.date).toFormat(
       "yyyy-LL-dd",
     );
 
-    const drawingsFolder = path.join(__dirname, "drawings", formattedDate);
+    const drawingsFolder = path.join(__dirname, "public/drawings");
     const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
     const filename = `${formattedDrawing.source}-${formattedDrawing.id}`;
-    const imagePath = path.join(drawingsFolder, `${filename}.jpg`);
+    const jpgImagePath = path.join(drawingsFolder, `${filename}.jpg`);
+    const webpImagePath = path.join(drawingsFolder, `${filename}.webp`);
     const thumbnailPath = path.join(thumbnailsFolder, `${filename}.svg`);
 
     await mkdirp(drawingsFolder);
     await mkdirp(thumbnailsFolder);
 
-    if (!(await fileExists(imagePath))) {
+    if (
+      !(await fileExists(jpgImagePath)) ||
+      !(await fileExists(webpImagePath))
+    ) {
       try {
-        const streams = [got.stream(formattedDrawing.image)];
+        const sharpStream = sharp({
+          failOnError: false,
+        });
 
-        if (extension !== ".jpg") {
-          streams.push(sharp().toFormat("jpg"));
-        }
+        const promises = [];
 
-        streams.push(fs.createWriteStream(imagePath));
+        promises.push(sharpStream.clone().toFormat("jpg").toFile(jpgImagePath));
+        promises.push(
+          sharpStream.clone().toFormat("webp").toFile(webpImagePath),
+        );
+        got.stream(formattedDrawing.originalImage).pipe(sharpStream);
 
-        await pipeline(...streams);
+        await Promise.all(promises);
       } catch (e) {
         // when there's a 404, image is still created so we delete it and returns
         if (e.name === "HTTPError") {
           console.error(formattedDrawing);
-          await fs.promises.unlink(imagePath);
+          try {
+            await fs.promises.unlink(jpgImagePath);
+            await fs.promises.unlink(webpImagePath);
+          } catch (e) {
+            console.error("Could not delete some files", e);
+          }
+
+          return false;
         }
+
+        console.error("Unknown error", e);
 
         return false;
       }
@@ -92,7 +103,7 @@ async function run() {
 
     if (!(await fileExists(thumbnailPath))) {
       await sqip({
-        input: imagePath,
+        input: jpgImagePath,
         output: thumbnailPath,
         width: 0,
         plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
@@ -105,7 +116,7 @@ async function run() {
     return true;
   });
 
-  async.eachLimit(formattedDrawings, 4, worker, (err) => {
+  async.eachLimit(formattedDrawings, 10, worker, (err) => {
     if (err) {
       throw err;
     }
