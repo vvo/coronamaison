@@ -1,15 +1,17 @@
 
 Todo:
   Launch:
-    ☐ Share to websites publishing stories about that
+    ✔ Share to websites publishing stories about that @done(20-03-27 16:46)
     ✔ Share to linkedin @done(20-03-27 16:03)
-    ☐ Share to facebook
+    ✔ Share to facebook @done(20-03-27 16:46)
   Before launch:
-    ☐ <meta> information for every page (different per page)
+    ✔ <meta> information for every page (different per page) @done(20-03-27 16:46)
     ☐ Code splitting Next.js + svg inline? search issues or create discussion
-    ☐ Why Next.js downloads json files on [day].js? Search issues
+    ✔ Why Next.js downloads json files on [day].js? Search issues @done(20-03-27 16:46)
+      Ok it's expected from the doc
     ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
     ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
+    ☐ sitemap
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
