@@ -66,6 +66,14 @@ function Nav({ allDates, toggleSidebar }) {
       </MenuItem>
 
       <a
+        href="/template.jpg"
+        download
+        className="block text-xl text-blue-800 font-cursive hover:text-twitter"
+      >
+        Le gabarit
+      </a>
+
+      <a
         href="https://simpleanalytics.com/coronamaison.now.sh"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
