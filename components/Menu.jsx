@@ -26,7 +26,7 @@ export default function Menu({ allDates }) {
         <div className="xl:hidden fixed inset-0 z-10">
           <div
             onClick={toggleSidebar}
-            className="absolute inset-0 bg-gray-600"
+            className="absolute inset-0 bg-gray-600 opacity-75"
           ></div>
           <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
             <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
@@ -44,7 +44,7 @@ export default function Menu({ allDates }) {
         <div className="fixed top-0 left-0 xl:hidden">
           <button
             onClick={toggleSidebar}
-            className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white opacity-75"
+            className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white"
           >
             <MenuIcon className="h-6 w-6" />
           </button>
