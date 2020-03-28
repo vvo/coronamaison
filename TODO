@@ -1,17 +1,12 @@
 
 Todo:
-  Launch:
-    ✔ Share to websites publishing stories about that @done(20-03-27 16:46)
-    ✔ Share to linkedin @done(20-03-27 16:03)
-    ✔ Share to facebook @done(20-03-27 16:46)
   Before launch:
-    ✔ <meta> information for every page (different per page) @done(20-03-27 16:46)
     ☐ Code splitting Next.js + svg inline? search issues or create discussion
-    ✔ Why Next.js downloads json files on [day].js? Search issues @done(20-03-27 16:46)
-      Ok it's expected from the doc
     ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
     ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
     ☐ sitemap
+    ☐ change prefetch to only last date and add documentation to nextjs
+    ☐ inline svgs
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
@@ -42,6 +37,12 @@ Maybe next features:
   ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ Share to websites publishing stories about that @done(20-03-27 16:46) @project(Todo.Launch)
+  ✔ Share to linkedin @done(20-03-27 16:03) @project(Todo.Launch)
+  ✔ Share to facebook @done(20-03-27 16:46) @project(Todo.Launch)
+  ✔ <meta> information for every page (different per page) @done(20-03-27 16:46) @project(Todo.Before launch)
+  ✔ Why Next.js downloads json files on [day].js? Search issues @done(20-03-27 16:46) @project(Todo.Before launch)
+    Ok it's expected from the doc
   ✔ Image size of thumbnails in html code @done(20-03-27 14:49) @project(Todo.Before launch)
   ✔ ensure images are always stretched to full width @done(20-03-27 14:49) @project(Todo.Before launch)
   ✔ Show avatar and username at the top of drawings instead of below @done(20-03-27 14:49) @project(Todo.Website)
