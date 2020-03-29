@@ -55,14 +55,14 @@ export default function DrawingItem({
         </div>
       </a>
 
-      <button
+      {/* <button
         className="text-3xl"
         onClick={async () => {
           await fetch(`/api/drawing/${id}`);
         }}
       >
         delete
-      </button>
+      </button> */}
 
       <Line
         className="text-yellow-700 h-2 opacity-50 mx-auto"
