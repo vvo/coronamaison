@@ -8,11 +8,24 @@ const regularClasses =
   "block text-xl text-blue-800 font-cursive hover:text-twitter";
 const activeClasses = `${regularClasses} text-twitter underline`;
 
-export default function MenuItem({ toggleSidebar, href, as, children }) {
+export default function MenuItem({
+  toggleSidebar,
+  href,
+  as,
+  children,
+  prefetch,
+}) {
+  if (as === undefined) {
+    as = href;
+  }
+
   const router = useRouter();
+  // we can't just use prefetch={prefetch} because nextjs sends a warning:
+  // https://err.sh/zeit/next.js/prefetch-true-deprecated
+  const prefetchAttr = prefetch === false ? { prefetch: false } : {};
 
   return (
-    <Link href={href} as={as}>
+    <Link href={href} as={as} {...prefetchAttr}>
       <a
         onClick={toggleSidebar}
         className={router.asPath === as ? activeClasses : regularClasses}
@@ -28,4 +41,5 @@ MenuItem.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string,
   toggleSidebar: PropTypes.func,
+  prefetch: PropTypes.bool,
 };

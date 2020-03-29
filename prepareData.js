@@ -1,3 +1,5 @@
+require("events").EventEmitter.defaultMaxListeners = 15;
+
 import low from "lowdb";
 import FileSync from "lowdb/adapters/FileSync";
 
@@ -9,11 +11,13 @@ import mkdirp from "mkdirp";
 import path from "path";
 import sharp from "sharp";
 import sqip from "sqip";
+import sizeOf from "image-size";
 
 const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
 
 const dbDeletes = low(new FileSync("data/deletes.json"));
+const sizes = [375, 640, 872, 1026];
 
 dbDeletes
   .defaults({
@@ -66,27 +70,23 @@ async function run() {
 
     const jpgOriginalImagePath = path.join(
       originalDrawingsFolder,
-      `${filename}.jpg`,
+      `${filename}`,
     );
-    const jpgPublicImagePath = path.join(
-      publicDrawingsFolder,
-      `${filename}.jpg`,
-    );
-    const webpPublicImagePath = path.join(
-      publicDrawingsFolder,
-      `${filename}.webp`,
-    );
-    const thumbnailPath = path.join(thumbnailsFolder, `${filename}.svg`);
 
     await mkdirp(originalDrawingsFolder);
     await mkdirp(publicDrawingsFolder);
     await mkdirp(thumbnailsFolder);
 
+    const jpgPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
+
+    const webpPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
+
     if (
       !(await fileExists(jpgOriginalImagePath)) ||
-      !(await fileExists(jpgPublicImagePath)) ||
-      !(await fileExists(webpPublicImagePath))
+      process.env.REGENERATE_IMAGES === "true"
     ) {
+      console.log("downloading images + resizing for", filename);
+
       try {
         const sharpStream = sharp({
           failOnError: false,
@@ -101,20 +101,24 @@ async function run() {
             .toFile(jpgOriginalImagePath),
         );
 
-        promises.push(
-          sharpStream
-            .clone()
-            .jpeg({ quality: 80, progressive: true })
-            .toFile(jpgPublicImagePath),
-        );
-        promises.push(
-          sharpStream
-            .clone()
-            .webp({
-              quality: 80,
-            })
-            .toFile(webpPublicImagePath),
-        );
+        sizes.forEach((size) => {
+          promises.push(
+            sharpStream
+              .clone()
+              .jpeg({ quality: 80 })
+              .toFile(`${jpgPublicBasePath}-${size}.jpg`),
+          );
+
+          promises.push(
+            sharpStream
+              .clone()
+              .webp({
+                quality: 80,
+              })
+              .toFile(`${webpPublicBasePath}-${size}.webp`),
+          );
+        });
+
         got.stream(formattedDrawing.originalImage).pipe(sharpStream);
 
         await Promise.all(promises);
@@ -128,8 +132,14 @@ async function run() {
             }
 
             await fs.promises.unlink(jpgOriginalImagePath);
-            await fs.promises.unlink(jpgPublicImagePath);
-            await fs.promises.unlink(webpPublicImagePath);
+            await Promise.all(
+              sizes.map((size) => {
+                return Promise.all([
+                  fs.promises.unlink(`${jpgPublicBasePath}-${size}.jpg`),
+                  fs.promises.unlink(`${webpPublicBasePath}-${size}.webp`),
+                ]);
+              }),
+            );
           } catch (e) {
             console.error(
               "Could not delete some files (most probably fine)",
@@ -146,17 +156,19 @@ async function run() {
       }
     }
 
-    if (!(await fileExists(thumbnailPath))) {
+    const thumbnailPath = path.join(thumbnailsFolder, `${filename}.svg`);
+
+    if (
+      !(await fileExists(thumbnailPath)) ||
+      process.env.REGENERATE_THUMBNAILS === "true"
+    ) {
+      console.log("generating thumbnail for", filename);
       try {
-        const result = await sqip({
-          input: jpgOriginalImagePath,
+        await sqip({
+          input: `${jpgPublicBasePath}-375.jpg`,
           output: thumbnailPath,
-          width: 0, // keep original width
           plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
         });
-
-        formattedDrawing.imageHeight = result.metadata.height;
-        formattedDrawing.imageWidth = result.metadata.width;
       } catch (e) {
         console.error(
           "Could not generate thumbnail for",
@@ -166,14 +178,25 @@ async function run() {
       }
     }
 
+    const { width: imageWidth, height: imageHeight } = await sizeOf(
+      jpgOriginalImagePath,
+    );
+
     drawingsByDate[formattedDate] = drawingsByDate[formattedDate] || [];
+
+    // This is done this way (and not via push({...formattedDrawing, imageWidth}) for example)
+    // because we WANT to modify the original formattedDrawing object from formattedDrawings array
+    // so that the top20Drawings are computed with modified data
+    // MUTATE ALL THE THINGS
+    formattedDrawing.imageWidth = imageWidth;
+    formattedDrawing.imageHeight = imageHeight;
+
     drawingsByDate[formattedDate].push(formattedDrawing);
 
     return true;
   });
 
-  console.log("Downloading images from twitter");
-  async.eachLimit(formattedDrawings, 10, worker, (err) => {
+  async.eachLimit(formattedDrawings, 4, worker, (err) => {
     if (err) {
       throw err;
     }

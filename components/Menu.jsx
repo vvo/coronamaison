@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
+import Line from "svg/line.svg";
+
 import MenuItem from "components/MenuItem";
 
 export default function Menu({ allDates }) {
@@ -27,8 +29,8 @@ export default function Menu({ allDates }) {
           <div
             onClick={toggleSidebar}
             className="absolute inset-0 bg-gray-600 opacity-75"
-          ></div>
-          <div className="absolute h-screen inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
+          />
+          <div className="absolute h-full inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
             <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
           </div>
           <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>
@@ -41,7 +43,7 @@ export default function Menu({ allDates }) {
           </div>
         </div>
       )) || (
-        <div className="fixed top-0 left-0 xl:hidden">
+        <div className="fixed top-0 left-0 xl:hidden z-10">
           <button
             onClick={toggleSidebar}
             className="h-12 w-12 inline-flex items-center justify-center rounded-br-lg text-yellow-900 bg-white"
@@ -60,27 +62,18 @@ export default function Menu({ allDates }) {
 function Nav({ allDates, toggleSidebar }) {
   return (
     <nav className="px-3">
-      <h2 className="text-underline text-3xl font-cursive">Menu :</h2>
-      <MenuItem href="/" as="/" toggleSidebar={toggleSidebar}>
+      <div className="text-3xl font-cursive">Menu :</div>
+      <MenuItem href="/" toggleSidebar={toggleSidebar}>
         Les plus partagées
       </MenuItem>
 
-      <a
-        href="/template.jpg"
-        download
-        className="block text-xl text-blue-800 font-cursive hover:text-twitter"
-      >
-        Le gabarit
-      </a>
+      <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
+        Je veux dessiner !
+      </MenuItem>
 
-      <a
-        href="https://simpleanalytics.com/coronamaison.now.sh"
-        className="block text-xl text-blue-800 font-cursive hover:text-twitter"
-      >
-        Statistiques
-      </a>
-      <h2 className="text-underline text-3xl font-cursive">Jours :</h2>
-      {allDates.map((date) => {
+      <Line className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+
+      {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
         const as = `/${year}/${month}/${day}`;
         return (
@@ -89,11 +82,21 @@ function Nav({ allDates, toggleSidebar }) {
             as={as}
             key={as}
             toggleSidebar={toggleSidebar}
+            prefetch={dateIndex < 2 ? true : false} // prefetch only first two items, see https://nextjs.org/docs/api-reference/next/link
           >
             {day}/{month}/{year} <sup>(+{nbDrawings})</sup>
           </MenuItem>
         );
       })}
+
+      <Line className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+
+      <a
+        href="https://simpleanalytics.com/coronamaison.now.sh"
+        className="block text-xl text-blue-800 font-cursive hover:text-twitter"
+      >
+        Statistiques
+      </a>
     </nav>
   );
 }

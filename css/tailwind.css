@@ -12,8 +12,8 @@
 .fixed-ratio {
   display: block;
   position: relative;
-  /* height: 0;
-  overflow: hidden; */
+  height: 0;
+  overflow: hidden;
 }
 
 .fixed-ratio-content {
@@ -22,5 +22,22 @@
   left: 0;
   width: 100%;
   height: auto;
-  /* max-width: inherit; */
+  max-width: inherit;
+}
+
+.lazy {
+  display: block;
+  opacity: 0;
+}
+.lazy:not(.initial) {
+  transition: opacity 0.5s;
+}
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
+  opacity: 1;
+}
+
+.fixed-ratio .lazy:not([src]) {
+  visibility: hidden;
 }
