@@ -48,7 +48,7 @@ export default function DrawingItem({
         <div className="absolute top-0">
           <img
             className="inline-block h-12 w-12 rounded-t-lg mr-2"
-            src={avatarImage}
+            data-src={avatarImage}
             alt={`Twitter avatar for ${username}`}
           />{" "}
           @{username}
