@@ -1,24 +1,24 @@
 
 Todo:
   Before launch:
-    ☐ Code splitting Next.js + svg inline? search issues or create discussion
+    ☐ Nextjs documentation: inform about prefetch in getStaticProps (json files), and in Link
     ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
     ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
-    ☐ sitemap
-    ☐ change prefetch to only last date and add documentation to nextjs
-    ☐ inline svgs
+    ☐ new domain name (how to transfer?)
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
     ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
     ☐ share buttons on all pages
-    ☐ add page "Je veux participer !" (explains how to do it)
+    ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
-      ☐ Je trouve pas mon dessin
+      ☐ Je trouve pas mon dessin (que la première photo
+      ☐ croquis!
       ☐ Et Instagram?
-    ☐ create and add favicon (like an emoji 🎨)
-    ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
+      ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
+      ☐ my name, their name
+      ☐ other website
     ☐ Click on drawing = drawing page
     ☐ Drawings image should use srcset to only download the right image
     ☐ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture
@@ -31,12 +31,29 @@ Todo:
   Project:
     ☐ README add instructions on how to run it yourself
 Maybe next features:
-  ☐ "better" UI
-  ☐ Add transition between pixel and real version
   ☐ Random image button
-  ☐ Manage to inline SVGs into pages without blowing out the build output size
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✘ sitemap @project(Todo.Before launch)
+    not needed for simple websites: https://www.imarc.com/blog/do-sites-really-need-a-sitemap-for-seo @cancelled(20-03-29 23:08)
+  ✔ native lazy + placeholder ? (delay) @done(20-03-29 22:02) @project(Todo.Before launch)
+  ✔ blur effect appear @done(20-03-29 22:02) @project(Todo.Before launch)
+  ✔ Code splitting Next.js + svg inline? search issues or create discussion @done(20-03-29 22:09) @project(Todo.Before launch)
+  ✔ change prefetch to only last date and add documentation to nextjs @done(20-03-29 22:09) @project(Todo.Before launch)
+  ✔ inline svgs @done(20-03-29 22:09) @project(Todo.Before launch)
+  ✔ reduce data sent in getStaticProps to the bare minimum @done(20-03-29 22:09) @project(Todo.Before launch)
+  ✔ remove unused modules from sqip @done(20-03-29 22:10) @project(Todo.Before launch)
+  ✘ whiter background @cancelled(20-03-29 22:17) @project(Todo.Before launch)
+    I tried it, liked better the strong one :D
+  ✘ use preact @project(Todo.Before launch)
+    not working @cancelled(20-03-29 22:25)
+  ✔ regenerate thumbnails low quality since no more needed to have lots of small pixels @done(20-03-29 22:26) @project(Todo.Before launch)
+  ✔ create and add favicon (like an emoji 🎨) @done(20-03-29 22:26) @project(Todo.Website)
+  ✘ "better" UI @project(Maybe next features)
+    good enough @cancelled(20-03-29 22:26)
+  ✔ Add transition between pixel and real version @done(20-03-29 22:26) @project(Maybe next features)
+  ✔ Manage to inline SVGs into pages without blowing out the build output size @done(20-03-29 22:26) @project(Maybe next features)
+    it was because of prefetch
   ✔ Share to websites publishing stories about that @done(20-03-27 16:46) @project(Todo.Launch)
   ✔ Share to linkedin @done(20-03-27 16:03) @project(Todo.Launch)
   ✔ Share to facebook @done(20-03-27 16:46) @project(Todo.Launch)
