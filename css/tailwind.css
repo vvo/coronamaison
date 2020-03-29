@@ -30,8 +30,7 @@ img.lazy {
   opacity: 0;
 }
 img.lazy:not(.initial) {
-  transition: opacity 1s;
-  -webkit-transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 img.lazy.initial,
 img.lazy.loaded,
