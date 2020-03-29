@@ -25,19 +25,19 @@
   max-width: inherit;
 }
 
-img.lazy {
+.lazy {
   display: block;
   opacity: 0;
 }
-img.lazy:not(.initial) {
+.lazy:not(.initial) {
   transition: opacity 0.5s;
 }
-img.lazy.initial,
-img.lazy.loaded,
-img.lazy.error {
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
   opacity: 1;
 }
 
-.fixed-ratio img.lazy:not([src]) {
+.fixed-ratio .lazy:not([src]) {
   visibility: hidden;
 }

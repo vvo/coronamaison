@@ -4,7 +4,10 @@ import LazyLoad from "vanilla-lazyload";
 
 if (typeof window !== "undefined") {
   if (!document.lazyLoadInstance) {
-    document.lazyLoadInstance = new LazyLoad();
+    document.lazyLoadInstance = new LazyLoad({
+      use_native: true,
+      load_delay: 500,
+    });
   }
 }
 
