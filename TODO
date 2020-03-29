@@ -1,17 +1,6 @@
 
 Todo:
-  Before launch:
-    ☐ Nextjs documentation: inform about prefetch in getStaticProps (json files), and in Link
-    ☐ Add example on Sharp on how to use Promises / onfinish (search stream to promise module?)
-    ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
-    ☐ new domain name (how to transfer?)
-  Data:
-    ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
-      Today it requires manual editing
-    ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
   Website:
-    ☐ share buttons on all pages
-    ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
       ☐ croquis!
@@ -19,9 +8,17 @@ Todo:
       ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
       ☐ my name, their name
       ☐ other website
+    ☐ new domain name (how to transfer?)
+    ☐ share buttons on all pages
+    ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22)
     ☐ Click on drawing = drawing page
     ☐ Drawings image should use srcset to only download the right image
     ☐ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture
+  Data:
+    ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
+      Today it requires manual editing
+    ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
+    ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
   Drawing page:
     ☐ Has drawing in full
     ☐ Displays original tweet using embedded tweet
