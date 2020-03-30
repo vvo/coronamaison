@@ -1,9 +1,13 @@
 
 Todo:
   ☐ Add pngout in preparedata
-  ☐ Deploy
+  ☐ Default to randomize list, allow to sort by popularity
+    Hard to do because it can confuse visitors (not everything is at the same place at every visit..),
+    We could do the opposite: default to popularity, allow to randomize
+  ☐ Add search
   ☐ finish png optimization
     ☐ find . -iname '*png' -exec pngout -y {} {} \;
+  ☐ Feedback to zeit about moving a project
   Website:
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
@@ -31,9 +35,10 @@ Todo:
   Project:
     ☐ README add instructions on how to run it yourself
 Maybe next features:
-  ☐ Random image button
-  ☐ Add search (to find your own drawing mostly :D)
+  ☐ Random image feature / page
 Archive:
+  ✔ Deploy @done(20-03-30 23:09) @project(Todo)
+  ✔ Add search (to find your own drawing mostly :D) @done(20-03-30 23:10) @project(Maybe next features)
   ✔ Create only two image variations @done(20-03-30 11:49) @project(Todo.Website)
   ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22) @project(Todo.Website)
   ✔ Drawings image should use srcset to only download the right image @done(20-03-30 11:49) @project(Todo.Website)

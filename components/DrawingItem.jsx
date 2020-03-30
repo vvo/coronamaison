@@ -53,7 +53,7 @@ export default function DrawingItem({
         <a
           href={profileUrl}
           title={`Voir le profile twitter de ${username}`}
-          className="absolute top-0 text-lg text-blue-800 hover:text-twitter "
+          className="absolute top-0 text-lg text-blue-800 hover:text-twitter"
         >
           <img
             className="inline-block h-12 w-12 rounded-t-lg mr-2"
@@ -65,9 +65,9 @@ export default function DrawingItem({
         <a
           title={`Accéder à la version à colorier de la #coronamaison de ${username}`}
           href={coloringPageUrl}
-          className="absolute top-0 right-0"
+          className="block absolute top-0 right-0 flex items-center text-lg text-blue-800 hover:text-twitter"
         >
-          <Coloring className="w-12 h-12" />
+          Colorier <Coloring className="w-12 h-12" />
         </a>
       </div>
 

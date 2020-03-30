@@ -26,10 +26,8 @@ export default function About() {
       <p className="text-lg mt-6">
         Pour participer à la Coronamaison et publier ton propre dessin via le
         hashtag{" "}
-        <a href="https://twitter.com/hashtag/coronamaison?lang=en">
-          #coronamaison
-        </a>
-        , rien de plus simple:
+        <a href="https://twitter.com/hashtag/coronamaison">#coronamaison</a>,
+        rien de plus simple:
       </p>
 
       <ol className="mt-4">
