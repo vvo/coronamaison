@@ -1,7 +1,6 @@
 
 Todo:
   Website:
-    ✔ Create only two image variations @done(20-03-30 11:49)
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
       ☐ croquis!
@@ -11,11 +10,7 @@ Todo:
       ☐ other website
     ☐ new domain name (how to transfer?)
     ☐ share buttons on all pages
-    ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22)
     ☐ Click on drawing = drawing page
-    ✔ Drawings image should use srcset to only download the right image @done(20-03-30 11:49)
-    ✔ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture @done(20-03-30 11:49)
-      handled via vanilla-lazyload
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
@@ -33,6 +28,11 @@ Maybe next features:
   ☐ Random image button
   ☐ Add search (to find your own drawing mostly :D)
 Archive:
+  ✔ Create only two image variations @done(20-03-30 11:49) @project(Todo.Website)
+  ✔ add page "Je veux participer !" (explains how to do it) @done(20-03-29 23:22) @project(Todo.Website)
+  ✔ Drawings image should use srcset to only download the right image @done(20-03-30 11:49) @project(Todo.Website)
+  ✔ Drawings should use <picture's> onload event with https://github.com/CloudPower97/react-progressive-picture @done(20-03-30 11:49) @project(Todo.Website)
+    handled via vanilla-lazyload
   ✘ sitemap @project(Todo.Before launch)
     not needed for simple websites: https://www.imarc.com/blog/do-sites-really-need-a-sitemap-for-seo @cancelled(20-03-29 23:08)
   ✔ native lazy + placeholder ? (delay) @done(20-03-29 22:02) @project(Todo.Before launch)
