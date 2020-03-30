@@ -9819,7 +9819,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vanilla-lazyload@^14.0.0:
+vanilla-lazyload@14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/vanilla-lazyload/-/vanilla-lazyload-14.0.0.tgz#64d9fde88d992aea70cc10b8caa2108a4c427445"
   integrity sha512-ZMU544KVkqrcOTVmdbx6a7mehzc0ZVsXU0qkG97gpY3m0wFPywG/7NBxcfd4rlW03TU2JUupSuGRV6VKCrAsLQ==

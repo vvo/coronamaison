@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
-import Line from "svg/line.svg";
+import Line from "svg/Line.svg";
 
 import MenuItem from "components/MenuItem";
 

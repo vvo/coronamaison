@@ -1,5 +1,7 @@
 
 Todo:
+  ☐ Add pngout in preparedata
+  ☐ Deploy
   Website:
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
@@ -8,6 +10,7 @@ Todo:
       ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
       ☐ my name, their name
       ☐ other website
+      ☐ change the coloring version
     ☐ new domain name (how to transfer?)
     ☐ share buttons on all pages
     ☐ Click on drawing = drawing page
@@ -21,6 +24,7 @@ Todo:
     ☐ Displays original tweet using embedded tweet
     ☐ Has a feature to turn the drawing into full black/white for colouring page
     ☐ Has a feature to print the drawing/colouring page
+      Most important part is done, it's linked directly from the list page
     ☐ Has feature to display large image (like https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=large or https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=4096x4096)
   Project:
     ☐ README add instructions on how to run it yourself

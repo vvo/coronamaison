@@ -12,6 +12,8 @@ import path from "path";
 import sharp from "sharp";
 import sqip from "sqip";
 import sizeOf from "image-size";
+import { promisify } from "util";
+const exec = promisify(require("child_process").exec);
 
 const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
@@ -66,6 +68,7 @@ async function run() {
     );
     const publicDrawingsFolder = path.join(__dirname, "public/drawings");
     const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
+    const coloringPagesFolder = path.join(__dirname, "public/coloringPages");
     const filename = `${formattedDrawing.source}-${formattedDrawing.id}`;
 
     const jpgOriginalImagePath = path.join(
@@ -76,6 +79,7 @@ async function run() {
     await mkdirp(originalDrawingsFolder);
     await mkdirp(publicDrawingsFolder);
     await mkdirp(thumbnailsFolder);
+    await mkdirp(coloringPagesFolder);
 
     const jpgPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
 
@@ -160,6 +164,25 @@ async function run() {
 
         return false;
       }
+    }
+
+    // convert jpgOriginalImagePath to public/colouring-pages/source-id.png
+    const coloringPagePath = path.join(coloringPagesFolder, `${filename}.png`);
+
+    if (
+      !(await fileExists(coloringPagePath)) ||
+      process.env.REGENERATE_COLORING_PAGES === "true"
+    ) {
+      console.log("Generating coloring page for", filename);
+      await exec(
+        [
+          `convert ${jpgOriginalImagePath} pgm:`,
+          "mkbitmap -f 4 -s 2 -t 0.48 - -o -",
+          "potrace --pgm",
+          "convert -resize 2300 - png:",
+          `pngquant 4 - > ${coloringPagePath}`,
+        ].join(" | "),
+      );
     }
 
     const thumbnailPath = path.join(thumbnailsFolder, `${filename}.svg`);

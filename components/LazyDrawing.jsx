@@ -33,27 +33,20 @@ export default function LazyDrawing({
       }}
     >
       <source
-        media="(max-width: 800px)"
-        data-srcset={`/drawings/${filename}-800.webp`}
+        data-sizes="(max-width: 1026px) 100vw, 1026px"
+        data-srcset={`
+        /drawings/${filename}-800.webp 800w,
+        /drawings/${filename}-1026.webp 1026w
+        `}
         type="image/webp"
-      />
-      <source
-        media="(max-width: 1200px)"
-        data-srcset={`/drawings/${filename}-1026.webp`}
-        type="image/webp"
-      />
-      <source
-        media="(max-width: 800px)"
-        data-srcset={`/drawings/${filename}-800.jpg`}
-        type="image/jpeg"
-      />
-      <source
-        media="(max-width: 1200px)"
-        data-srcset={`/drawings/${filename}-1026.jpg`}
-        type="image/jpeg"
+        className="fixed-ratio-content lazy"
       />
       <img
-        data-src={`/drawings/${filename}-1026.jpg`}
+        data-sizes="(max-width: 1026px) 100vw, 1026px"
+        data-srcset={`
+        /drawings/${filename}-800.jpg 800w,
+        /drawings/${filename}-1026.jpg 1026w
+        `}
         alt={alt}
         width={imageWidth}
         height={imageHeight}
