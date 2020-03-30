@@ -17,7 +17,7 @@ const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
 
 const dbDeletes = low(new FileSync("data/deletes.json"));
-const sizes = [375, 640, 872, 1026];
+const sizes = [800, 1026];
 
 dbDeletes
   .defaults({
@@ -105,6 +105,7 @@ async function run() {
           promises.push(
             sharpStream
               .clone()
+              .resize({ width: size })
               .jpeg({ quality: 80 })
               .toFile(`${jpgPublicBasePath}-${size}.jpg`),
           );
@@ -112,6 +113,7 @@ async function run() {
           promises.push(
             sharpStream
               .clone()
+              .resize({ width: size })
               .webp({
                 quality: 80,
               })
@@ -119,7 +121,11 @@ async function run() {
           );
         });
 
-        got.stream(formattedDrawing.originalImage).pipe(sharpStream);
+        if (await fileExists(jpgOriginalImagePath)) {
+          fs.createReadStream(jpgOriginalImagePath).pipe(sharpStream);
+        } else {
+          got.stream(formattedDrawing.originalImage).pipe(sharpStream);
+        }
 
         await Promise.all(promises);
       } catch (e) {
@@ -165,7 +171,7 @@ async function run() {
       console.log("generating thumbnail for", filename);
       try {
         await sqip({
-          input: `${jpgPublicBasePath}-375.jpg`,
+          input: `${jpgPublicBasePath}-800.jpg`,
           output: thumbnailPath,
           plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
         });

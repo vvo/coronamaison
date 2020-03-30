@@ -32,24 +32,27 @@ export default function LazyDrawing({
         background: `url(data:image/svg+xml;utf8,${encodeURIComponent(svg)})`,
       }}
     >
-      {/* <img src={`/thumbnails/${filename}.svg`} /> */}
-
       <source
-        data-sizes="(max-width: 1026px) 100vw, 1026px"
-        data-srcset={`
-  /drawings/${filename}-375.webp 375w,
-  /drawings/${filename}-640.webp 640w,
-  /drawings/${filename}-872.webp 872w,
-  /drawings/${filename}-1026.webp 1026w`}
+        media="(max-width: 800px)"
+        data-srcset={`/drawings/${filename}-800.webp`}
         type="image/webp"
       />
+      <source
+        media="(max-width: 1200px)"
+        data-srcset={`/drawings/${filename}-1026.webp`}
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 800px)"
+        data-srcset={`/drawings/${filename}-800.jpg`}
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width: 1200px)"
+        data-srcset={`/drawings/${filename}-1026.jpg`}
+        type="image/jpeg"
+      />
       <img
-        data-sizes="(max-width: 1026px) 100vw, 1026px"
-        data-srcset={`
-  /drawings/${filename}-375.jpg 375w,
-  /drawings/${filename}-640.jpg 640w,
-  /drawings/${filename}-872.jpg 872w,
-  /drawings/${filename}-1026.jpg 1026w`}
         data-src={`/drawings/${filename}-1026.jpg`}
         alt={alt}
         width={imageWidth}
