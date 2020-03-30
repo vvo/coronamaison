@@ -2,6 +2,8 @@
 Todo:
   ☐ Add pngout in preparedata
   ☐ Deploy
+  ☐ finish png optimization
+    ☐ find . -iname '*png' -exec pngout -y {} {} \;
   Website:
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
