@@ -2,7 +2,11 @@
   "editor.formatOnSave": true,
   "search.exclude": {
     ".yarn": true,
-    "yarn.lock": true
+    "yarn.lock": true,
+    "data/originalDrawings": true,
+    "public/drawings": true,
+    "public/thumbnails": true,
+    "public/coloringPages": true,
   },
   "eslint.packageManager": "yarn",
   "eslint.alwaysShowStatus": true,
