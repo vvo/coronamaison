@@ -5,6 +5,10 @@
 
 @import "tailwindcss/utilities";
 
+html {
+  margin-left: calc(100vw - 100%);
+}
+
 .rice {
   background-image: url("/ricepaper.png");
 }
@@ -36,8 +40,4 @@
 .lazy.loaded,
 .lazy.error {
   opacity: 1;
-}
-
-.fixed-ratio .lazy:not([src]) {
-  visibility: hidden;
 }
