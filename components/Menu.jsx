@@ -92,7 +92,7 @@ function Nav({ allDates, toggleSidebar }) {
       <Line className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
 
       <a
-        href="https://simpleanalytics.com/coronamaison.now.sh"
+        href="https://simpleanalytics.com/coronamaison.net"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
         Statistiques
