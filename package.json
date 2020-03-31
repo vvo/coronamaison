@@ -89,7 +89,7 @@
     "sqip-plugin-svgo": "1.0.0-alpha.32",
     "supports-webp": "2.0.1",
     "tailwindcss": "1.2.0",
-    "vanilla-lazyload": "14.0.1"
+    "vanilla-lazyload": "15.0.0"
   },
   "engines": {
     "node": "12.16.1",
