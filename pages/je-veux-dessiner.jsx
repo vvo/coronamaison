@@ -7,7 +7,7 @@ export default function JeVeuxDessiner() {
   const title = "CoronaMaison : dessine ta coronamaison avec le modèle";
   const description =
     "Participe au projet CoronaMaison sur les réseaux sociaux en utilisant le modèle de dessin pour créer ta propre CoronaMaison !";
-  const socialImage = "https://coronamaison.net/modele.jpg";
+  const socialImage = "https://coronamaison.net/modele-coronamaison.jpg";
 
   return (
     <>

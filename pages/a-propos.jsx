@@ -1,11 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import TweetEmbed from "react-tweet-embed";
 
 export default function About() {
   const title = "CoronaMaison : à propos du projet #CoronaMaison";
   const description = "Qui est derrière le project #CoronaMaison";
-  const socialImage = "https://coronamaison.net/modele.jpg";
+  const socialImage = "https://coronamaison.net/modele-coronamaison.jpg";
 
   return (
     <>
@@ -58,32 +59,7 @@ export default function About() {
         </a>
         . Et ça a commencé le 15 Mars 2020 avec un tweet comme ça :
       </p>
-      <blockquote className="twitter-tweet">
-        <p lang="fr" dir="ltr">
-          Ok voici le template que{" "}
-          <a href="https://twitter.com/acupoftim?ref_src=twsrc%5Etfw">
-            @acupoftim
-          </a>{" "}
-          nous a fait pour la{" "}
-          <a href="https://twitter.com/hashtag/Coronamaison?src=hash&amp;ref_src=twsrc%5Etfw">
-            #Coronamaison
-          </a>{" "}
-          ! On dessine l‘étage/la déco/la compagnie/les animaux/la bouffe/les
-          fenêtres, enfin l’endroit idéal pour être confiné(e)! Et si on fait du
-          noir et blanc, que les coloristes n’hésitent pas à reprendre les
-          images{" "}
-          <a href="https://t.co/7BvqQOA9GU">pic.twitter.com/7BvqQOA9GU</a>
-        </p>
-        &mdash; Pélénope Bagieu (@PenelopeB){" "}
-        <a href="https://twitter.com/PenelopeB/status/1239186251833630720?ref_src=twsrc%5Etfw">
-          March 15, 2020
-        </a>
-      </blockquote>{" "}
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
-      ></script>
+      <TweetEmbed id="1239186251833630720" />
       <p className="text-lg mt-6">
         Le{" "}
         <Link href="/je-veux-dessiner">
