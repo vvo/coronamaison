@@ -10,7 +10,6 @@ export default function DrawingItem({
   id,
   source,
   username,
-  avatarImage,
   imageWidth,
   imageHeight,
   svg,
@@ -18,6 +17,7 @@ export default function DrawingItem({
   const profileUrl = `https://twitter.com/${username}`;
   const tweetUrl = `https://twitter.com/${username}/status/${id}`;
   const coloringPageUrl = `/coloringPages/${source}-${id}.png`;
+  const avatarImage = `https://twitter-avatar.now.sh/${username}`;
 
   const [detectingWebp, setDetectingWebp] = useState(true);
   const [canUseWebp, setCanUseWebp] = useState(false);

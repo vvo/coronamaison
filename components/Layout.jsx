@@ -11,7 +11,12 @@ export default function Layout({ children }) {
       <div className="xl:grid xl:grid-cols-12 xl:gap-2">
         <div className="xl:col-span-10 xl:col-start-3">
           <h1 className="font-cursive text-4xl xl:text-6xl text-center text-blue-800">
-            <a href="/">#coronamaison ({nbDrawings})</a>
+            <a
+              href="/"
+              title="Tous les dessins CoronaMaison du hashtag #coronamaison"
+            >
+              CoronaMaison ({nbDrawings})
+            </a>
           </h1>
         </div>
 
