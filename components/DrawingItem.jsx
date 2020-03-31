@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import Line from "svg/Line.svg";
+import HandDrawnLine from "svg/HandDrawnLine.svg";
 import Coloring from "svg/Coloring.svg";
 import supportsWebP from "supports-webp";
 import LazyDrawing from "components/LazyDrawing";
@@ -82,7 +82,7 @@ export default function DrawingItem({
         delete
       </button> */}
 
-      <Line
+      <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto"
         style={{ maxWidth: "80%" }}
       />

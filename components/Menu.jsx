@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
-import Line from "svg/Line.svg";
+import HandDrawnLine from "svg/HandDrawnLine.svg";
 
 import MenuItem from "components/MenuItem";
 
@@ -71,7 +71,7 @@ function Nav({ allDates, toggleSidebar }) {
         Je veux dessiner !
       </MenuItem>
 
-      <Line className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+      <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
 
       {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
@@ -89,7 +89,7 @@ function Nav({ allDates, toggleSidebar }) {
         );
       })}
 
-      <Line className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+      <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
 
       <a
         href="https://simpleanalytics.com/coronamaison.net"
