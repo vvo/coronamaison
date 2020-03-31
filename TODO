@@ -1,15 +1,7 @@
 
 Todo:
+  ☐ English version
   ☐ go up button
-  ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
-      ☐ Je trouve pas mon dessin (que la première photo
-      ☐ croquis!
-      ☐ Et Instagram?
-      ☐ page à colorier manuellement
-      ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
-      ☐ my name, their name
-      ☐ other website
-      ☐ change the coloring version
   ☐ Add a random items page
     Generate a specific stripped down drawings.json, minify it
     Downloads the full drawings.json, verify cache
@@ -35,6 +27,15 @@ Todo:
 Maybe next features:
   ☐ Random image feature / page
 Archive:
+  ✔ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...) @done(20-04-01 00:10) @project(Todo)
+  ✔ Je trouve pas mon dessin (que la première photo @done(20-04-01 00:10) @project(Todo)
+  ✔ croquis! @done(20-04-01 00:10) @project(Todo)
+  ✔ Et Instagram? @done(20-04-01 00:10) @project(Todo)
+  ✔ page à colorier manuellement @done(20-04-01 00:10) @project(Todo)
+  ✔ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background @done(20-04-01 00:10) @project(Todo)
+  ✔ my name, their name @done(20-04-01 00:10) @project(Todo)
+  ✔ other website @done(20-04-01 00:10) @project(Todo)
+  ✔ change the coloring version @done(20-04-01 00:10) @project(Todo)
   ✔ twitter avatars issue @done(20-03-31 16:48) @project(Todo)
     fixed using https://twitter-avatar.now.sh/ :D
   ✔ finish png optimization @done(20-03-31 15:55) @project(Todo)

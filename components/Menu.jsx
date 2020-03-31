@@ -71,6 +71,10 @@ function Nav({ allDates, toggleSidebar }) {
         Je veux dessiner !
       </MenuItem>
 
+      <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
+        À propos
+      </MenuItem>
+
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
 
       {allDates.map((date, dateIndex) => {

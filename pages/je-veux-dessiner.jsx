@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Head from "next/head";
 
@@ -28,8 +29,13 @@ export default function JeVeuxDessiner() {
       <p className="text-lg mt-6">
         Pour participer à la Coronamaison et publier ton propre dessin via le
         hashtag{" "}
-        <a href="https://twitter.com/hashtag/coronamaison">#coronamaison</a>,
-        rien de plus simple:
+        <a
+          href="https://twitter.com/hashtag/coronamaison"
+          className="text-blue-800 underline hover:text-twitter"
+        >
+          #coronamaison
+        </a>
+        , rien de plus simple:
       </p>
 
       <ol className="mt-4">
@@ -50,10 +56,18 @@ export default function JeVeuxDessiner() {
           graphique et fais toi plaisir !
         </li>
         <li className="text-lg">
-          3. Publie ton dessin sur <a href="https://twitter.com">Twitter</a> en
-          ajoutant le hashtag #coronamaison au texte qui accompagne ton image (
+          3. Publie ton dessin sur{" "}
+          <a
+            href="https://twitter.com"
+            className="text-blue-800 underline hover:text-twitter"
+          >
+            Twitter
+          </a>{" "}
+          en ajoutant le hashtag #coronamaison au texte qui accompagne ton image
+          (
           <a
             href="https://twitter.com/Bouletcorp/status/1241018332112998401"
+            className="text-blue-800 underline hover:text-twitter"
             alt="Exemple d'un tweet #coronamaison"
           >
             exemple
@@ -69,7 +83,20 @@ export default function JeVeuxDessiner() {
         Le modèle de coronamaison
       </h3>
 
-      <a href="/modele-coronamaison.jpg" alt="Modèle de dessin Coronamaison">
+      <p>
+        Rappel : ce modèle a été réalisé par <a href="">Timothy Hannem</a> mais
+        y'a aussi d'autres gens dans ce projet, plus d'informations sur la page{" "}
+        <Link href="/a-propos">
+          <a className="text-blue-800 underline hover:text-twitter">À-propos</a>
+        </Link>
+        .
+      </p>
+
+      <a
+        href="/modele-coronamaison.jpg"
+        alt="Modèle de dessin Coronamaison"
+        className="text-blue-800 underline hover:text-twitter"
+      >
         <img src="/modele-coronamaison.jpg" />
       </a>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "components/Menu";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 const allDates = require("data/allDates.json");
 const { nbDrawings, lastUpdate } = require("data/state.json");
@@ -11,12 +12,14 @@ export default function Layout({ children }) {
       <div className="xl:grid xl:grid-cols-12 xl:gap-2">
         <div className="xl:col-span-10 xl:col-start-3">
           <h1 className="font-cursive text-4xl xl:text-6xl text-center text-blue-800">
-            <a
-              href="/"
-              title="Tous les dessins CoronaMaison du hashtag #coronamaison"
-            >
-              CoronaMaison ({nbDrawings})
-            </a>
+            <Link href="/">
+              <a
+                title="Tous les dessins CoronaMaison du hashtag #coronamaison"
+                className="text-blue-800 hover:text-twitter"
+              >
+                CoronaMaison ({nbDrawings})
+              </a>
+            </Link>
           </h1>
         </div>
 
