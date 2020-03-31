@@ -10,9 +10,6 @@ module.exports = withPlugins(
     }),
   ],
   {
-    experimental: {
-      jsconfigPaths: true,
-    },
     webpack(config) {
       config.module.rules.push({
         test: /\.svg$/,
