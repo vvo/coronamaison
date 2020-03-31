@@ -1,29 +1,21 @@
 
 Todo:
-  ☐ Add pngout in preparedata
-  ☐ Default to randomize list, allow to sort by popularity
-    Hard to do because it can confuse visitors (not everything is at the same place at every visit..),
-    We could do the opposite: default to popularity, allow to randomize
-  ☐ Add search
-  ☐ finish png optimization
-    ☐ find . -iname '*png' -exec pngout -y {} {} \;
-  ✔ Feedback to zeit about moving a project @done(20-03-31 10:46)
-    ✔ @done(20-03-31 10:46)
-  ☐ twitter avatars issue
   ☐ go up button
-  ☐ Manual update:
-    ☐ https://twitter.com/Zoryall/status/1244918866100260864/photo/1
-    ☐ https://twitter.com/messages/14908513-361910845
-  Website:
-    ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
+  ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo
       ☐ croquis!
       ☐ Et Instagram?
+      ☐ page à colorier manuellement
       ☐ add reference to // <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> for the background
       ☐ my name, their name
       ☐ other website
       ☐ change the coloring version
-    ☐ new domain name (how to transfer?)
+  ☐ Add a random items page
+    Generate a specific stripped down drawings.json, minify it
+    Downloads the full drawings.json, verify cache
+    Then choose random drawings from it
+  ☐ Add search
+  Website:
     ☐ share buttons on all pages
     ☐ Click on drawing = drawing page
   Data:
@@ -43,6 +35,18 @@ Todo:
 Maybe next features:
   ☐ Random image feature / page
 Archive:
+  ✔ twitter avatars issue @done(20-03-31 16:48) @project(Todo)
+    fixed using https://twitter-avatar.now.sh/ :D
+  ✔ finish png optimization @done(20-03-31 15:55) @project(Todo)
+  ✔ find . -iname '*png' -exec pngout -y {} {} \; @done(20-03-31 15:55) @project(Todo)
+  ✔ Add pngout in preparedata @done(20-03-31 15:31) @project(Todo)
+  ✔ Feedback to zeit about moving a project @done(20-03-31 10:46) @project(Todo)
+  ✔ @done(20-03-31 10:46) @project(Todo)
+  ✔ Manual update: @done(20-03-31 15:51) @project(Todo)
+  ✔ https://twitter.com/Zoryall/status/1244918866100260864/photo/1 @done(20-03-31 15:51) @project(Todo)
+  ✔ https://twitter.com/messages/14908513-361910845 @done(20-03-31 15:51) @project(Todo)
+  ✔ new domain name (how to transfer?) @project(Todo.Website)
+    coronamaison.net @done(20-03-31 11:50)
   ✔ Deploy @done(20-03-30 23:09) @project(Todo)
   ✔ Add search (to find your own drawing mostly :D) @done(20-03-30 23:10) @project(Maybe next features)
   ✔ Create only two image variations @done(20-03-30 11:49) @project(Todo.Website)

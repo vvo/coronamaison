@@ -50,7 +50,6 @@ async function run() {
       username: drawing.user.screen_name,
       likes: drawing.retweet_count + drawing.favorite_count,
       originalImage: drawing.extended_entities.media[0].media_url_https,
-      avatarImage: drawing.user.profile_image_url_https,
       date: date.toISO(),
     };
   });
@@ -66,6 +65,10 @@ async function run() {
       "data/originalDrawings",
       formattedDate,
     );
+    const manualColoringPagesFolder = path.join(
+      __dirname,
+      "data/manualColoringPages",
+    );
     const publicDrawingsFolder = path.join(__dirname, "public/drawings");
     const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
     const coloringPagesFolder = path.join(__dirname, "public/coloringPages");
@@ -80,6 +83,7 @@ async function run() {
     await mkdirp(publicDrawingsFolder);
     await mkdirp(thumbnailsFolder);
     await mkdirp(coloringPagesFolder);
+    await mkdirp(manualColoringPagesFolder);
 
     const jpgPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
 
@@ -168,8 +172,15 @@ async function run() {
 
     // convert jpgOriginalImagePath to public/colouring-pages/source-id.png
     const coloringPagePath = path.join(coloringPagesFolder, `${filename}.png`);
+    const maybeManualColoringPagePath = path.join(
+      manualColoringPagesFolder,
+      `${filename}.png`,
+    );
 
-    if (
+    if (await fileExists(maybeManualColoringPagePath)) {
+      console.log("Manual coloring page exists for", filename);
+      await fs.promises.copyFile(maybeManualColoringPagePath, coloringPagePath);
+    } else if (
       !(await fileExists(coloringPagePath)) ||
       process.env.REGENERATE_COLORING_PAGES === "true"
     ) {
@@ -180,7 +191,8 @@ async function run() {
           "mkbitmap -f 4 -s 2 -t 0.48 - -o -",
           "potrace --pgm",
           "convert -resize 2300 - png:",
-          `pngquant 4 - > ${coloringPagePath}`,
+          "pngquant 4 -",
+          `pngout - ${coloringPagePath}`,
         ].join(" | "),
       );
     }

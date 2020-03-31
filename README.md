@@ -11,3 +11,17 @@ Nothing to see here, YET.
 - brew install potrace
 - convert
 - pngout: brew install jonof/kenutils/pngout
+
+## Notes
+
+## Manual coloring pages optimization
+
+```bash
+convert -resize 2300 filename png: | pngquant 4 - | pngout - filename.png -y
+```
+
+## Re optimize every coloring page
+
+```bash
+find . -iname '*png' -exec pngout -y {} {} \;
+```
