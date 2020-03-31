@@ -5,9 +5,9 @@ import DrawingsList from "components/DrawingsList";
 import Head from "next/head";
 
 export default function Home({ top20Drawings }) {
-  const title = "Coronamaison: Tous les dessins du hashtag #coronamaison";
+  const title = "CoronaMaison: Tous les dessins du hashtag #CoronaMaison";
   const description =
-    "Ce site contient tous les dessins du hashtag #coronamaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
+    "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
   const url = "https://coronamaison.net";
   const socialImage = `${url}/social.jpg`;
 

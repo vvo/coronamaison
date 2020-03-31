@@ -14,7 +14,7 @@ export default function Layout({ children }) {
           <h1 className="font-cursive text-4xl xl:text-6xl text-center text-blue-800">
             <Link href="/">
               <a
-                title="Tous les dessins CoronaMaison du hashtag #coronamaison"
+                title="Tous les dessins CoronaMaison du hashtag #CoronaMaison"
                 className="text-blue-800 hover:text-twitter"
               >
                 CoronaMaison ({nbDrawings})

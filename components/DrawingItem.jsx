@@ -38,7 +38,7 @@ export default function DrawingItem({
       <div className="block mt-8 mb-12 pt-12 relative">
         <a
           href={tweetUrl}
-          title={`Voir le tweet #coronamaison de ${username}`}
+          title={`Voir le tweet #CoronaMaison de ${username}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,7 +63,7 @@ export default function DrawingItem({
           @{username}
         </a>
         <a
-          title={`Accéder à la version à colorier de la #coronamaison de ${username}`}
+          title={`Accéder à la version à colorier de la #CoronaMaison de ${username}`}
           href={coloringPageUrl}
           target="_blank"
           rel="noopener noreferrer"

@@ -4,9 +4,9 @@ import Link from "next/link";
 import Head from "next/head";
 
 export default function JeVeuxDessiner() {
-  const title = "Coronamaison : dessine ta coronamaison avec le modèle";
+  const title = "CoronaMaison : dessine ta coronamaison avec le modèle";
   const description =
-    "Participe à la Coronamaison sur les réseaux sociaux en utilisant le modèle de dessin pour créer ta propre coronamaison !";
+    "Participe au projet CoronaMaison sur les réseaux sociaux en utilisant le modèle de dessin pour créer ta propre CoronaMaison !";
   const socialImage = "https://coronamaison.net/modele.jpg";
 
   return (
@@ -23,17 +23,17 @@ export default function JeVeuxDessiner() {
       </Head>
 
       <h2 className="text-3xl font-cursive text-center">
-        Je veux dessiner : le modèle de coronamaison
+        Je veux dessiner : le modèle de CoronaMaison
       </h2>
 
       <p className="text-lg mt-6">
-        Pour participer à la Coronamaison et publier ton propre dessin via le
+        Pour participer au projet CoronaMaison et publier ton dessin via le
         hashtag{" "}
         <a
           href="https://twitter.com/hashtag/coronamaison"
           className="text-blue-800 underline hover:text-twitter"
         >
-          #coronamaison
+          #CoronaMaison
         </a>
         , rien de plus simple:
       </p>
@@ -63,12 +63,12 @@ export default function JeVeuxDessiner() {
           >
             Twitter
           </a>{" "}
-          en ajoutant le hashtag #coronamaison au texte qui accompagne ton image
+          en ajoutant le hashtag #CoronaMaison au texte qui accompagne ton image
           (
           <a
             href="https://twitter.com/Bouletcorp/status/1241018332112998401"
             className="text-blue-800 underline hover:text-twitter"
-            alt="Exemple d'un tweet #coronamaison"
+            alt="Exemple d'un tweet #CoronaMaison"
           >
             exemple
           </a>
@@ -83,9 +83,16 @@ export default function JeVeuxDessiner() {
         Le modèle de coronamaison
       </h3>
 
-      <p>
-        Rappel : ce modèle a été réalisé par <a href="">Timothy Hannem</a> mais
-        y'a aussi d'autres gens dans ce projet, plus d'informations sur la page{" "}
+      <p className="mt-6 text-lg">
+        Rappel : ce modèle a été réalisé par{" "}
+        <a
+          href="https://twitter.com/acupoftim"
+          className="text-blue-800 underline hover:text-twitter"
+        >
+          Timothy Hannem
+        </a>{" "}
+        mais y'a aussi d'autres gens dans ce projet, plus d'informations sur la
+        page{" "}
         <Link href="/a-propos">
           <a className="text-blue-800 underline hover:text-twitter">À-propos</a>
         </Link>
@@ -97,7 +104,7 @@ export default function JeVeuxDessiner() {
         alt="Modèle de dessin Coronamaison"
         className="text-blue-800 underline hover:text-twitter"
       >
-        <img src="/modele-coronamaison.jpg" />
+        <img src="/modele-coronamaison.jpg" className="mt-6" />
       </a>
     </>
   );

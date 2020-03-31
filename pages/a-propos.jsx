@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function About() {
-  const title = "Coronamaison : à propos du projet #coronamaison";
-  const description = "";
+  const title = "CoronaMaison : à propos du projet #CoronaMaison";
+  const description = "Qui est derrière le project #CoronaMaison";
   const socialImage = "https://coronamaison.net/modele.jpg";
 
   return (
