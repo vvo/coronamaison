@@ -10,4 +10,4 @@ Nothing to see here, YET.
 - brew install pngquant
 - brew install potrace
 - convert
-- optipng: brew install optipng
+- pngout: brew install jonof/kenutils/pngout

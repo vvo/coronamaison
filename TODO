@@ -8,6 +8,8 @@ Todo:
   ☐ finish png optimization
     ☐ find . -iname '*png' -exec pngout -y {} {} \;
   ☐ Feedback to zeit about moving a project
+  ☐ twitter avatars issue
+  ☐ go up button
   Website:
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo

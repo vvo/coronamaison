@@ -4,7 +4,6 @@
     "env": {}
   },
   "github": {
-    "silent": true,
-    "enabled": false
+    "silent": true
   }
 }
