@@ -5898,7 +5898,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.3.4-canary.1:
+next@9.3.4-canary.1:
   version "9.3.4-canary.1"
   resolved "https://registry.yarnpkg.com/next/-/next-9.3.4-canary.1.tgz#5486a2db72bd657c8c4a9e2defa88e44af0865c0"
   integrity sha512-saoyisuxInX01vnZd8h46dbVyoRDaeREsUru5ZdxDoP4CbMRQerFxd8DI1pwDWdTGrMgTMqeBwub9rjcFt9ZGQ==
