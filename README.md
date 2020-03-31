@@ -1,4 +1,4 @@
-# [coronamaison.now.sh](https://coronamaison.now.sh)
+# [coronamaison.net](https://coronamaison.net)
 
 Nothing to see here, YET.
 

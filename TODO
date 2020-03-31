@@ -7,9 +7,13 @@ Todo:
   ☐ Add search
   ☐ finish png optimization
     ☐ find . -iname '*png' -exec pngout -y {} {} \;
-  ☐ Feedback to zeit about moving a project
+  ✔ Feedback to zeit about moving a project @done(20-03-31 10:46)
+    ✔ @done(20-03-31 10:46)
   ☐ twitter avatars issue
   ☐ go up button
+  ☐ Manual update:
+    ☐ https://twitter.com/Zoryall/status/1244918866100260864/photo/1
+    ☐ https://twitter.com/messages/14908513-361910845
   Website:
     ☐ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...)
       ☐ Je trouve pas mon dessin (que la première photo

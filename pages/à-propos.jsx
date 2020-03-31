@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function About() {
   const title = "Coronamaison : à propos du projet #coronamaison";
   const description = "";
-  const socialImage = "https://coronamaison.now.sh/modele.jpg";
+  const socialImage = "https://coronamaison.net/modele.jpg";
 
   return (
     <>

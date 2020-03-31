@@ -8,7 +8,7 @@ export default function Home({ top20Drawings }) {
   const title = "Coronamaison: Tous les dessins du hashtag #coronamaison";
   const description =
     "Ce site contient tous les dessins du hashtag #coronamaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
-  const url = "https://coronamaison.now.sh";
+  const url = "https://coronamaison.net";
   const socialImage = `${url}/social.jpg`;
 
   return (

@@ -7,7 +7,7 @@ import DrawingsList from "components/DrawingsList";
 export default function DrawingsForDay({ drawingsForDay, date }) {
   const title = `Coronamaison: Tous les dessins du ${date}`;
   const description = `Découvrez tous les dessins Coronamaison du ${date}, #coronamaison`;
-  const socialImage = `https://coronamaison.now.sh/drawings/${drawingsForDay[0].source}-${drawingsForDay[0].id}-1026.jpg`;
+  const socialImage = `https://coronamaison.net/drawings/${drawingsForDay[0].source}-${drawingsForDay[0].id}-1026.jpg`;
 
   return (
     <>
