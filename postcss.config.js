@@ -2,6 +2,7 @@ const purgecss = [
   "@fullhuman/postcss-purgecss",
   {
     content: ["./components/**/*.jsx", "./pages/**/*.jsx"],
+    whitelist: ["twitter-tweet"],
     whitelistPatternsChildren: [/^lazy/], // lazy loading classes are added dynamically by an external script
     defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
   },
