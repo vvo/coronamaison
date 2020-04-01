@@ -70,6 +70,7 @@
     "got": "10.7.0",
     "image-size": "0.8.3",
     "imagemin-svgo": "7.1.0",
+    "lodash": "^4.17.15",
     "lowdb": "1.0.0",
     "luxon": "1.22.2",
     "mkdirp": "1.0.3",

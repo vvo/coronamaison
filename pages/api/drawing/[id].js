@@ -21,7 +21,6 @@ export default function (req, res) {
   } = req;
 
   const deletes = db.get("deleted.twitter");
-  console.log(deletes.includes(id).value());
   if (!deletes.includes(id).value()) {
     deletes.push(id).write();
   }

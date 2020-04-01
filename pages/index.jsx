@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import DrawingsList from "components/DrawingsList";
 import Head from "next/head";
 
-export default function Home({ top20Drawings }) {
+export default function Home({ top50Drawings }) {
   const title = "CoronaMaison: Tous les dessins du hashtag #CoronaMaison";
   const description =
     "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
@@ -25,20 +25,22 @@ export default function Home({ top20Drawings }) {
         <meta property="twitter:card" content="summary_large_image" />
       </Head>
 
-      <h2 className="text-3xl font-cursive text-center">Les plus partagées</h2>
+      <h2 className="text-3xl font-cursive text-center">
+        Top 50 des CoronaMaisons les plus partagées
+      </h2>
 
-      <DrawingsList drawings={top20Drawings} />
+      <DrawingsList drawings={top50Drawings} />
     </>
   );
 }
 
 Home.propTypes = {
-  top20Drawings: PropTypes.arrayOf(PropTypes.object),
+  top50Drawings: PropTypes.arrayOf(PropTypes.object),
 };
 
 export async function getStaticProps() {
   const fs = require("fs");
-  const top20Drawings = require("data/top20Drawings.json").map((drawing) => {
+  const top50Drawings = require("data/top50Drawings.json").map((drawing) => {
     const svg = fs.readFileSync(
       `public/thumbnails/${drawing.source}-${drawing.id}.svg`,
       "utf8",
@@ -51,7 +53,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      top20Drawings,
+      top50Drawings,
     },
   };
 }

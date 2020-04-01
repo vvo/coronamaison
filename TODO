@@ -7,13 +7,13 @@ Todo:
     Downloads the full drawings.json, verify cache
     Then choose random drawings from it
   ☐ Add search
+  ☐ Add a script that removes every deleted tweet from the actual database
   Website:
     ☐ share buttons on all pages
     ☐ Click on drawing = drawing page
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
-    ☐ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup
     ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
   Drawing page:
     ☐ Has drawing in full
@@ -27,6 +27,7 @@ Todo:
 Maybe next features:
   ☐ Random image feature / page
 Archive:
+  ✔ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup @done(20-04-01 21:43) @project(Todo.Data)
   ✔ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...) @done(20-04-01 00:10) @project(Todo)
   ✔ Je trouve pas mon dessin (que la première photo @done(20-04-01 00:10) @project(Todo)
   ✔ croquis! @done(20-04-01 00:10) @project(Todo)

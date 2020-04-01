@@ -21,6 +21,15 @@ const db = low(adapter);
 const dbDeletes = low(new FileSync("data/deletes.json"));
 const sizes = [800, 1026];
 
+const bearerToken = process.env.SECRET_TWITTER_BEARER_TOKEN;
+const twitter = got.extend({
+  prefixUrl: "https://api.twitter.com/1.1/",
+  responseType: "json",
+  headers: {
+    authorization: `Bearer ${bearerToken}`,
+  },
+});
+
 dbDeletes
   .defaults({
     deleted: {
@@ -29,12 +38,58 @@ dbDeletes
   })
   .write();
 
-const deletes = dbDeletes.get("deleted.twitter").value();
+const deletes = dbDeletes.get("deleted.twitter");
+const deletedTweets = deletes.value();
 
 async function run() {
-  const drawings = db
+  const drawingsFromDatabase = db
     .get("drawings")
-    .filter(({ id_str }) => !deletes.includes(id_str))
+    .filter(({ id_str }) => !deletedTweets.includes(id_str));
+
+  // First let's update RT + likes count for every drawing
+  const drawingsGroupsOf100 = drawingsFromDatabase.chunk(100);
+  let updatedTweets = {};
+
+  for (const drawingsGroupOf100 of drawingsGroupsOf100) {
+    try {
+      const res = await twitter.post("statuses/lookup.json", {
+        form: {
+          id: drawingsGroupOf100.map(({ id_str }) => id_str).join(","),
+          include_entities: false,
+          trim_user: true,
+          map: true,
+        },
+      });
+      updatedTweets = {
+        ...updatedTweets,
+        ...res.body.id,
+      };
+    } catch (e) {
+      console.error("Could not update tweets", e.response.body);
+      process.exit(1);
+    }
+  }
+
+  const tweetsIdToDelete = Object.entries(updatedTweets)
+    .filter(([, tweet]) => tweet === null)
+    .map(([id]) => id);
+
+  tweetsIdToDelete.forEach((id) => {
+    if (!deletedTweets.includes(id)) {
+      console.log("Deleting tweet", id);
+      deletes.push(id).write();
+    }
+  });
+
+  const drawings = drawingsFromDatabase
+    .filter(({ id_str }) => !tweetsIdToDelete.includes(id_str))
+    .map((drawing) => {
+      return {
+        ...drawing,
+        retweet_count: updatedTweets[drawing.id_str].retweet_count,
+        favorite_count: updatedTweets[drawing.id_str].favorite_count,
+      };
+    })
     .value();
 
   const drawingsByDate = {};
@@ -141,8 +196,8 @@ async function run() {
         if (e.name === "HTTPError") {
           console.error("Drawing in error:", formattedDrawing);
           try {
-            if (!dbDeletes.includes(formattedDrawing.id).value()) {
-              dbDeletes.push(formattedDrawing.id).write();
+            if (!deletedTweets.includes(formattedDrawing.id).value()) {
+              deletes.push(formattedDrawing.id).write();
             }
 
             await fs.promises.unlink(jpgOriginalImagePath);
@@ -227,7 +282,7 @@ async function run() {
 
     // This is done this way (and not via push({...formattedDrawing, imageWidth}) for example)
     // because we WANT to modify the original formattedDrawing object from formattedDrawings array
-    // so that the top20Drawings are computed with modified data
+    // so that the top50Drawings are computed with modified data
     // MUTATE ALL THE THINGS
     formattedDrawing.imageWidth = imageWidth;
     formattedDrawing.imageHeight = imageHeight;
@@ -242,16 +297,16 @@ async function run() {
       throw err;
     }
 
-    console.log("Compiling top20");
-    const top20Drawings = formattedDrawings
+    console.log("Compiling top50");
+    const top50Drawings = formattedDrawings
       .sort((a, b) => {
         return a.likes > b.likes ? -1 : 1;
       })
-      .slice(0, 20);
+      .slice(0, 50);
 
     fs.writeFileSync(
-      path.join(dataFolder, "top20Drawings.json"),
-      JSON.stringify(top20Drawings, null, 2),
+      path.join(dataFolder, "top50Drawings.json"),
+      JSON.stringify(top50Drawings, null, 2),
     );
 
     // reorder to get most recent dates at the top

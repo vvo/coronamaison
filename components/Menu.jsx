@@ -61,18 +61,17 @@ export default function Menu({ allDates }) {
 
 function Nav({ allDates, toggleSidebar }) {
   return (
-    <nav className="px-3">
-      <div className="text-3xl font-cursive">Menu :</div>
+    <nav className="px-3 pt-4">
       <MenuItem href="/" toggleSidebar={toggleSidebar}>
-        Les plus partagées
+        📈 Top 50
       </MenuItem>
 
       <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
-        Je veux dessiner !
+        🙋‍♀️ Je veux dessiner !
       </MenuItem>
 
       <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
-        À propos
+        🤔 À propos
       </MenuItem>
 
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />

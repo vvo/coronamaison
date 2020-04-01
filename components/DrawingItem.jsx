@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import HandDrawnLine from "svg/HandDrawnLine.svg";
 import Coloring from "svg/Coloring.svg";
+import Heart from "svg/Heart.svg";
 import supportsWebP from "supports-webp";
 import LazyDrawing from "components/LazyDrawing";
 
@@ -12,6 +13,7 @@ export default function DrawingItem({
   username,
   imageWidth,
   imageHeight,
+  likes,
   svg,
 }) {
   const profileUrl = `https://twitter.com/${username}`;
@@ -36,6 +38,46 @@ export default function DrawingItem({
   return (
     <>
       <div className="block mt-8 mb-12 pt-12 relative">
+        <div className="flex flex-row justify-between">
+          <a
+            href={profileUrl}
+            title={`Voir le profile twitter de ${username}`}
+            className="flex items-center text-lg text-blue-800 hover:text-twitter"
+          >
+            <img
+              className="inline-block h-12 w-12 rounded-t-lg mr-2"
+              data-src={avatarImage}
+              alt={`Twitter avatar for ${username}`}
+            />{" "}
+            @{username}
+          </a>
+          <a
+            title={`RT ou like la #CoronaMaison de ${username}`}
+            href={tweetUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex items-center text-lg text-blue-800 hover:text-twitter"
+          >
+            <Heart className="w-12 h-12" />{" "}
+            <span
+              style={{
+                textShadow: "#fff 1px -2px 4px",
+                WebkitTextStroke: "1px rgba(255,255,255,0.3)",
+              }}
+            >
+              {likes}
+            </span>
+          </a>
+          <a
+            title={`Accéder à la version à colorier de la #CoronaMaison de ${username}`}
+            href={coloringPageUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-lg text-blue-800 hover:text-twitter"
+          >
+            Colorier <Coloring className="ml-2 w-12 h-12" />
+          </a>
+        </div>
         <a
           href={tweetUrl}
           title={`Voir le tweet #CoronaMaison de ${username}`}
@@ -49,27 +91,6 @@ export default function DrawingItem({
             svg={svg}
             alt={`Coronamaison en dessin de ${username} sur Twitter`}
           />
-        </a>
-        <a
-          href={profileUrl}
-          title={`Voir le profile twitter de ${username}`}
-          className="absolute top-0 text-lg text-blue-800 hover:text-twitter"
-        >
-          <img
-            className="inline-block h-12 w-12 rounded-t-lg mr-2"
-            data-src={avatarImage}
-            alt={`Twitter avatar for ${username}`}
-          />{" "}
-          @{username}
-        </a>
-        <a
-          title={`Accéder à la version à colorier de la #CoronaMaison de ${username}`}
-          href={coloringPageUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block absolute top-0 right-0 flex items-center text-lg text-blue-800 hover:text-twitter"
-        >
-          Colorier <Coloring className="w-12 h-12" />
         </a>
       </div>
 

@@ -114,12 +114,20 @@ export default function About() {
         .
       </p>
       <p className="text-lg mt-6">
-        Le fond de cette page :{" "}
+        Remerciements :{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://www.freepik.com/free-photos-vectors/background"
         >
           Background vector created by freepik - www.freepik.com
+        </a>{" "}
+        | Heart icon made by{" "}
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+          Freepik
+        </a>{" "}
+        from{" "}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com
         </a>
         .
       </p>
