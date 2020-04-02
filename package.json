@@ -72,7 +72,7 @@
     "imagemin-svgo": "7.1.0",
     "lodash": "4.17.15",
     "lowdb": "1.0.0",
-    "luxon": "1.22.2",
+    "luxon": "1.23.0",
     "mkdirp": "1.0.3",
     "next": "9.3.3",
     "next-compose-plugins": "2.2.0",
