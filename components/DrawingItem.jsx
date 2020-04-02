@@ -37,7 +37,7 @@ export default function DrawingItem({
 
   return (
     <>
-      <div className="block mt-8 mb-12 pt-12 relative">
+      <div className="relative block mt-8 mb-12 pt-12 relative">
         <div className="flex flex-row justify-between">
           <a
             href={profileUrl}
@@ -50,23 +50,6 @@ export default function DrawingItem({
               alt={`Twitter avatar for ${username}`}
             />{" "}
             @{username}
-          </a>
-          <a
-            title={`RT ou like la #CoronaMaison de ${username}`}
-            href={tweetUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" flex items-center text-lg text-blue-800 hover:text-twitter"
-          >
-            <Heart className="w-12 h-12" />{" "}
-            <span
-              style={{
-                textShadow: "#fff 1px -2px 4px",
-                WebkitTextStroke: "1px rgba(255,255,255,0.3)",
-              }}
-            >
-              {likes}
-            </span>
           </a>
           <a
             title={`Accéder à la version à colorier de la #CoronaMaison de ${username}`}
@@ -91,6 +74,16 @@ export default function DrawingItem({
             svg={svg}
             alt={`Coronamaison en dessin de ${username} sur Twitter`}
           />
+        </a>
+        <a
+          title={`RT ou like la #CoronaMaison de ${username}`}
+          href={tweetUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute left-0 flex items-center text-md text-blue-800 hover:text-twitter"
+          style={{ bottom: "-2.5em" }}
+        >
+          <Heart className="w-10 h-10" /> {likes}
         </a>
       </div>
 
