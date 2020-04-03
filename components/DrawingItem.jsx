@@ -87,14 +87,14 @@ export default function DrawingItem({
         </a>
       </div>
 
-      {/* <button
+      <button
         className="text-3xl"
         onClick={async () => {
           await fetch(`/api/drawing/${id}`);
         }}
       >
         delete
-      </button> */}
+      </button>
 
       <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto"
@@ -106,10 +106,10 @@ export default function DrawingItem({
 
 DrawingItem.propTypes = {
   id: PropTypes.string,
-  source: PropTypes.string,
-  username: PropTypes.string,
-  avatarImage: PropTypes.string,
-  imageWidth: PropTypes.number,
   imageHeight: PropTypes.number,
+  imageWidth: PropTypes.number,
+  likes: PropTypes.number,
+  source: PropTypes.string,
   svg: PropTypes.string,
+  username: PropTypes.string,
 };
