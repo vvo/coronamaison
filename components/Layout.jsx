@@ -1,7 +1,7 @@
 import React from "react";
-import Menu from "components/Menu";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import Menu from "components/Menu";
 
 const allDates = require("data/allDates.json");
 const { nbDrawings, lastUpdate } = require("data/state.json");

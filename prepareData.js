@@ -1,18 +1,18 @@
 require("events").EventEmitter.defaultMaxListeners = 15;
 
+import fs from "fs";
+import path from "path";
+import { promisify } from "util";
 import low from "lowdb";
 import FileSync from "lowdb/adapters/FileSync";
 
 import async from "async";
 import { DateTime } from "luxon";
 import got from "got";
-import fs from "fs";
 import mkdirp from "mkdirp";
-import path from "path";
 import sharp from "sharp";
 import sqip from "sqip";
 import sizeOf from "image-size";
-import { promisify } from "util";
 const exec = promisify(require("child_process").exec);
 
 const adapter = new FileSync("data/drawings.json");

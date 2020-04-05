@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import supportsWebP from "supports-webp";
 
 import HandDrawnLine from "svg/HandDrawnLine.svg";
 import Coloring from "svg/Coloring.svg";
 import Heart from "svg/Heart.svg";
-import supportsWebP from "supports-webp";
 import LazyDrawing from "components/LazyDrawing";
 
 export default function DrawingItem({

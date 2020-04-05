@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Head from "next/head";
 
 import DrawingsList from "components/DrawingsList";
-import Head from "next/head";
 
 export default function Home({ top50Drawings }) {
   const title = "CoronaMaison: Tous les dessins du hashtag #CoronaMaison";

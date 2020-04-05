@@ -31,6 +31,18 @@
       "sourceType": "module"
     },
     "settings": {
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": [
+            "node_modules",
+            "."
+          ],
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      },
       "react": {
         "version": "16.3.0"
       }
