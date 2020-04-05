@@ -32,8 +32,19 @@ export default function DrawingItem({
             <img
               className="inline-block h-12 w-12 rounded-t-lg mr-2"
               data-src={avatarImage}
+              height={200}
+              width={200}
               alt={`Twitter avatar for ${username}`}
-            />{" "}
+            />
+            <noscript>
+              <img
+                className="inline-block h-12 w-12 rounded-t-lg mr-2"
+                src={avatarImage}
+                height={200}
+                width={200}
+                alt={`Twitter avatar for ${username}`}
+              />
+            </noscript>{" "}
             @{username}
           </a>
           <a
