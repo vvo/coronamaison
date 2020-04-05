@@ -11,7 +11,6 @@ if (typeof window !== "undefined") {
   }
 }
 
-// Add polyfills, add noscript
 export default function LazyDrawing({
   filename,
   imageWidth,
@@ -52,6 +51,29 @@ export default function LazyDrawing({
         height={imageHeight}
         className="fixed-ratio-content lazy"
       />
+      <noscript>
+        <source
+          sizes="(max-width: 1026px) 100vw, 1026px"
+          srcSet={`
+        /drawings/${filename}-800.webp 800w,
+        /drawings/${filename}-1026.webp 1026w
+        `}
+          type="image/webp"
+          className="fixed-ratio-content"
+        />
+        <img
+          sizes="(max-width: 1026px) 100vw, 1026px"
+          srcSet={`
+        /drawings/${filename}-800.jpg 800w,
+        /drawings/${filename}-1026.jpg 1026w
+        `}
+          alt={alt}
+          width={imageWidth}
+          height={imageHeight}
+          className="fixed-ratio-content"
+          src={`/drawings/${filename}-1026.jpg 1026w`}
+        />
+      </noscript>
     </picture>
   );
 }

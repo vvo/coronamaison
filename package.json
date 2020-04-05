@@ -105,7 +105,6 @@
     "sqip": "1.0.0-alpha.31",
     "sqip-plugin-pixels": "1.0.0-alpha.31",
     "sqip-plugin-svgo": "1.0.0-alpha.32",
-    "supports-webp": "2.0.1",
     "tailwindcss": "1.2.0",
     "vanilla-lazyload": "15.1.1"
   },
