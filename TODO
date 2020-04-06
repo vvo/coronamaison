@@ -1,8 +1,11 @@
 
 Todo:
   ☐ English version
-  ☐ go up button
+  ☐ Share on HN
+  ☐ Add a drawing page
   ☐ Add a random items page
+  ☐ Go up button
+  ☐ Credits all the tools used on the website (mkbitmap)
     Generate a specific stripped down drawings.json, minify it
     Downloads the full drawings.json, verify cache
     Then choose random drawings from it
