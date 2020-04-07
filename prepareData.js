@@ -246,9 +246,9 @@ async function run() {
           `convert ${jpgOriginalImagePath} pgm:`,
           "mkbitmap -f 4 -s 2 -t 0.48 - -o -",
           "potrace --pgm",
-          "convert -resize 2300 - png:",
+          "convert -resize 1500 - png:",
           "pngquant 4 -",
-          `pngout - ${coloringPagePath}`,
+          `pngout - ${coloringPagePath} -y`,
         ].join(" | "),
       );
     }
@@ -296,7 +296,7 @@ async function run() {
     return true;
   });
 
-  async.eachLimit(formattedDrawings, 4, worker, (err) => {
+  async.eachLimit(formattedDrawings, 2, worker, (err) => {
     if (err) {
       throw err;
     }
