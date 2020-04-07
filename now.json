@@ -1,9 +1,7 @@
 {
   "env": {},
   "build": {
-    "env": {
-      "NODE_ICU_DATA": "./node_modules/full-icu"
-    }
+    "env": {}
   },
   "github": {
     "silent": true

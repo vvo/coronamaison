@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "NODE_ICU_DATA=node_modules/full-icu next build",
     "dev": "next dev",
     "findDrawings": "babel-node --presets @babel/preset-env findDrawings.js",
     "format": "prettier --write '**/*.*' && eslint . --fix",
