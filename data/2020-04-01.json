@@ -3,8 +3,7 @@
     "source": "twitter",
     "id": "1245308295809769472",
     "username": "AnataDiCat",
-    "likes": 96,
-    "originalImage": "https://pbs.twimg.com/media/EUg5SYOXkAAqPZ_.jpg",
+    "likes": 97,
     "date": "2020-04-01T13:13:29.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 778
@@ -14,7 +13,6 @@
     "id": "1245312521285906433",
     "username": "olivierjsimon",
     "likes": 79,
-    "originalImage": "https://pbs.twimg.com/media/EUg9AipXsAAIY1I.jpg",
     "date": "2020-04-01T13:30:16.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 646
@@ -24,7 +22,6 @@
     "id": "1245415929628033025",
     "username": "MarieBlue05",
     "likes": 64,
-    "originalImage": "https://pbs.twimg.com/media/EUiaDAGXkAElJoI.jpg",
     "date": "2020-04-01T20:21:10.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 642
@@ -34,7 +31,6 @@
     "id": "1245378990166212609",
     "username": "Mananama_",
     "likes": 45,
-    "originalImage": "https://pbs.twimg.com/media/EUh5lh6WsAAC5Y5.jpg",
     "date": "2020-04-01T17:54:23.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 848
@@ -44,7 +40,6 @@
     "id": "1245294343080103936",
     "username": "OrtieMarie",
     "likes": 20,
-    "originalImage": "https://pbs.twimg.com/media/EUgsFw6XgAAkAMS.jpg",
     "date": "2020-04-01T12:18:02.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 640
@@ -54,7 +49,6 @@
     "id": "1245380162402869249",
     "username": "acupoftim",
     "likes": 19,
-    "originalImage": "https://pbs.twimg.com/media/EUh6p4bWoAMkKze.jpg",
     "date": "2020-04-01T17:59:03.000+02:00",
     "imageWidth": 1076,
     "imageHeight": 959
@@ -63,8 +57,7 @@
     "source": "twitter",
     "id": "1245431669995307014",
     "username": "white_artiste",
-    "likes": 16,
-    "originalImage": "https://pbs.twimg.com/media/EUipchUWoAcLFN9.jpg",
+    "likes": 18,
     "date": "2020-04-01T21:23:43.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 826
@@ -74,7 +67,6 @@
     "id": "1245225573451956234",
     "username": "LuDesmoulins",
     "likes": 12,
-    "originalImage": "https://pbs.twimg.com/media/EUfuDF-XkAUSOKi.jpg",
     "date": "2020-04-01T07:44:46.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 683
@@ -84,7 +76,6 @@
     "id": "1245403907876151303",
     "username": "Lady_Marineton",
     "likes": 8,
-    "originalImage": "https://pbs.twimg.com/media/EUiQHimXsAAsdpN.jpg",
     "date": "2020-04-01T19:33:24.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 648
@@ -94,7 +85,6 @@
     "id": "1245374146864918533",
     "username": "eyevertclair",
     "likes": 7,
-    "originalImage": "https://pbs.twimg.com/media/EUh1K2AXgAAcEEd.jpg",
     "date": "2020-04-01T17:35:09.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 610
@@ -104,7 +94,6 @@
     "id": "1245368291536838657",
     "username": "ak_anneka",
     "likes": 7,
-    "originalImage": "https://pbs.twimg.com/media/EUhv0P-XgAEH0Cx.jpg",
     "date": "2020-04-01T17:11:53.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 848
@@ -113,58 +102,52 @@
     "source": "twitter",
     "id": "1245229621353893888",
     "username": "CyrilBeuque",
-    "likes": 6,
-    "originalImage": "https://pbs.twimg.com/media/EUfxZsKWkAAwHWh.jpg",
+    "likes": 7,
     "date": "2020-04-01T08:00:51.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
   },
   {
     "source": "twitter",
-    "id": "1245388249301954561",
-    "username": "boxadessin",
-    "likes": 5,
-    "originalImage": "https://pbs.twimg.com/media/EUiB_0jWsAAMvgU.jpg",
-    "date": "2020-04-01T18:31:11.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 770
-  },
-  {
-    "source": "twitter",
     "id": "1245383390016176137",
     "username": "FamilleGuerrier",
-    "likes": 5,
-    "originalImage": "https://pbs.twimg.com/media/EUh9g3kWAAMsY_r.jpg",
+    "likes": 6,
     "date": "2020-04-01T18:11:52.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 646
   },
   {
     "source": "twitter",
-    "id": "1245431179110735872",
-    "username": "shakiespub",
-    "likes": 4,
-    "originalImage": "https://pbs.twimg.com/media/EUipC0GXgAEog7a.jpg",
-    "date": "2020-04-01T21:21:46.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 1106
-  },
-  {
-    "source": "twitter",
     "id": "1245411574636052480",
     "username": "coulinstephani1",
-    "likes": 4,
-    "originalImage": "https://pbs.twimg.com/media/EUiDYdmX0AAx-Ur.jpg",
+    "likes": 5,
     "date": "2020-04-01T20:03:52.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 666
   },
   {
     "source": "twitter",
+    "id": "1245388249301954561",
+    "username": "boxadessin",
+    "likes": 5,
+    "date": "2020-04-01T18:31:11.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 770
+  },
+  {
+    "source": "twitter",
+    "id": "1245431179110735872",
+    "username": "shakiespub",
+    "likes": 4,
+    "date": "2020-04-01T21:21:46.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 1106
+  },
+  {
+    "source": "twitter",
     "id": "1245297949569155073",
     "username": "massala_k",
     "likes": 3,
-    "originalImage": "https://pbs.twimg.com/media/EUgvjysXsAQntBI.jpg",
     "date": "2020-04-01T12:32:22.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 743
@@ -174,7 +157,6 @@
     "id": "1245273361879531521",
     "username": "stopherjones",
     "likes": 3,
-    "originalImage": "https://pbs.twimg.com/media/EUgZg_jWsAAsoiS.jpg",
     "date": "2020-04-01T10:54:40.000+02:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -184,7 +166,6 @@
     "id": "1245451804860649473",
     "username": "cecilebessonper",
     "likes": 2,
-    "originalImage": "https://pbs.twimg.com/media/EUi7yazXsAEuVjT.jpg",
     "date": "2020-04-01T22:43:44.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 600
@@ -194,7 +175,6 @@
     "id": "1245382954240684035",
     "username": "FamilleGuerrier",
     "likes": 2,
-    "originalImage": "https://pbs.twimg.com/media/EUh9JHIX0AMbQVi.jpg",
     "date": "2020-04-01T18:10:09.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 668
@@ -204,7 +184,6 @@
     "id": "1245282572772487170",
     "username": "rachelleholbein",
     "likes": 2,
-    "originalImage": "https://pbs.twimg.com/media/EUgh5KOWkAw8aZy.jpg",
     "date": "2020-04-01T11:31:16.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
@@ -214,7 +193,6 @@
     "id": "1245248066116083718",
     "username": "dedeweb",
     "likes": 2,
-    "originalImage": "https://pbs.twimg.com/media/EUgCddhXgAAW-Gm.jpg",
     "date": "2020-04-01T09:14:09.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 752
@@ -224,7 +202,6 @@
     "id": "1245434545412997124",
     "username": "schenk_ch",
     "likes": 1,
-    "originalImage": "https://pbs.twimg.com/media/EUisG5JXgAMhzK5.jpg",
     "date": "2020-04-01T21:35:09.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
@@ -234,7 +211,6 @@
     "id": "1245416310311444487",
     "username": "rachelleholbein",
     "likes": 1,
-    "originalImage": "https://pbs.twimg.com/media/EUibhBCXkAccbPc.jpg",
     "date": "2020-04-01T20:22:41.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900

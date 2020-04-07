@@ -68,7 +68,7 @@ export default function JeVeuxDessiner() {
           <a
             href="https://twitter.com/Bouletcorp/status/1241018332112998401"
             className="text-blue-800 underline hover:text-twitter"
-            alt="Exemple d'un tweet #CoronaMaison"
+            alt="Exemple d'un tweet CoronaMaison de Boulet"
           >
             exemple
           </a>

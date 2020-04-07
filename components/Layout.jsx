@@ -27,9 +27,13 @@ export default function Layout({ children }) {
 
         <main className="xl:col-span-10 xl:px-5">{children}</main>
 
-        <footer className="mt-6 xl:col-start-3 xl:col-span-10">
+        <footer className="py-6 xl:col-start-3 xl:col-span-10">
           <p className="text-right italic text-sm">
-            Dernière mise à jour: {lastUpdate}
+            Dernière mise à jour: {lastUpdate}.
+          </p>
+
+          <p className="text-right italic text-sm">
+            Les dessins restent la propriété de leurs auteurs respectifs.
           </p>
         </footer>
       </div>

@@ -2,12 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 
+import { useRouter } from "next/router";
 import DrawingsList from "components/DrawingsList";
+import Share from "components/Share";
 
 export default function DrawingsForDay({ drawingsForDay, date }) {
+  const router = useRouter();
+
   const title = `CoronaMaison: Tous les dessins du ${date}`;
-  const description = `Découvrez tous les dessins Coronamaison du ${date}, #CoronaMaison`;
+  const description = `Découvrez tous les dessins CoronaMaison du ${date}`;
   const socialImage = `https://coronamaison.net/drawings/${drawingsForDay[0].source}-${drawingsForDay[0].id}-1026.jpg`;
+  const url = `https://coronamaison.net/${router.asPath}`;
 
   return (
     <>
@@ -28,6 +33,8 @@ export default function DrawingsForDay({ drawingsForDay, date }) {
       </h2>
 
       <DrawingsList drawings={drawingsForDay} />
+
+      <Share url={url} title={title} description={description} />
     </>
   );
 }
@@ -45,7 +52,6 @@ export async function getStaticProps({ params: { year, month, day } }) {
         `public/thumbnails/${drawing.source}-${drawing.id}.svg`,
         "utf8",
       );
-      delete drawing.originalImage;
       delete drawing.date;
       drawing.svg = svg;
       return drawing;

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import HandDrawnLine from "svg/HandDrawnLine.svg";
+import Link from "next/link";
 import Coloring from "svg/Coloring.svg";
 import Heart from "svg/Heart.svg";
 import LazyDrawing from "components/LazyDrawing";
@@ -14,11 +14,25 @@ export default function DrawingItem({
   imageHeight,
   likes,
   svg,
+  withColoringPage = true,
+  linkToImage = false,
 }) {
   const profileUrl = `https://twitter.com/${username}`;
   const tweetUrl = `https://twitter.com/${username}/status/${id}`;
   const coloringPageUrl = `/coloringPages/${source}-${id}.png`;
   const avatarImage = `https://twitter-avatar.now.sh/${username}`;
+
+  const Drawing = () => {
+    return (
+      <LazyDrawing
+        filename={`${source}-${id}`}
+        imageWidth={imageWidth}
+        imageHeight={imageHeight}
+        svg={svg}
+        alt={`CoronaMaison en dessin de ${username} sur Twitter`}
+      />
+    );
+  };
 
   return (
     <>
@@ -47,32 +61,39 @@ export default function DrawingItem({
             </noscript>{" "}
             @{username}
           </a>
+          {withColoringPage && (
+            <a
+              title={`Accéder à la version à colorier de la CoronaMaison de ${username}`}
+              href={coloringPageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-blue-800 hover:text-twitter"
+            >
+              <span className="text-md text-center w-32">
+                Colorier la CoronaMaison
+              </span>{" "}
+              <Coloring className="ml-2 w-12 h-12" />
+            </a>
+          )}
+        </div>
+        {(linkToImage && (
           <a
-            title={`Accéder à la version à colorier de la #CoronaMaison de ${username}`}
-            href={coloringPageUrl}
+            href={`/drawings/${source}-${id}-1026.jpg`}
+            title={`Télécharger la CoronaMaison de ${username}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-lg text-blue-800 hover:text-twitter"
           >
-            Colorier <Coloring className="ml-2 w-12 h-12" />
+            <Drawing />
           </a>
-        </div>
+        )) || (
+          <Link href="/drawing/[id]" as={`/drawing/${id}`}>
+            <a title={`Voir la page du dessin CoronaMaison de ${username}`}>
+              <Drawing />
+            </a>
+          </Link>
+        )}
         <a
-          href={tweetUrl}
-          title={`Voir le tweet #CoronaMaison de ${username}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LazyDrawing
-            filename={`${source}-${id}`}
-            imageWidth={imageWidth}
-            imageHeight={imageHeight}
-            svg={svg}
-            alt={`Coronamaison en dessin de ${username} sur Twitter`}
-          />
-        </a>
-        <a
-          title={`RT ou like la #CoronaMaison de ${username}`}
+          title={`RT ou like la CoronaMaison de ${username}`}
           href={tweetUrl}
           target="_blank"
           rel="noopener noreferrer"
@@ -91,11 +112,6 @@ export default function DrawingItem({
       >
         delete
       </button> */}
-
-      <HandDrawnLine
-        className="text-yellow-700 h-2 opacity-50 mx-auto"
-        style={{ maxWidth: "80%" }}
-      />
     </>
   );
 }
@@ -105,7 +121,9 @@ DrawingItem.propTypes = {
   imageHeight: PropTypes.number,
   imageWidth: PropTypes.number,
   likes: PropTypes.number,
+  linkToImage: PropTypes.bool,
   source: PropTypes.string,
   svg: PropTypes.string,
   username: PropTypes.string,
+  withColoringPage: PropTypes.bool,
 };

@@ -4,8 +4,8 @@ import Link from "next/link";
 import TweetEmbed from "react-tweet-embed";
 
 export default function About() {
-  const title = "CoronaMaison : à propos du projet #CoronaMaison";
-  const description = "Qui est derrière le project #CoronaMaison";
+  const title = "CoronaMaison : à propos du projet CoronaMaison";
+  const description = "Qui est derrière le project CoronaMaison";
   const socialImage = "https://coronamaison.net/modele-coronamaison.jpg";
 
   return (
@@ -27,7 +27,7 @@ export default function About() {
           className="text-blue-800 underline hover:text-twitter"
           href="https://twitter.com/hashtag/coronamaison"
         >
-          #CoronaMaison
+          CoronaMaison
         </a>{" "}
         c'est l'idée de :{" "}
         <a
@@ -64,7 +64,7 @@ export default function About() {
         Le{" "}
         <Link href="/je-veux-dessiner">
           <a className="text-blue-800 underline hover:text-twitter">
-            modèle de #CoronaMaison
+            modèle de CoronaMaison
           </a>
         </Link>{" "}
         est un dessin de{" "}
@@ -78,7 +78,7 @@ export default function About() {
       </p>
       <p className="text-lg mt-6">
         Ce site internet a été réalisé par Vincent Voyer car je souhaitai être
-        sûr de ne rater aucune #CoronaMaison (d'où l'organisation sous forme de
+        sûr de ne rater aucune CoronaMaison (d'où l'organisation sous forme de
         dates) et puis ensuite je me suis un peu emballé. Le code source est en
         libre accès ici (venez m'aider c'est fun) :{" "}
         <a
@@ -104,7 +104,7 @@ export default function About() {
         .
       </p>
       <p className="text-lg mt-6">
-        Le site officiel de #CoronaMaison c'est{" "}
+        Le site officiel de CoronaMaison c'est{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://coronamaison.fun/"

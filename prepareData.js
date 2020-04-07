@@ -93,6 +93,7 @@ async function run() {
     .value();
 
   const drawingsByDate = {};
+  const drawingsById = {};
   const dataFolder = path.join(__dirname, "data");
 
   console.log("Formatting drawings objects");
@@ -286,6 +287,9 @@ async function run() {
     // MUTATE ALL THE THINGS
     formattedDrawing.imageWidth = imageWidth;
     formattedDrawing.imageHeight = imageHeight;
+    formattedDrawing.originalImage = undefined;
+
+    drawingsById[formattedDrawing.id] = formattedDrawing;
 
     drawingsByDate[formattedDate].push(formattedDrawing);
 
@@ -328,6 +332,11 @@ async function run() {
         ),
       );
     });
+
+    fs.writeFileSync(
+      path.join(dataFolder, "drawingsById.json"),
+      JSON.stringify(drawingsById, null, 2),
+    );
 
     const allDates = drawingsByDateArray.reduce(
       (acc, [date, drawingsForDay]) => {

@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 
 import DrawingsList from "components/DrawingsList";
+import Share from "components/Share";
 
 export default function Home({ top50Drawings }) {
-  const title = "CoronaMaison: Tous les dessins du hashtag #CoronaMaison";
+  const title = "CoronaMaison : Tous les dessins du challenge artistique";
   const description =
-    "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvrez-les !";
+    "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvre-les !";
   const url = "https://coronamaison.net";
   const socialImage = `${url}/social.jpg`;
 
@@ -29,6 +30,8 @@ export default function Home({ top50Drawings }) {
         Top 50 des CoronaMaisons les plus partagées
       </h2>
 
+      <Share url={url} title={title} description={description} />
+
       <DrawingsList drawings={top50Drawings} />
     </>
   );
@@ -45,7 +48,6 @@ export async function getStaticProps() {
       `public/thumbnails/${drawing.source}-${drawing.id}.svg`,
       "utf8",
     );
-    delete drawing.originalImage;
     delete drawing.date;
     drawing.svg = svg;
     return drawing;
