@@ -1,8 +1,5 @@
 
 Todo:
-  ☐ Add a drawing page with share buttons, original tweet, version à colorier
-  ☐ Add alt description and titles everywhere
-  ☐ In general, add more of "CoronaMaison" keyword (double check pages)
   ☐ We can get rid of the source information, it will always be twitter
   ☐ English version
   ☐ Share on HN
@@ -14,25 +11,26 @@ Todo:
     Then choose random drawings from it
   ☐ Add search
   ☐ Add a script that removes every deleted tweet from the actual database
-  Website:
-    ☐ share buttons on all pages
-    ☐ Click on drawing = drawing page
   Data:
     ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
       Today it requires manual editing
     ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
-  Drawing page:
-    ☐ Has drawing in full
-    ☐ Displays original tweet using embedded tweet
-    ☐ Has a feature to turn the drawing into full black/white for colouring page
-    ☐ Has a feature to print the drawing/colouring page
-      Most important part is done, it's linked directly from the list page
-    ☐ Has feature to display large image (like https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=large or https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=4096x4096)
   Project:
     ☐ README add instructions on how to run it yourself
 Maybe next features:
   ☐ Random image feature / page
 Archive:
+  ✔ Add a drawing page with share buttons, original tweet, version à colorier @done(20-04-07 15:00) @project(Todo)
+  ✔ Add alt description and titles everywhere @done(20-04-07 15:00) @project(Todo)
+  ✔ In general, add more of "CoronaMaison" keyword (double check pages) @done(20-04-07 15:00) @project(Todo)
+  ✔ share buttons on all pages @done(20-04-07 15:00) @project(Todo.Website)
+  ✔ Click on drawing = drawing page @done(20-04-07 15:00) @project(Todo.Website)
+  ✔ Has drawing in full @done(20-04-07 15:00) @project(Todo.Drawing page)
+  ✔ Displays original tweet using embedded tweet @done(20-04-07 15:00) @project(Todo.Drawing page)
+  ✔ Has a feature to turn the drawing into full black/white for colouring page @done(20-04-07 15:00) @project(Todo.Drawing page)
+  ✔ Has a feature to print the drawing/colouring page @done(20-04-07 15:00) @project(Todo.Drawing page)
+    Most important part is done, it's linked directly from the list page
+  ✔ Has feature to display large image (like https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=large or https://pbs.twimg.com/media/ETaYWXEWoAQTCGU?format=jpg&name=4096x4096) @done(20-04-07 15:00) @project(Todo.Drawing page)
   ✔ Update RT count in prepareData: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-statuses-lookup @done(20-04-01 21:43) @project(Todo.Data)
   ✔ add page "À propos" (original tweet from PenelopeB, source code link, how to manually add a drawing, how to remove a drawing...) @done(20-04-01 00:10) @project(Todo)
   ✔ Je trouve pas mon dessin (que la première photo @done(20-04-01 00:10) @project(Todo)

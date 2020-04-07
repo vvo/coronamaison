@@ -69,7 +69,7 @@ export default function DrawingItem({
               rel="noopener noreferrer"
               className="flex items-center text-blue-800 hover:text-twitter"
             >
-              <span className="text-md text-center w-32">
+              <span className="text-sm text-center w-24">
                 Colorier la CoronaMaison
               </span>{" "}
               <Coloring className="ml-2 w-12 h-12" />
