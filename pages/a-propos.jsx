@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import TweetEmbed from "react-tweet-embed";
 
 export default function About() {
   const title = "CoronaMaison : à propos du projet CoronaMaison";
@@ -57,9 +56,8 @@ export default function About() {
         >
           Timothy Hannem
         </a>
-        . Et ça a commencé le 15 Mars 2020 avec un tweet comme ça :
+        .
       </p>
-      <TweetEmbed id="1239186251833630720" />
       <p className="text-lg mt-6">
         Le{" "}
         <Link href="/je-veux-dessiner">
