@@ -11,7 +11,7 @@
     "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",
     "prepareData": "babel-node --presets @babel/preset-env prepareData.js",
     "start": "next start",
-    "test": "yarn lint"
+    "test": "yarn lint && yarn build"
   },
   "prettier": {
     "trailingComma": "all"
@@ -114,7 +114,12 @@
   },
   "renovate": {
     "extends": [
-      "config:js-app"
+      "config:js-app",
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergeLinters",
+      ":automergeTesters",
+      ":automergeTypes"
     ],
     "lockFileMaintenance": {
       "enabled": true
