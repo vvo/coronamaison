@@ -90,12 +90,24 @@ export default function About() {
         .
       </p>
 
-      <p>
+      <p className="text-lg mt-6">
         Les versions à colorier sont générées automatiquement par les programmes
         de Peter Selinger :{" "}
-        <a href="http://potrace.sourceforge.net/mkbitmap.html">mkbitmap</a> et{" "}
-        <a href="http://potrace.sourceforge.net/">potrace</a>. Merci pour vos
-        conseils avisés sur la meilleure façon d'utiliser ces programmes.
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="http://potrace.sourceforge.net/mkbitmap.html"
+        >
+          mkbitmap
+        </a>{" "}
+        et{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="http://potrace.sourceforge.net/"
+        >
+          potrace
+        </a>
+        . Merci pour vos conseils avisés sur la meilleure façon d'utiliser ces
+        programmes.
       </p>
 
       <p className="text-lg mt-6">
