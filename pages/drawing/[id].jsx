@@ -44,6 +44,14 @@ export default function Drawing({
         CoronaMaison de {username} publiée le {formattedDate}
       </h2>
 
+      <h2 className="text-3xl font-cursive mt-10 mb-2">Tweet d'origine</h2>
+
+      <TweetEmbed id={id} options={{ width: 550 }} />
+
+      <h2 className="text-3xl font-cursive mt-10 mb-6 clear-left">
+        Version à télécharger
+      </h2>
+
       <DrawingItem
         id={id}
         source={source}
@@ -56,9 +64,7 @@ export default function Drawing({
         linkToImage={true}
       />
 
-      <h2 className="text-3xl font-cursive text-center my-6">
-        Version à colorier
-      </h2>
+      <h2 className="text-3xl font-cursive mt-10 mb-6">Version à colorier</h2>
 
       <a
         href={`/coloringPages/twitter-${id}.png`}
@@ -69,12 +75,6 @@ export default function Drawing({
           alt={`Version noir et blanc à colorier de la CoronaMaison de ${username}`}
         />
       </a>
-
-      <h2 className="text-3xl font-cursive text-center my-6">
-        Tweet d'origine
-      </h2>
-
-      <TweetEmbed id={id} />
 
       <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto mt-8"

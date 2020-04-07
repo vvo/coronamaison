@@ -36,7 +36,7 @@ export default function DrawingItem({
 
   return (
     <>
-      <div className="relative block mt-8 mb-12 pt-12 relative">
+      <div className="relative">
         <div className="flex flex-row justify-between">
           <a
             href={profileUrl}
@@ -105,7 +105,7 @@ export default function DrawingItem({
       </div>
 
       {/* <button
-        className="text-3xl"
+        className="mt-10 bg-red-500 text-3xl"
         onClick={async () => {
           await fetch(`/api/drawing/${id}`);
         }}
