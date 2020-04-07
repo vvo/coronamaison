@@ -6,13 +6,13 @@ import DrawingItem from "components/DrawingItem";
 
 export default function DrawingsList({ drawings }) {
   return drawings.map((drawing) => (
-    <>
-      <DrawingItem {...drawing} key={`${drawing.source}-${drawing.id}`} />
+    <div key={`${drawing.source}-${drawing.id}`}>
+      <DrawingItem {...drawing} />
       <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto"
         style={{ maxWidth: "80%" }}
       />
-    </>
+    </div>
   ));
 }
 
