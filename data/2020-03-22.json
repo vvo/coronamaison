@@ -244,6 +244,15 @@
   },
   {
     "source": "twitter",
+    "id": "1241509232261976068",
+    "username": "CookingFred",
+    "likes": 11,
+    "date": "2020-03-22T00:37:21.000+01:00",
+    "imageWidth": 979,
+    "imageHeight": 520
+  },
+  {
+    "source": "twitter",
     "id": "1241752549507715078",
     "username": "AndraWalex",
     "likes": 10,
@@ -268,15 +277,6 @@
     "date": "2020-03-22T09:21:08.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 848
-  },
-  {
-    "source": "twitter",
-    "id": "1241509232261976068",
-    "username": "CookingFred",
-    "likes": 10,
-    "date": "2020-03-22T00:37:21.000+01:00",
-    "imageWidth": 979,
-    "imageHeight": 520
   },
   {
     "source": "twitter",

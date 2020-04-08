@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1245717059335577610",
     "username": "Gally",
-    "likes": 2066,
+    "likes": 2076,
     "date": "2020-04-02T16:17:45.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 650
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1245753710648713218",
     "username": "LesLorraine",
-    "likes": 270,
+    "likes": 274,
     "date": "2020-04-02T18:43:24.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 651
@@ -66,10 +66,19 @@
     "source": "twitter",
     "id": "1245688141874442241",
     "username": "JulietJFall",
-    "likes": 11,
+    "likes": 12,
     "date": "2020-04-02T14:22:51.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 721
+  },
+  {
+    "source": "twitter",
+    "id": "1245734950722306050",
+    "username": "rebeccamrtt",
+    "likes": 11,
+    "date": "2020-04-02T17:28:51.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 633
   },
   {
     "source": "twitter",
@@ -79,15 +88,6 @@
     "date": "2020-04-02T18:05:58.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 662
-  },
-  {
-    "source": "twitter",
-    "id": "1245734950722306050",
-    "username": "rebeccamrtt",
-    "likes": 10,
-    "date": "2020-04-02T17:28:51.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 633
   },
   {
     "source": "twitter",
@@ -118,6 +118,15 @@
   },
   {
     "source": "twitter",
+    "id": "1245657238280142850",
+    "username": "AHPea",
+    "likes": 6,
+    "date": "2020-04-02T12:20:03.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  {
+    "source": "twitter",
     "id": "1245481094331469824",
     "username": "cry_alot_",
     "likes": 6,
@@ -127,18 +136,9 @@
   },
   {
     "source": "twitter",
-    "id": "1245657238280142850",
-    "username": "AHPea",
-    "likes": 4,
-    "date": "2020-04-02T12:20:03.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
-  },
-  {
-    "source": "twitter",
     "id": "1245603401318055936",
     "username": "AAfpjr",
-    "likes": 4,
+    "likes": 5,
     "date": "2020-04-02T08:46:07.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 806
@@ -147,7 +147,7 @@
     "source": "twitter",
     "id": "1245484043182825474",
     "username": "NishiMarj",
-    "likes": 4,
+    "likes": 5,
     "date": "2020-04-02T00:51:50.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 643

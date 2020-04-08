@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1246447876714135552",
     "username": "Joe__Hume",
-    "likes": 1934,
+    "likes": 2077,
     "date": "2020-04-04T16:41:46.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 799
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1246497649257259009",
     "username": "lydia__am",
-    "likes": 404,
+    "likes": 406,
     "date": "2020-04-04T19:59:33.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 728
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1246479440613343233",
     "username": "proftaquin",
-    "likes": 13,
+    "likes": 14,
     "date": "2020-04-04T18:47:11.000+02:00",
     "imageWidth": 600,
     "imageHeight": 600
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1246382450567192582",
     "username": "CedricTaling",
-    "likes": 12,
+    "likes": 14,
     "date": "2020-04-04T12:21:47.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 636
@@ -91,6 +91,15 @@
   },
   {
     "source": "twitter",
+    "id": "1246372041068085248",
+    "username": "BloodyM18992325",
+    "likes": 6,
+    "date": "2020-04-04T11:40:25.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  {
+    "source": "twitter",
     "id": "1246371775673483265",
     "username": "veroche78",
     "likes": 6,
@@ -106,15 +115,6 @@
     "date": "2020-04-04T21:17:05.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 654
-  },
-  {
-    "source": "twitter",
-    "id": "1246372041068085248",
-    "username": "BloodyM18992325",
-    "likes": 5,
-    "date": "2020-04-04T11:40:25.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
   },
   {
     "source": "twitter",
@@ -136,6 +136,15 @@
   },
   {
     "source": "twitter",
+    "id": "1246556930346291201",
+    "username": "CelineS_Lilico",
+    "likes": 3,
+    "date": "2020-04-04T23:55:06.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 670
+  },
+  {
+    "source": "twitter",
     "id": "1246469368944275458",
     "username": "isaavecunicourt",
     "likes": 3,
@@ -145,18 +154,9 @@
   },
   {
     "source": "twitter",
-    "id": "1246556930346291201",
-    "username": "CelineS_Lilico",
-    "likes": 2,
-    "date": "2020-04-04T23:55:06.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 670
-  },
-  {
-    "source": "twitter",
     "id": "1246435351369048065",
     "username": "CruelHall",
-    "likes": 0,
+    "likes": 1,
     "date": "2020-04-04T15:52:00.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 641
