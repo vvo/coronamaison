@@ -38,7 +38,7 @@ export default function About() {
         ,{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
-          href="https://twitter.com/PenelopeB"
+          href="https://twitter.com/OssKx"
         >
           Oscar Barda
         </a>
