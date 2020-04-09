@@ -69,7 +69,7 @@
     "@babel/core": "7.9.0",
     "@babel/node": "7.8.7",
     "@babel/preset-env": "7.9.5",
-    "@fullhuman/postcss-purgecss": "2.1.0",
+    "@fullhuman/postcss-purgecss": "2.1.2",
     "@next/bundle-analyzer": "9.3.3",
     "@prettier/plugin-xml": "0.7.2",
     "@svgr/webpack": "5.3.1",
@@ -109,7 +109,7 @@
     "vanilla-lazyload": "15.1.1"
   },
   "engines": {
-    "node": "12.16.1",
+    "node": "12.16.2",
     "yarn": "1.22.4"
   },
   "renovate": {
