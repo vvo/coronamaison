@@ -104,14 +104,14 @@ export default function DrawingItem({
         </a>
       </div>
 
-      <button
+      {/* <button
         className="mt-10 bg-red-500 text-3xl"
         onClick={async () => {
           await fetch(`/api/drawing/${id}`);
         }}
       >
         delete
-      </button>
+      </button> */}
     </>
   );
 }
