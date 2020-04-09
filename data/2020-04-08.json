@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1247988717056339976",
     "username": "alm_esr",
-    "likes": 7,
+    "likes": 9,
     "date": "2020-04-08T22:44:31.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 891
@@ -73,6 +73,24 @@
   },
   {
     "source": "twitter",
+    "id": "1247833439576997888",
+    "username": "FillaudJean",
+    "likes": 1,
+    "date": "2020-04-08T12:27:30.000+02:00",
+    "imageWidth": 1199,
+    "imageHeight": 902
+  },
+  {
+    "source": "twitter",
+    "id": "1247832858431033346",
+    "username": "FillaudJean",
+    "likes": 1,
+    "date": "2020-04-08T12:25:11.000+02:00",
+    "imageWidth": 1199,
+    "imageHeight": 902
+  },
+  {
+    "source": "twitter",
     "id": "1247790953466740736",
     "username": "celine_mazoyer",
     "likes": 1,
@@ -106,24 +124,6 @@
     "date": "2020-04-08T14:26:39.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 713
-  },
-  {
-    "source": "twitter",
-    "id": "1247833439576997888",
-    "username": "FillaudJean",
-    "likes": 0,
-    "date": "2020-04-08T12:27:30.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 902
-  },
-  {
-    "source": "twitter",
-    "id": "1247832858431033346",
-    "username": "FillaudJean",
-    "likes": 0,
-    "date": "2020-04-08T12:25:11.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 902
   },
   {
     "source": "twitter",
