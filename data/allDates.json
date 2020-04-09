@@ -2,6 +2,12 @@
   {
     "year": "2020",
     "month": "04",
+    "day": "08",
+    "nbDrawings": 15
+  },
+  {
+    "year": "2020",
+    "month": "04",
     "day": "07",
     "nbDrawings": 19
   },
@@ -75,7 +81,7 @@
     "year": "2020",
     "month": "03",
     "day": "26",
-    "nbDrawings": 55
+    "nbDrawings": 54
   },
   {
     "year": "2020",
@@ -111,7 +117,7 @@
     "year": "2020",
     "month": "03",
     "day": "20",
-    "nbDrawings": 68
+    "nbDrawings": 67
   },
   {
     "year": "2020",

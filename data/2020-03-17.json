@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1239933069085245440",
     "username": "Fernandezcomics",
-    "likes": 886,
+    "likes": 888,
     "date": "2020-03-17T16:14:15.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 659
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1239969747887747073",
     "username": "Nicola_Gendron",
-    "likes": 738,
+    "likes": 740,
     "date": "2020-03-17T18:40:00.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 820
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1239872825013477383",
     "username": "Mael_Biskotz",
-    "likes": 542,
+    "likes": 544,
     "date": "2020-03-17T12:14:51.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1240034059847335936",
     "username": "brfab71200",
-    "likes": 418,
+    "likes": 419,
     "date": "2020-03-17T22:55:33.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 641
@@ -57,7 +57,7 @@
     "source": "twitter",
     "id": "1240044145412014082",
     "username": "cirquedepapier",
-    "likes": 397,
+    "likes": 398,
     "date": "2020-03-17T23:35:37.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 668
@@ -66,7 +66,7 @@
     "source": "twitter",
     "id": "1240021593444712448",
     "username": "PoF28",
-    "likes": 363,
+    "likes": 364,
     "date": "2020-03-17T22:06:01.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 637
@@ -658,21 +658,21 @@
   },
   {
     "source": "twitter",
-    "id": "1239940035442548736",
-    "username": "ShettyShet",
-    "likes": 14,
-    "date": "2020-03-17T16:41:56.000+01:00",
-    "imageWidth": 1000,
-    "imageHeight": 549
-  },
-  {
-    "source": "twitter",
     "id": "1239931898941648902",
     "username": "elisabeth_jutel",
     "likes": 14,
     "date": "2020-03-17T16:09:36.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 664
+  },
+  {
+    "source": "twitter",
+    "id": "1239940035442548736",
+    "username": "ShettyShet",
+    "likes": 13,
+    "date": "2020-03-17T16:41:56.000+01:00",
+    "imageWidth": 1000,
+    "imageHeight": 549
   },
   {
     "source": "twitter",
