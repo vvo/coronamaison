@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1248660966721630208",
     "username": "Tyron_Gearing",
-    "likes": 103,
+    "likes": 165,
     "date": "2020-04-10T19:15:48.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 638
@@ -12,17 +12,44 @@
     "source": "twitter",
     "id": "1248615671706992643",
     "username": "Kenshiante",
-    "likes": 18,
+    "likes": 24,
     "date": "2020-04-10T16:15:48.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 675
   },
   {
     "source": "twitter",
+    "id": "1248615300305522691",
+    "username": "El1seD",
+    "likes": 5,
+    "date": "2020-04-10T16:14:20.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 651
+  },
+  {
+    "source": "twitter",
+    "id": "1248669071752773632",
+    "username": "veroche78",
+    "likes": 4,
+    "date": "2020-04-10T19:48:00.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 768
+  },
+  {
+    "source": "twitter",
     "id": "1248680601563156484",
     "username": "chrissoune",
-    "likes": 1,
+    "likes": 3,
     "date": "2020-04-10T20:33:49.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 862
+  },
+  {
+    "source": "twitter",
+    "id": "1248633323917901824",
+    "username": "AnglieSzczepan1",
+    "likes": 1,
+    "date": "2020-04-10T17:25:57.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 862
   },
@@ -37,39 +64,12 @@
   },
   {
     "source": "twitter",
-    "id": "1248669071752773632",
-    "username": "veroche78",
-    "likes": 0,
-    "date": "2020-04-10T19:48:00.000+02:00",
-    "imageWidth": 1024,
-    "imageHeight": 768
-  },
-  {
-    "source": "twitter",
     "id": "1248659428301299713",
     "username": "Alex_neeves",
     "likes": 0,
     "date": "2020-04-10T19:09:41.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 618
-  },
-  {
-    "source": "twitter",
-    "id": "1248633323917901824",
-    "username": "AnglieSzczepan1",
-    "likes": 0,
-    "date": "2020-04-10T17:25:57.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 862
-  },
-  {
-    "source": "twitter",
-    "id": "1248615300305522691",
-    "username": "El1seD",
-    "likes": 0,
-    "date": "2020-04-10T16:14:20.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 651
   },
   {
     "source": "twitter",

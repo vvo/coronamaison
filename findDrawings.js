@@ -31,8 +31,8 @@ async function run() {
     const res = await twitter.post("tweets/search/30day/dev.json", {
       json: {
         query: "#coronamaison has:images",
-        fromDate: "202004092159",
-        toDate: "202004102159",
+        fromDate: "202004102159",
+        toDate: "202004112159",
         maxResults: 100,
         next,
       },
