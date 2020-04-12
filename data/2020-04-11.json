@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1248892608165937152",
     "username": "acupoftim",
-    "likes": 307,
+    "likes": 317,
     "date": "2020-04-11T10:36:15.000+02:00",
     "imageWidth": 995,
     "imageHeight": 892
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1248993766305869824",
     "username": "Allaxel_AA",
-    "likes": 62,
+    "likes": 86,
     "date": "2020-04-11T17:18:13.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 701
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1248966352053964802",
     "username": "HeleneLeDauphin",
-    "likes": 39,
+    "likes": 49,
     "date": "2020-04-11T15:29:17.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 647
@@ -37,6 +37,15 @@
   },
   {
     "source": "twitter",
+    "id": "1249087633877340161",
+    "username": "federica_dL",
+    "likes": 4,
+    "date": "2020-04-11T23:31:13.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 879
+  },
+  {
+    "source": "twitter",
     "id": "1249008043452399616",
     "username": "liskarria",
     "likes": 4,
@@ -48,7 +57,7 @@
     "source": "twitter",
     "id": "1248770773273251841",
     "username": "Violalto_",
-    "likes": 3,
+    "likes": 4,
     "date": "2020-04-11T02:32:08.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
@@ -64,12 +73,12 @@
   },
   {
     "source": "twitter",
-    "id": "1249087633877340161",
-    "username": "federica_dL",
+    "id": "1248966877960904704",
+    "username": "fredfactory",
     "likes": 1,
-    "date": "2020-04-11T23:31:13.000+02:00",
+    "date": "2020-04-11T15:31:23.000+02:00",
     "imageWidth": 1200,
-    "imageHeight": 879
+    "imageHeight": 826
   },
   {
     "source": "twitter",
@@ -97,14 +106,5 @@
     "date": "2020-04-11T18:29:33.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 767
-  },
-  {
-    "source": "twitter",
-    "id": "1248966877960904704",
-    "username": "fredfactory",
-    "likes": 0,
-    "date": "2020-04-11T15:31:23.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 826
   }
 ]
