@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1248966352053964802",
     "username": "HeleneLeDauphin",
-    "likes": 50,
+    "likes": 53,
     "date": "2020-04-11T15:29:17.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 647
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1249011717276946436",
     "username": "veroche78",
-    "likes": 4,
+    "likes": 5,
     "date": "2020-04-11T18:29:33.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 767
@@ -70,6 +70,15 @@
     "date": "2020-04-11T02:32:08.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
+  },
+  {
+    "source": "twitter",
+    "id": "1249013302367334400",
+    "username": "Nayill63",
+    "likes": 2,
+    "date": "2020-04-11T18:35:51.000+02:00",
+    "imageWidth": 1199,
+    "imageHeight": 870
   },
   {
     "source": "twitter",
@@ -97,14 +106,5 @@
     "date": "2020-04-11T10:36:42.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 713
-  },
-  {
-    "source": "twitter",
-    "id": "1249013302367334400",
-    "username": "Nayill63",
-    "likes": 0,
-    "date": "2020-04-11T18:35:51.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 870
   }
 ]

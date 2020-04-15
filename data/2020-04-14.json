@@ -1,0 +1,92 @@
+[
+  {
+    "source": "twitter",
+    "id": "1250065743414267906",
+    "username": "LaChipouille",
+    "likes": 19,
+    "date": "2020-04-14T16:17:52.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 848
+  },
+  {
+    "source": "twitter",
+    "id": "1250140300787449858",
+    "username": "Manon_Rnri",
+    "likes": 2,
+    "date": "2020-04-14T21:14:08.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 824
+  },
+  {
+    "source": "twitter",
+    "id": "1250127648971464705",
+    "username": "Amelieben",
+    "likes": 2,
+    "date": "2020-04-14T20:23:52.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 675
+  },
+  {
+    "source": "twitter",
+    "id": "1250095700031025155",
+    "username": "veroche78",
+    "likes": 2,
+    "date": "2020-04-14T18:16:55.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 768
+  },
+  {
+    "source": "twitter",
+    "id": "1250113945270128643",
+    "username": "Nayill63",
+    "likes": 1,
+    "date": "2020-04-14T19:29:25.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 830
+  },
+  {
+    "source": "twitter",
+    "id": "1250157134114885634",
+    "username": "F6Blanche",
+    "likes": 0,
+    "date": "2020-04-14T22:21:02.000+02:00",
+    "imageWidth": 1029,
+    "imageHeight": 708
+  },
+  {
+    "source": "twitter",
+    "id": "1249976052203630595",
+    "username": "DocCAUE67",
+    "likes": 0,
+    "date": "2020-04-14T10:21:28.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 602
+  },
+  {
+    "source": "twitter",
+    "id": "1249975028931866624",
+    "username": "dianegarnault",
+    "likes": 0,
+    "date": "2020-04-14T10:17:24.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  {
+    "source": "twitter",
+    "id": "1249946801324597248",
+    "username": "veroche78",
+    "likes": 0,
+    "date": "2020-04-14T08:25:14.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  {
+    "source": "twitter",
+    "id": "1249869086995165188",
+    "username": "rockartwork",
+    "likes": 0,
+    "date": "2020-04-14T03:16:26.000+02:00",
+    "imageWidth": 1080,
+    "imageHeight": 1080
+  }
+]
