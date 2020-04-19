@@ -103,6 +103,8 @@ export default function Home({ top50Drawings }) {
         </a>
         . Merci à eux !
       </p>
+
+      <Share url={url} title={title} description={description} />
     </>
   );
 }
