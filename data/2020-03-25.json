@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1242667925020041217",
     "username": "carole30323454",
-    "likes": 596,
+    "likes": 597,
     "date": "2020-03-25T05:21:35.000+01:00",
     "imageWidth": 1080,
     "imageHeight": 601
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1242885713068204033",
     "username": "AlexMouron",
-    "likes": 282,
+    "likes": 287,
     "date": "2020-03-25T19:47:00.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 661
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1242822359679197184",
     "username": "Beloup_Art",
-    "likes": 164,
+    "likes": 165,
     "date": "2020-03-25T15:35:15.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 746
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1242801399127314432",
     "username": "milena_kaah",
-    "likes": 137,
+    "likes": 140,
     "date": "2020-03-25T14:11:58.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 634
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1242942442044874758",
     "username": "MathouSalem",
-    "likes": 60,
+    "likes": 61,
     "date": "2020-03-25T23:32:25.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 838
@@ -66,7 +66,7 @@
     "source": "twitter",
     "id": "1242724499528835080",
     "username": "KWIllustrateur",
-    "likes": 37,
+    "likes": 36,
     "date": "2020-03-25T09:06:24.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 848
@@ -325,6 +325,15 @@
   },
   {
     "source": "twitter",
+    "id": "1242828659804823553",
+    "username": "Floria8",
+    "likes": 4,
+    "date": "2020-03-25T16:00:17.000+01:00",
+    "imageWidth": 1200,
+    "imageHeight": 842
+  },
+  {
+    "source": "twitter",
     "id": "1242857188248424450",
     "username": "Meme_Cirdutemps",
     "likes": 3,
@@ -340,15 +349,6 @@
     "date": "2020-03-25T16:55:30.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 916
-  },
-  {
-    "source": "twitter",
-    "id": "1242828659804823553",
-    "username": "Floria8",
-    "likes": 3,
-    "date": "2020-03-25T16:00:17.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 842
   },
   {
     "source": "twitter",

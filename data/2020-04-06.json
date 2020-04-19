@@ -100,21 +100,21 @@
   },
   {
     "source": "twitter",
-    "id": "1247122739628032000",
-    "username": "SellierMarie3",
-    "likes": 5,
-    "date": "2020-04-06T13:23:26.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 682
-  },
-  {
-    "source": "twitter",
     "id": "1247211778506981377",
     "username": "ChrisGa52746137",
     "likes": 4,
     "date": "2020-04-06T19:17:14.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 644
+  },
+  {
+    "source": "twitter",
+    "id": "1247122739628032000",
+    "username": "SellierMarie3",
+    "likes": 4,
+    "date": "2020-04-06T13:23:26.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 682
   },
   {
     "source": "twitter",

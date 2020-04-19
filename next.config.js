@@ -18,5 +18,8 @@ module.exports = withPlugins(
 
       return config;
     },
+    env: {
+      APP_ENV: process.env.APP_ENV || "production",
+    },
   },
 );

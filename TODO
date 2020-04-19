@@ -1,24 +1,27 @@
+This file is maintained by https://github.com/fabiospampinato/vscode-todo-plus, you can edit it manually too. If you're interested by one of the items, create an issue with it and discuss it.
 
 Todo:
-  ☐ We can get rid of the source information, it will always be twitter
-  ☐ English version
+  ☐ [Good contribution] add search by author with Algolia
+    It should be possible to search by author name. Most authors are trying to find their drawings again so that would be nice to have that
+    The rendering should be the same as the date listings so a lot can be reused with some refactoring I guess
+  ☐ [Good contribution] English version
+    We have roughly 30% of visitors that are not French
+  ☐ [Good contribution] Host drawings and coloring pages on Cloudinary
+    Currently we optimize and store all images in the repository and on zeit/now. zeit/now has a 10,000 deployment files limitation. We're reaching this limit and will soon no more be able to push to production. We should upload drawings and coloring pages to cloudinary instead but keeping the drawings and coloringpages in the repository and ignoring them in `.nowignore`
+    Keeping the drawings in the repository is important as the optimization and coloring pages generation takes a lot of time and can't be done at build time.
+  ☐ [Good contribution] Better menu, we're reaching so many dates that the menu starts to be hard to use. I would prefer to have the current month always opened and have other months folded.
+  ☐ [Good contribution] Add a random items page, this has been asked by project authors (Tim) as a way to discover images easily. Not sure what's the best way to do this though since the selection needs to be made at runtime, not buildtime. Maybe:
+    Generate a specific stripped down drawingsById.json, minify it
+    Downloads the full drawingsById.json from the frontend code
+    Then choose random drawings from it and display them
   ☐ Share on HN
-  ☐ Add a random items page
-  ☐ Go up button
+    Once we have an English version, I'd like to try to share it on HN again
+  ☐ [UI] Go up button / or sticky sidebar
   ☐ Credits all the tools used on the website (mkbitmap)
-    Generate a specific stripped down drawings.json, minify it
-    Downloads the full drawings.json, verify cache
-    Then choose random drawings from it
-  ☐ Add search
-  ☐ Add a script that removes every deleted tweet from the actual database
-  Data:
-    ☐ Update findDrawings to handle from/to syncing from database and last sync automatically
-      Today it requires manual editing
-    ☐ Add a cleaning script that takes all ids and remove the images from drawing folders
   Project:
-    ☐ README add instructions on how to run it yourself
-Maybe next features:
-  ☐ Random image feature / page
+    ✔ README add instructions on how to run it yourself @done(20-04-19 09:06)
+    ☐ [Chore] We can get rid of the source information, it will always be twitter
+    ☐ Go with TypeScript, mostly I am curious about the dev editing experience in TypeScript
 Archive:
   ✔ Add a drawing page with share buttons, original tweet, version à colorier @done(20-04-07 15:00) @project(Todo)
   ✔ Add alt description and titles everywhere @done(20-04-07 15:00) @project(Todo)

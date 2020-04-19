@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1242013451381284864",
     "username": "RomainRonzeau",
-    "likes": 231,
+    "likes": 230,
     "date": "2020-03-23T10:00:56.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 654
@@ -138,7 +138,7 @@
     "source": "twitter",
     "id": "1242178034947502081",
     "username": "tutankart",
-    "likes": 36,
+    "likes": 38,
     "date": "2020-03-23T20:54:56.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -205,15 +205,6 @@
     "date": "2020-03-23T16:45:05.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 857
-  },
-  {
-    "source": "twitter",
-    "id": "1241871040684478467",
-    "username": "bySlassh",
-    "likes": 16,
-    "date": "2020-03-23T00:35:03.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 740
   },
   {
     "source": "twitter",

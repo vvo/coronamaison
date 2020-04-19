@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
+import Link from "next/link";
 
 import DrawingsList from "components/DrawingsList";
 import Share from "components/Share";
@@ -33,6 +34,75 @@ export default function Home({ top50Drawings }) {
       <Share url={url} title={title} description={description} />
 
       <DrawingsList drawings={top50Drawings} />
+
+      <p className="text-lg mt-6">
+        Le challenge CoronaMaison consiste à dessiner votre lieu de confinement
+        favori durant la pandémie de COVID-19 en utilisant un{" "}
+        <a
+          href="/modele-coronamaison.jpg"
+          className="text-blue-800 underline hover:text-twitter"
+        >
+          modèle de dessin
+        </a>
+        . Puis à le publier sur les réseaux sociaux en utilisant le hashtag{" "}
+        <a
+          href="https://twitter.com/hashtag/coronamaison"
+          className="text-blue-800 underline hover:text-twitter"
+        >
+          #CoronaMaison
+        </a>
+        . Ce site recense tous les dessins publiés par date. Retrouvez le modèle
+        et plus d'informations dans les pages{" "}
+        <Link href="/a-propos">
+          <a className="text-blue-800 underline hover:text-twitter">À propos</a>
+        </Link>{" "}
+        et{" "}
+        <Link href="/je-veux-dessiner">
+          <a className="text-blue-800 underline hover:text-twitter">
+            Je veux dessiner
+          </a>
+        </Link>
+        .
+      </p>
+
+      <p className="text-lg mt-6">
+        Le projet{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="https://twitter.com/hashtag/coronamaison"
+        >
+          CoronaMaison
+        </a>{" "}
+        c'est l'idée de :{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="https://twitter.com/PenelopeB"
+        >
+          Pénélope Bagieu
+        </a>
+        ,{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="https://twitter.com/OssKx"
+        >
+          Oscar Barda
+        </a>
+        ,{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="https://twitter.com/garagedeloffre"
+        >
+          Sandrine Deloffre
+        </a>{" "}
+        et{" "}
+        <a
+          className="text-blue-800 underline hover:text-twitter"
+          href="https://twitter.com/acupoftim"
+        >
+          Timothy Hannem
+        </a>
+        . Merci à eux !
+      </p>
     </>
   );
 }

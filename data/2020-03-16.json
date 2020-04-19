@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1239349380320243712",
     "username": "FredePatiences",
-    "likes": 650,
+    "likes": 651,
     "date": "2020-03-16T01:34:52.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 644
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1239586880443875329",
     "username": "Ga_eelle",
-    "likes": 498,
+    "likes": 496,
     "date": "2020-03-16T17:18:37.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1239543198927724544",
     "username": "CendresBD",
-    "likes": 362,
+    "likes": 364,
     "date": "2020-03-16T14:25:02.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 710
@@ -66,7 +66,7 @@
     "source": "twitter",
     "id": "1239666560177975299",
     "username": "_ockto_",
-    "likes": 240,
+    "likes": 241,
     "date": "2020-03-16T22:35:14.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 710
@@ -138,7 +138,7 @@
     "source": "twitter",
     "id": "1239508232407789569",
     "username": "katkarsen",
-    "likes": 145,
+    "likes": 144,
     "date": "2020-03-16T12:06:06.000+01:00",
     "imageWidth": 1024,
     "imageHeight": 550
@@ -147,7 +147,7 @@
     "source": "twitter",
     "id": "1239349135377080320",
     "username": "EmmaCrn_GD",
-    "likes": 139,
+    "likes": 140,
     "date": "2020-03-16T01:33:54.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 826
@@ -183,7 +183,7 @@
     "source": "twitter",
     "id": "1239658858341171202",
     "username": "kristof06600",
-    "likes": 117,
+    "likes": 114,
     "date": "2020-03-16T22:04:38.000+01:00",
     "imageWidth": 900,
     "imageHeight": 1200
@@ -201,7 +201,7 @@
     "source": "twitter",
     "id": "1239570519516643328",
     "username": "GrivelasseBoy",
-    "likes": 101,
+    "likes": 100,
     "date": "2020-03-16T16:13:36.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -228,19 +228,10 @@
     "source": "twitter",
     "id": "1239636883623247873",
     "username": "AnataDiCat",
-    "likes": 78,
+    "likes": 79,
     "date": "2020-03-16T20:37:19.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 749
-  },
-  {
-    "source": "twitter",
-    "id": "1239559767942729728",
-    "username": "GrivelasseBoy",
-    "likes": 78,
-    "date": "2020-03-16T15:30:53.000+01:00",
-    "imageWidth": 1029,
-    "imageHeight": 708
   },
   {
     "source": "twitter",
@@ -250,6 +241,15 @@
     "date": "2020-03-16T08:16:47.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 643
+  },
+  {
+    "source": "twitter",
+    "id": "1239559767942729728",
+    "username": "GrivelasseBoy",
+    "likes": 77,
+    "date": "2020-03-16T15:30:53.000+01:00",
+    "imageWidth": 1029,
+    "imageHeight": 708
   },
   {
     "source": "twitter",

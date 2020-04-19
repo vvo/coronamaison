@@ -104,14 +104,16 @@ export default function DrawingItem({
         </a>
       </div>
 
-      {/* <button
-        className="mt-10 bg-red-500 text-3xl"
-        onClick={async () => {
-          await fetch(`/api/drawing/${id}`);
-        }}
-      >
-        delete
-      </button> */}
+      {process.env.APP_ENV === "development" && (
+        <button
+          className="mt-10 bg-red-500 text-3xl"
+          onClick={async () => {
+            await fetch(`/api/drawing/${id}`);
+          }}
+        >
+          delete
+        </button>
+      )}
     </>
   );
 }
