@@ -5,6 +5,7 @@ Todo:
     It should be possible to search by author name. Most authors are trying to find their drawings again so that would be nice to have that
     The rendering should be the same as the date listings so a lot can be reused with some refactoring I guess
   ☐ [Good contribution] English version
+  ☐ [Good contribution] Add prev/next links on listings like dates
     We have roughly 30% of visitors that are not French
   ☐ [Good contribution] Host drawings and coloring pages on Cloudinary
     Currently we optimize and store all images in the repository and on zeit/now. zeit/now has a 10,000 deployment files limitation. We're reaching this limit and will soon no more be able to push to production. We should upload drawings and coloring pages to cloudinary instead but keeping the drawings and coloringpages in the repository and ignoring them in `.nowignore`
