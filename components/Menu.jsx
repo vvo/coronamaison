@@ -7,7 +7,7 @@ import HandDrawnLine from "svg/HandDrawnLine.svg";
 
 import MenuItem from "components/MenuItem";
 
-export default function Menu({ allDates }) {
+export default function Menu({ allDates, lang }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -31,7 +31,11 @@ export default function Menu({ allDates }) {
             className="absolute inset-0 bg-gray-600 opacity-75"
           />
           <div className="absolute h-full inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
-            <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
+            <Nav
+              allDates={allDates}
+              toggleSidebar={toggleSidebar}
+              lang={lang}
+            />
           </div>
           <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>
             <button
@@ -53,26 +57,39 @@ export default function Menu({ allDates }) {
         </div>
       )}
       <div className="hidden xl:col-span-2 xl:block">
-        <Nav allDates={allDates} />
+        <Nav allDates={allDates} lang={lang} />
       </div>
     </>
   );
 }
 
-function Nav({ allDates, toggleSidebar }) {
+function Nav({ allDates, toggleSidebar, lang }) {
+  console.log("Nav -> lang", lang);
   return (
     <nav className="px-3 pt-4">
       <MenuItem href="/" toggleSidebar={toggleSidebar}>
         📈 Top 50
       </MenuItem>
 
-      <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
-        🙋‍♀️ Je veux dessiner !
-      </MenuItem>
+      {lang === "en" ? (
+        <MenuItem href="/en/i-want-to-draw" toggleSidebar={toggleSidebar}>
+          🙋‍♀️ I want to draw !
+        </MenuItem>
+      ) : (
+        <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
+          🙋‍♀️ Je veux dessiner !
+        </MenuItem>
+      )}
 
-      <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
-        🤔 À propos
-      </MenuItem>
+      {lang === "en" ? (
+        <MenuItem href="/en/about" toggleSidebar={toggleSidebar}>
+          🤔 About
+        </MenuItem>
+      ) : (
+        <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
+          🤔 À propos
+        </MenuItem>
+      )}
 
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
 
@@ -98,7 +115,7 @@ function Nav({ allDates, toggleSidebar }) {
         href="https://simpleanalytics.com/coronamaison.net"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
-        Statistiques
+        {lang === "en" ? `Statistics` : `Statistiques`}
       </a>
     </nav>
   );
@@ -107,8 +124,10 @@ function Nav({ allDates, toggleSidebar }) {
 Nav.propTypes = {
   allDates: PropTypes.arrayOf(PropTypes.object),
   toggleSidebar: PropTypes.func,
+  lang: PropTypes.string,
 };
 
 Menu.propTypes = {
   allDates: PropTypes.arrayOf(PropTypes.object),
+  lang: PropTypes.string,
 };
