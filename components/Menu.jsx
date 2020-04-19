@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
+
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
@@ -67,10 +69,9 @@ function Nav({ allDates, toggleSidebar, lang }) {
   console.log("Nav -> lang", lang);
   return (
     <nav className="px-3 pt-4">
-      <MenuItem href="/" toggleSidebar={toggleSidebar}>
+      <MenuItem href={lang === "en" ? '/en' : '/'} toggleSidebar={toggleSidebar}>
         📈 Top 50
       </MenuItem>
-
       {lang === "en" ? (
         <MenuItem href="/en/i-want-to-draw" toggleSidebar={toggleSidebar}>
           🙋‍♀️ I want to draw !
@@ -80,7 +81,6 @@ function Nav({ allDates, toggleSidebar, lang }) {
           🙋‍♀️ Je veux dessiner !
         </MenuItem>
       )}
-
       {lang === "en" ? (
         <MenuItem href="/en/about" toggleSidebar={toggleSidebar}>
           🤔 About
@@ -90,15 +90,15 @@ function Nav({ allDates, toggleSidebar, lang }) {
           🤔 À propos
         </MenuItem>
       )}
-
+      <Link href="/"><a className="text-xl text-blue-800 font-cursive hover:text-twitter">FR</a></Link> / <Link href="/en"><a className="text-xl text-blue-800 font-cursive hover:text-twitter">EN</a></Link>
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
-
       {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
-        const as = `/${year}/${month}/${day}`;
+        let as = `/${year}/${month}/${day}`;
+        if (lang === 'en') as = `/en/${year}/${month}/${day}`;
         return (
           <MenuItem
-            href="/[year]/[month]/[day]"
+            href={lang === "en" ? `/en/[year]/[month]/[day]`: `/[year]/[month]/[day]` }
             as={as}
             key={as}
             toggleSidebar={toggleSidebar}
@@ -108,9 +108,7 @@ function Nav({ allDates, toggleSidebar, lang }) {
           </MenuItem>
         );
       })}
-
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
-
       <a
         href="https://simpleanalytics.com/coronamaison.net"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"

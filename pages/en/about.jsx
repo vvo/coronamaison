@@ -21,14 +21,13 @@ export default function About() {
       </Head>
       <h2 className="text-3xl font-cursive text-center">About</h2>
       <p className="text-lg mt-6">
-        The project{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://twitter.com/hashtag/coronamaison"
         >
-          CoronaMaison
+          The CoronaMaison
         </a>{" "}
-        is an idea of:{" "}
+        project is an idea of:{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://twitter.com/PenelopeB"
@@ -62,10 +61,10 @@ export default function About() {
         The{" "}
         <Link href="/je-veux-dessiner">
           <a className="text-blue-800 underline hover:text-twitter">
-            blank template CoronaMaison
+            original draw CoronaMaison
           </a>
         </Link>{" "}
-        is a drawing of{" "}
+        was drawn by{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://twitter.com/acupoftim"
@@ -76,9 +75,7 @@ export default function About() {
       </p>
       <p className="text-lg mt-6">
         This website was created by Vincent Voyer because I wanted to be sure
-        not to miss any CoronaMaison (hence the organization in the form of
-        dates) and then I got a little excited. The source code is in free
-        access here (come help me it's fun):{" "}
+        not to miss any CoronaMaison (hence the chronological order) and then I got a little excited. The source code is accessible freely on Github (come help me it's fun):{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://github.com/vvo/coronamaison"
@@ -89,8 +86,7 @@ export default function About() {
       </p>
 
       <p className="text-lg mt-6">
-        The coloring versions are generated automatically by the programs by
-        Peter Selinger:{" "}
+        The coloring versions are generated automatically using Peter Selinger's programs:{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="http://potrace.sourceforge.net/mkbitmap.html"
@@ -109,9 +105,9 @@ export default function About() {
 
       <p className="text-lg mt-6">
         All designs remain the property of their respective authors. If you want
-        to: change the attribution of a design, change the image of a drawing or
+        to: change the attribution of a drawing, the image of a drawing or
         its coloring version, remove a drawing, find out why your drawing is not
-        there, or any other request, contact the author of site via{" "}
+        there, or any other request, contact the author of the site via{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="mailto:vincent.voyer+coronamaison@gmail.com"

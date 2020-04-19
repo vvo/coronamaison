@@ -39,12 +39,12 @@ export default function Home({ top50Drawings }) {
 
       <p className="text-lg mt-6">
         The CoronaMaison challenge consists in drawing your favorite place of
-        containment during the COVID-19 pandemic using an{" "}
+        containment during the COVID-19 pandemic using a{" "}
         <a
           href="/modele-coronamaison.jpg"
           className="text-blue-800 underline hover:text-twitter"
         >
-          original drawing model
+          starter drawing
         </a>
         . Then publish it on social media using the hashtag{" "}
         <a
@@ -53,13 +53,12 @@ export default function Home({ top50Drawings }) {
         >
           #CoronaMaison
         </a>
-        . This site lists all the drawings published by date. Find the blank
-        template and more information in the pages{" "}
-        <Link href="/a-propos">
+        . This site lists all the drawings published by date. Find the starter drawing and more information in the pages{" "}
+        <Link href="/en/about">
           <a className="text-blue-800 underline hover:text-twitter">About</a>
         </Link>{" "}
         and{" "}
-        <Link href="/je-veux-dessiner">
+        <Link href="/en/i-want-to-draw">
           <a className="text-blue-800 underline hover:text-twitter">
             I want to draw
           </a>
@@ -103,7 +102,7 @@ export default function Home({ top50Drawings }) {
         >
           Timothy Hannem
         </a>
-        . thanks a lot to them !
+        . Thanks a lot to them !
       </p>
 
       <Share url={url} title={title} description={description} lang={"en"} />

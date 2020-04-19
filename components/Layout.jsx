@@ -12,7 +12,7 @@ export default function Layout({ children, lang }) {
       <div className="xl:grid xl:grid-cols-12 xl:gap-2">
         <div className="xl:col-span-10 xl:col-start-3">
           <h1 className="font-cursive text-4xl xl:text-6xl text-center text-blue-800">
-            <Link href="/">
+            <Link href={lang === 'en' ? '/en' : '/'}>
               <a
                 title="Tous les dessins CoronaMaison du hashtag #CoronaMaison"
                 className="text-blue-800 hover:text-twitter"

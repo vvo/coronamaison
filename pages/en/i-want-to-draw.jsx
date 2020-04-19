@@ -5,9 +5,9 @@ import Head from "next/head";
 
 export default function JeVeuxDessiner() {
   const title =
-    "CoronaMaison : draw your own coronamaison with this blank template";
+    "CoronaMaison : draw your own coronamaison with this starter drawing";
   const description =
-    "Participate in the CoronaMaison project on social networks using the blank template to create your own CoronaMaison !";
+    "Participate in the CoronaMaison project on social networks using the starter drawing to create your own CoronaMaison !";
   const socialImage = "https://coronamaison.net/modele-coronamaison.jpg";
 
   return (
@@ -24,7 +24,7 @@ export default function JeVeuxDessiner() {
       </Head>
 
       <h2 className="text-3xl font-cursive text-center">
-        I want to draw : the blank template of CoronaMaison
+        I want to draw : the starter drawing of CoronaMaison
       </h2>
 
       <p className="text-lg mt-6">
@@ -49,7 +49,7 @@ export default function JeVeuxDessiner() {
           >
             ⬇️ Download
           </a>{" "}
-          the blank template. You can either draw inspiration from it or print
+          the starter drawing. You can either draw inspiration from it or print
           it and draw directly on it.
         </li>
         <li className="text-lg">
@@ -64,7 +64,7 @@ export default function JeVeuxDessiner() {
             Twitter
           </a>{" "}
           by adding the hashtag #CoronaMaison to the text accompanying your
-          image(
+          image (
           <a
             href="https://twitter.com/Bouletcorp/status/1241018332112998401"
             className="text-blue-800 underline hover:text-twitter"
@@ -81,11 +81,11 @@ export default function JeVeuxDessiner() {
       </ol>
 
       <h3 className="mt-6 mb-4 text-2xl font-cursive">
-        The blank template of coronamaison
+        The starter drawing of coronamaison
       </h3>
 
       <p className="mt-6 text-lg">
-        Reminder : this template was produced by{" "}
+        Reminder : this drawing was produced by{" "}
         <a
           href="https://twitter.com/acupoftim"
           className="text-blue-800 underline hover:text-twitter"
@@ -93,11 +93,11 @@ export default function JeVeuxDessiner() {
           Timothy Hannem
         </a>{" "}
         but there are also other people in this project, more information on the
-        page{" "}
+        {" "}
         <Link href="/en/about">
           <a className="text-blue-800 underline hover:text-twitter">About</a>
         </Link>
-        .
+        {" "}page.
       </p>
 
       <a
