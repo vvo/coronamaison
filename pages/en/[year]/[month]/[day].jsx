@@ -29,7 +29,9 @@ export default function DrawingsForDay({ drawingsForDay, date, lang }) {
       </Head>
 
       <h2 className="text-3xl font-cursive text-center">
-        {lang === 'en' ? `${drawingsForDay.length} drawings on ${date}` : `${drawingsForDay.length} dessins le ${date}` }
+        {lang === "en"
+          ? `${drawingsForDay.length} drawings on ${date}`
+          : `${drawingsForDay.length} dessins le ${date}`}
       </h2>
 
       <DrawingsList drawings={drawingsForDay} lang={`en`} />
@@ -63,7 +65,7 @@ export async function getStaticProps({ params: { year, month, day } }) {
     props: {
       drawingsForDay,
       date: `${day}/${month}/${year}`,
-      lang: 'en'
+      lang: "en",
     },
   };
 }

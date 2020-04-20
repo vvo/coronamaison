@@ -16,7 +16,7 @@ export default function DrawingItem({
   svg,
   withColoringPage = true,
   linkToImage = false,
-  lang
+  lang,
 }) {
   const profileUrl = `https://twitter.com/${username}`;
   const tweetUrl = `https://twitter.com/${username}/status/${id}`;
@@ -30,7 +30,11 @@ export default function DrawingItem({
         imageWidth={imageWidth}
         imageHeight={imageHeight}
         svg={svg}
-        alt={lang === 'en' ? `CoronaMaison drawing made by ${username} on Twitter` : `CoronaMaison en dessin de ${username} sur Twitter`}
+        alt={
+          lang === "en"
+            ? `CoronaMaison drawing made by ${username} on Twitter`
+            : `CoronaMaison en dessin de ${username} sur Twitter`
+        }
       />
     );
   };
@@ -41,7 +45,11 @@ export default function DrawingItem({
         <div className="flex flex-row justify-between">
           <a
             href={profileUrl}
-            title={lang === 'en' ? `See ${username} Twitter profile` : `Voir le profile twitter de ${username}`}
+            title={
+              lang === "en"
+                ? `See ${username} Twitter profile`
+                : `Voir le profile twitter de ${username}`
+            }
             className="flex items-center text-lg text-blue-800 hover:text-twitter"
           >
             <img
@@ -64,14 +72,20 @@ export default function DrawingItem({
           </a>
           {withColoringPage && (
             <a
-              title={lang === 'en' ? `See the coloring version of CoronaMaison by ${username}` : `Accéder à la version à colorier de la CoronaMaison de ${username}`}
+              title={
+                lang === "en"
+                  ? `See the coloring version of CoronaMaison by ${username}`
+                  : `Accéder à la version à colorier de la CoronaMaison de ${username}`
+              }
               href={coloringPageUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-blue-800 hover:text-twitter"
             >
               <span className="text-sm text-center w-24">
-                {lang === 'en' ? `Color this CoronaMaison` : `Colorier la CoronaMaison`}
+                {lang === "en"
+                  ? `Color this CoronaMaison`
+                  : `Colorier la CoronaMaison`}
               </span>{" "}
               <Coloring className="ml-2 w-12 h-12" />
             </a>
@@ -80,21 +94,38 @@ export default function DrawingItem({
         {(linkToImage && (
           <a
             href={`/drawings/${source}-${id}-1026.jpg`}
-            title={lang === 'en' ? `Download the CoronaMaison of ${username}`: `Télécharger la CoronaMaison de ${username}`}
+            title={
+              lang === "en"
+                ? `Download the CoronaMaison of ${username}`
+                : `Télécharger la CoronaMaison de ${username}`
+            }
             target="_blank"
             rel="noopener noreferrer"
           >
             <Drawing />
           </a>
         )) || (
-          <Link href={lang === 'en' ? '/en/drawing/[id]' : '/drawing/[id]'} as={lang === 'en' ? `/en/drawing/${id}` : `/drawing/${id}`}>
-            <a title={lang === 'en' ? `See the page of the CoronaMaison drawing by ${username}` : `Voir la page du dessin CoronaMaison de ${username}`}>
+          <Link
+            href={lang === "en" ? "/en/drawing/[id]" : "/drawing/[id]"}
+            as={lang === "en" ? `/en/drawing/${id}` : `/drawing/${id}`}
+          >
+            <a
+              title={
+                lang === "en"
+                  ? `See the page of the CoronaMaison drawing by ${username}`
+                  : `Voir la page du dessin CoronaMaison de ${username}`
+              }
+            >
               <Drawing />
             </a>
           </Link>
         )}
         <a
-          title={lang === 'en' ? `Retweet or like this coronamaison by ${username}`: `RT ou like la CoronaMaison de ${username}`}
+          title={
+            lang === "en"
+              ? `Retweet or like this coronamaison by ${username}`
+              : `RT ou like la CoronaMaison de ${username}`
+          }
           href={tweetUrl}
           target="_blank"
           rel="noopener noreferrer"

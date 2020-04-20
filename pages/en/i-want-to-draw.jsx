@@ -92,12 +92,11 @@ export default function JeVeuxDessiner() {
         >
           Timothy Hannem
         </a>{" "}
-        but there are also other people in this project, more information on the
-        {" "}
+        but there are also other people in this project, more information on the{" "}
         <Link href="/en/about">
           <a className="text-blue-800 underline hover:text-twitter">About</a>
-        </Link>
-        {" "}page.
+        </Link>{" "}
+        page.
       </p>
 
       <a

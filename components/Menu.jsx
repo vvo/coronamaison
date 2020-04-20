@@ -69,7 +69,10 @@ function Nav({ allDates, toggleSidebar, lang }) {
   console.log("Nav -> lang", lang);
   return (
     <nav className="px-3 pt-4">
-      <MenuItem href={lang === "en" ? '/en' : '/'} toggleSidebar={toggleSidebar}>
+      <MenuItem
+        href={lang === "en" ? "/en" : "/"}
+        toggleSidebar={toggleSidebar}
+      >
         📈 Top 50
       </MenuItem>
       {lang === "en" ? (
@@ -90,15 +93,29 @@ function Nav({ allDates, toggleSidebar, lang }) {
           🤔 À propos
         </MenuItem>
       )}
-      <Link href="/"><a className="text-xl text-blue-800 font-cursive hover:text-twitter">FR</a></Link> / <Link href="/en"><a className="text-xl text-blue-800 font-cursive hover:text-twitter">EN</a></Link>
+      <Link href="/">
+        <a className="text-xl text-blue-800 font-cursive hover:text-twitter">
+          FR
+        </a>
+      </Link>{" "}
+      /{" "}
+      <Link href="/en">
+        <a className="text-xl text-blue-800 font-cursive hover:text-twitter">
+          EN
+        </a>
+      </Link>
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
       {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
         let as = `/${year}/${month}/${day}`;
-        if (lang === 'en') as = `/en/${year}/${month}/${day}`;
+        if (lang === "en") as = `/en/${year}/${month}/${day}`;
         return (
           <MenuItem
-            href={lang === "en" ? `/en/[year]/[month]/[day]`: `/[year]/[month]/[day]` }
+            href={
+              lang === "en"
+                ? `/en/[year]/[month]/[day]`
+                : `/[year]/[month]/[day]`
+            }
             as={as}
             key={as}
             toggleSidebar={toggleSidebar}

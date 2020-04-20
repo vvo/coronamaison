@@ -53,7 +53,8 @@ export default function Home({ top50Drawings }) {
         >
           #CoronaMaison
         </a>
-        . This site lists all the drawings published by date. Find the starter drawing and more information in the pages{" "}
+        . This site lists all the drawings published by date. Find the starter
+        drawing and more information in the pages{" "}
         <Link href="/en/about">
           <a className="text-blue-800 underline hover:text-twitter">About</a>
         </Link>{" "}

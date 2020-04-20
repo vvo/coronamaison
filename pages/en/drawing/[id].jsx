@@ -18,7 +18,7 @@ export default function Drawing({
   likes,
   svg,
   formattedDate,
-  lang
+  lang,
 }) {
   const router = useRouter();
 
@@ -66,15 +66,25 @@ export default function Drawing({
         lang={`en`}
       />
 
-      <h2 className="text-3xl font-cursive mt-10 mb-6">{lang === 'en' ? `Coloring version` : `Version à colorier`}</h2>
+      <h2 className="text-3xl font-cursive mt-10 mb-6">
+        {lang === "en" ? `Coloring version` : `Version à colorier`}
+      </h2>
 
       <a
         href={`/coloringPages/twitter-${id}.png`}
-        title={lang === 'en' ? `Download coloring version of CoronaMaison by ${username}` : `Télécharge la CoronaMaison à colorier de ${username}`}
+        title={
+          lang === "en"
+            ? `Download coloring version of CoronaMaison by ${username}`
+            : `Télécharge la CoronaMaison à colorier de ${username}`
+        }
       >
         <img
           src={`/coloringPages/twitter-${id}.png`}
-          alt={lang === 'en' ? `Black and white version of CoronaMaison by ${username}` : `Version noir et blanc à colorier de la CoronaMaison de ${username}`}
+          alt={
+            lang === "en"
+              ? `Black and white version of CoronaMaison by ${username}`
+              : `Version noir et blanc à colorier de la CoronaMaison de ${username}`
+          }
         />
       </a>
 
@@ -97,7 +107,7 @@ Drawing.propTypes = {
   source: PropTypes.string,
   svg: PropTypes.string,
   username: PropTypes.string,
-  lang: PropTypes.string
+  lang: PropTypes.string,
 };
 
 export async function getStaticProps({ params: { id } }) {
@@ -119,7 +129,7 @@ export async function getStaticProps({ params: { id } }) {
       formattedDate: `${date.toLocaleString(
         DateTime.DATE_HUGE,
       )} à ${date.toLocaleString(DateTime.TIME_SIMPLE)}`,
-      lang: 'en'
+      lang: "en",
     },
   };
 }
@@ -133,6 +143,6 @@ export async function getStaticPaths() {
         params: { id },
       };
     }),
-    fallback: false
+    fallback: false,
   };
 }

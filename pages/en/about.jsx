@@ -75,7 +75,9 @@ export default function About() {
       </p>
       <p className="text-lg mt-6">
         This website was created by Vincent Voyer because I wanted to be sure
-        not to miss any CoronaMaison (hence the chronological order) and then I got a little excited. The source code is accessible freely on Github (come help me it's fun):{" "}
+        not to miss any CoronaMaison (hence the chronological order) and then I
+        got a little excited. The source code is accessible freely on Github
+        (come help me it's fun):{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="https://github.com/vvo/coronamaison"
@@ -86,7 +88,8 @@ export default function About() {
       </p>
 
       <p className="text-lg mt-6">
-        The coloring versions are generated automatically using Peter Selinger's programs:{" "}
+        The coloring versions are generated automatically using Peter Selinger's
+        programs:{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
           href="http://potrace.sourceforge.net/mkbitmap.html"
@@ -105,8 +108,8 @@ export default function About() {
 
       <p className="text-lg mt-6">
         All designs remain the property of their respective authors. If you want
-        to: change the attribution of a drawing, the image of a drawing or
-        its coloring version, remove a drawing, find out why your drawing is not
+        to: change the attribution of a drawing, the image of a drawing or its
+        coloring version, remove a drawing, find out why your drawing is not
         there, or any other request, contact the author of the site via{" "}
         <a
           className="text-blue-800 underline hover:text-twitter"
