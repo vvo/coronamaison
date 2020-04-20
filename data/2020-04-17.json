@@ -3,10 +3,19 @@
     "source": "twitter",
     "id": "1251068347858509825",
     "username": "AnaisDefever",
-    "likes": 4,
+    "likes": 40,
     "date": "2020-04-17T10:41:52.000+02:00",
     "imageWidth": 1039,
     "imageHeight": 559
+  },
+  {
+    "source": "twitter",
+    "id": "1251184261383753729",
+    "username": "Taken0w",
+    "likes": 30,
+    "date": "2020-04-17T18:22:28.000+02:00",
+    "imageWidth": 1199,
+    "imageHeight": 848
   },
   {
     "source": "twitter",
@@ -61,15 +70,6 @@
     "date": "2020-04-17T19:22:19.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 645
-  },
-  {
-    "source": "twitter",
-    "id": "1251184261383753729",
-    "username": "Taken0w",
-    "likes": 0,
-    "date": "2020-04-17T18:22:28.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 848
   },
   {
     "source": "twitter",

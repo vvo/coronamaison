@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1245717059335577610",
     "username": "Gally",
-    "likes": 2121,
+    "likes": 2120,
     "date": "2020-04-02T16:17:45.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 650
@@ -172,21 +172,21 @@
   },
   {
     "source": "twitter",
-    "id": "1245603714817114112",
-    "username": "AAfpjr",
-    "likes": 2,
-    "date": "2020-04-02T08:47:22.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 732
-  },
-  {
-    "source": "twitter",
     "id": "1245604191713689602",
     "username": "AAfpjr",
     "likes": 2,
     "date": "2020-04-02T08:49:16.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 698
+  },
+  {
+    "source": "twitter",
+    "id": "1245603714817114112",
+    "username": "AAfpjr",
+    "likes": 2,
+    "date": "2020-04-02T08:47:22.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 732
   },
   {
     "source": "twitter",

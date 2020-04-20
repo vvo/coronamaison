@@ -2,6 +2,12 @@
   {
     "year": "2020",
     "month": "04",
+    "day": "19",
+    "nbDrawings": 12
+  },
+  {
+    "year": "2020",
+    "month": "04",
     "day": "18",
     "nbDrawings": 11
   },
@@ -183,30 +189,30 @@
     "year": "2020",
     "month": "03",
     "day": "19",
-    "nbDrawings": 88
+    "nbDrawings": 86
   },
   {
     "year": "2020",
     "month": "03",
     "day": "18",
-    "nbDrawings": 88
+    "nbDrawings": 86
   },
   {
     "year": "2020",
     "month": "03",
     "day": "17",
-    "nbDrawings": 106
+    "nbDrawings": 103
   },
   {
     "year": "2020",
     "month": "03",
     "day": "16",
-    "nbDrawings": 61
+    "nbDrawings": 57
   },
   {
     "year": "2020",
     "month": "03",
     "day": "15",
-    "nbDrawings": 31
+    "nbDrawings": 26
   }
 ]
