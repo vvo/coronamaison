@@ -44,7 +44,7 @@ export default function JeVeuxDessiner() {
           1.{" "}
           <a
             href="/modele-coronamaison.jpg"
-            alt="Modèle de dessin Coronamaison"
+            alt="Coronamaison drawing template"
             className="text-blue-800 underline hover:text-twitter"
           >
             ⬇️ Download
@@ -68,7 +68,7 @@ export default function JeVeuxDessiner() {
           <a
             href="https://twitter.com/Bouletcorp/status/1241018332112998401"
             className="text-blue-800 underline hover:text-twitter"
-            alt="Exemple d'un tweet CoronaMaison de Boulet"
+            alt="Example of a Coronamaison tweet Exemple by Boulet"
           >
             example
           </a>

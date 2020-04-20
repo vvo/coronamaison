@@ -130,7 +130,7 @@ function Nav({ allDates, toggleSidebar, lang }) {
         href="https://simpleanalytics.com/coronamaison.net"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
-        {lang === "en" ? `Statistics` : `Statistiques`}
+        {lang === "en" ? `Analytics` : `Statistiques`}
       </a>
     </nav>
   );
