@@ -7,9 +7,7 @@ import DrawingsList from "components/DrawingsList";
 import Share from "components/Share";
 
 export default function Home({ top50Drawings }) {
-  // const title = "CoronaMaison : Tous les dessins du challenge artistique";
   const title = "CoronaMaison : All the drawings of the artistic challenge";
-  // const description = "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvre-les !";
   const description =
     "This site contains all the drawings of the hashtag #CoronaMaison published on social networks. They are organized by date and popularity. Discover them!";
   const url = "https://coronamaison.net";
