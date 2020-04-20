@@ -7,7 +7,7 @@ import DrawingItem from "components/DrawingItem";
 export default function DrawingsList({ drawings, lang }) {
   return drawings.map((drawing) => (
     <div key={`${drawing.source}-${drawing.id}`} className="mt-8 mb-12 pt-12">
-      <DrawingItem {...drawing} lang={"en"} />
+      <DrawingItem {...drawing} lang={lang} />
       <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto"
         style={{ maxWidth: "80%" }}

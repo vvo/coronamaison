@@ -66,7 +66,6 @@ export default function Menu({ allDates, lang }) {
 }
 
 function Nav({ allDates, toggleSidebar, lang }) {
-  console.log("Nav -> lang", lang);
   return (
     <nav className="px-3 pt-4">
       <MenuItem
@@ -108,7 +107,9 @@ function Nav({ allDates, toggleSidebar, lang }) {
       {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
         let as = `/${year}/${month}/${day}`;
-        if (lang === "en") as = `/en/${year}/${month}/${day}`;
+        if (lang === "en") {
+          as = `/en/${year}/${month}/${day}`;
+        }
         return (
           <MenuItem
             href={
