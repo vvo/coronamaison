@@ -94,7 +94,7 @@
     "next": "9.3.5",
     "next-compose-plugins": "2.2.0",
     "postcss-import": "12.0.1",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "prettier-plugin-packagejson": "2.2.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
