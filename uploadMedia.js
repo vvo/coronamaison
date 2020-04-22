@@ -1,3 +1,14 @@
+/**
+  Usage with env var :
+
+  USERNAME required
+  PASSWORD required
+  TENANTID required
+  DATE optional
+  
+  $> USERNAME=xxxx PASSWORD=xxx TENANTID=xxxx DATE=2020-04-19 yarn uploadMedia
+ */
+
 import path from "path";
 import { DateTime } from "luxon";
 import OVHStorage from "node-ovh-storage";
