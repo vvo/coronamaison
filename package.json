@@ -11,7 +11,8 @@
     "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",
     "prepareData": "babel-node --presets @babel/preset-env prepareData.js",
     "start": "next start",
-    "test": "yarn lint && yarn build"
+    "test": "yarn lint && yarn build",
+    "uploadMedia": "babel-node --presets @babel/preset-env uploadMedia.js"
   },
   "prettier": {
     "trailingComma": "all"
@@ -93,6 +94,7 @@
     "mkdirp": "1.0.4",
     "next": "9.3.5",
     "next-compose-plugins": "2.2.0",
+    "node-ovh-storage": "^0.2.0",
     "postcss-import": "12.0.1",
     "prettier": "2.0.4",
     "prettier-plugin-packagejson": "2.2.1",
