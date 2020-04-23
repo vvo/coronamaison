@@ -19,7 +19,7 @@ const adapter = new FileSync("data/drawings.json");
 const db = low(adapter);
 
 const dbDeletes = low(new FileSync("data/deletes.json"));
-const sizes = [800, 1026];
+const sizes = [1026];
 
 const bearerToken = process.env.SECRET_TWITTER_BEARER_TOKEN;
 const twitter = got.extend({
@@ -174,15 +174,15 @@ async function run() {
               .toFile(`${jpgPublicBasePath}-${size}.jpg`),
           );
 
-          promises.push(
-            sharpStream
-              .clone()
-              .resize({ width: size })
-              .webp({
-                quality: 80,
-              })
-              .toFile(`${webpPublicBasePath}-${size}.webp`),
-          );
+          // promises.push(
+          //   sharpStream
+          //     .clone()
+          //     .resize({ width: size })
+          //     .webp({
+          //       quality: 80,
+          //     })
+          //     .toFile(`${webpPublicBasePath}-${size}.webp`),
+          // );
         });
 
         if (await fileExists(jpgOriginalImagePath)) {
@@ -206,7 +206,7 @@ async function run() {
               sizes.map((size) => {
                 return Promise.all([
                   fs.promises.unlink(`${jpgPublicBasePath}-${size}.jpg`),
-                  fs.promises.unlink(`${webpPublicBasePath}-${size}.webp`),
+                  // fs.promises.unlink(`${webpPublicBasePath}-${size}.webp`),
                 ]);
               }),
             );
