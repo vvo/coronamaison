@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "NODE_ICU_DATA=node_modules/full-icu next build",
+    "createIndex": "babel-node --presets @babel/preset-env createIndexAlgolia.js",
     "dev": "next dev",
     "findDrawings": "babel-node --presets @babel/preset-env findDrawings.js",
     "format": "prettier --write '**/*.*' && eslint . --fix",
@@ -75,6 +76,7 @@
     "@prettier/plugin-xml": "0.7.2",
     "@svgr/webpack": "5.3.1",
     "@types/luxon": "1.22.0",
+    "algoliasearch": "^4.2.0",
     "async": "3.2.0",
     "autoprefixer": "9.7.6",
     "babel-eslint": "10.1.0",
