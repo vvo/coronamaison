@@ -85,7 +85,7 @@
     "eslint-plugin-react-hooks": "3.0.0",
     "full-icu": "1.3.1",
     "global": "4.4.0",
-    "got": "10.7.0",
+    "got": "11.0.2",
     "image-size": "0.8.3",
     "imagemin-svgo": "7.1.0",
     "lodash": "4.17.15",
@@ -96,8 +96,8 @@
     "next-compose-plugins": "2.2.0",
     "node-ovh-storage": "^0.2.0",
     "postcss-import": "12.0.1",
-    "prettier": "2.0.4",
-    "prettier-plugin-packagejson": "2.2.1",
+    "prettier": "2.0.5",
+    "prettier-plugin-packagejson": "2.2.2",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -109,7 +109,7 @@
     "sqip-cli": "1.0.0-alpha.35",
     "sqip-plugin-pixels": "1.0.0-alpha.31",
     "sqip-plugin-svgo": "1.0.0-alpha.32",
-    "tailwindcss": "1.2.0",
+    "tailwindcss": "1.3.4",
     "vanilla-lazyload": "15.1.1"
   },
   "engines": {
