@@ -5,8 +5,8 @@
     "username": "_Axaba_",
     "likes": 112,
     "date": "2020-04-15T19:07:26.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 719
+    "imageWidth": 1920,
+    "imageHeight": 1150
   },
   {
     "source": "twitter",
@@ -23,8 +23,8 @@
     "username": "ADesmassias",
     "likes": 16,
     "date": "2020-04-15T12:37:42.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 644
+    "imageWidth": 2000,
+    "imageHeight": 1073
   },
   {
     "source": "twitter",
@@ -32,8 +32,8 @@
     "username": "_GuiguiYT",
     "likes": 7,
     "date": "2020-04-15T18:02:55.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "source": "twitter",
@@ -41,17 +41,17 @@
     "username": "EvaDcrx",
     "likes": 7,
     "date": "2020-04-15T14:43:43.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
     "id": "1250474721352863744",
     "username": "PopartLa",
-    "likes": 5,
+    "likes": 4,
     "date": "2020-04-15T19:23:00.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 641
+    "imageWidth": 2048,
+    "imageHeight": 1094
   },
   {
     "source": "twitter",
@@ -59,8 +59,8 @@
     "username": "Halba_1951",
     "likes": 4,
     "date": "2020-04-15T00:23:20.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 655
+    "imageWidth": 2048,
+    "imageHeight": 1118
   },
   {
     "source": "twitter",
@@ -68,8 +68,8 @@
     "username": "cath_mayer",
     "likes": 3,
     "date": "2020-04-15T14:43:27.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 694
+    "imageWidth": 2048,
+    "imageHeight": 1184
   },
   {
     "source": "twitter",
@@ -95,16 +95,16 @@
     "username": "LoheacStephanie",
     "likes": 1,
     "date": "2020-04-15T11:39:04.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 727
+    "imageWidth": 2560,
+    "imageHeight": 1552
   },
   {
     "source": "twitter",
     "id": "1250305090843332611",
     "username": "MPBEC1",
-    "likes": 0,
+    "likes": 1,
     "date": "2020-04-15T08:08:57.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 848
+    "imageWidth": 2048,
+    "imageHeight": 1448
   }
 ]

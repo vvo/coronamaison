@@ -14,8 +14,8 @@
     "username": "WildOnion4",
     "likes": 7,
     "date": "2020-04-20T14:57:17.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 866
+    "imageWidth": 1280,
+    "imageHeight": 924
   },
   {
     "source": "twitter",
@@ -41,8 +41,8 @@
     "username": "XuaneJ",
     "likes": 3,
     "date": "2020-04-20T10:35:06.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 901
+    "imageWidth": 2048,
+    "imageHeight": 1537
   },
   {
     "source": "twitter",
@@ -50,7 +50,7 @@
     "username": "ElsaGarrel",
     "likes": 0,
     "date": "2020-04-20T15:25:03.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 2048,
+    "imageHeight": 1152
   }
 ]
