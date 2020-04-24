@@ -22,6 +22,7 @@ export default function LazyDrawing({
     document.lazyLoadInstance.update();
   });
   const ratio = ((imageHeight / imageWidth) * 100).toFixed(2);
+  const drawingUrl = `${process.env.DRAWINGS_BASE_URL}/drawings/${filename}-1026.jpg`;
 
   return (
     <picture
@@ -34,8 +35,8 @@ export default function LazyDrawing({
       <source
         data-sizes="(max-width: 1026px) 100vw, 1026px"
         data-srcset={`
-        /drawings/${filename}-800.webp 800w,
-        /drawings/${filename}-1026.webp 1026w
+        ${drawingUrl}?fmt=webp&w=800 800w,
+        ${drawingUrl}?fmt=webp&w=1026 1026w
         `}
         type="image/webp"
         className="fixed-ratio-content lazy"
@@ -43,8 +44,8 @@ export default function LazyDrawing({
       <img
         data-sizes="(max-width: 1026px) 100vw, 1026px"
         data-srcset={`
-        /drawings/${filename}-800.jpg 800w,
-        /drawings/${filename}-1026.jpg 1026w
+        ${drawingUrl}?&w=800 800w,
+        ${drawingUrl}?&w=1026 1026w
         `}
         alt={alt}
         width={imageWidth}
@@ -55,8 +56,8 @@ export default function LazyDrawing({
         <source
           sizes="(max-width: 1026px) 100vw, 1026px"
           srcSet={`
-        /drawings/${filename}-800.webp 800w,
-        /drawings/${filename}-1026.webp 1026w
+          ${drawingUrl}?fmt=webp&w=800 800w,
+          ${drawingUrl}?fmt=webp&w=1026 1026w
         `}
           type="image/webp"
           className="fixed-ratio-content"
@@ -64,14 +65,14 @@ export default function LazyDrawing({
         <img
           sizes="(max-width: 1026px) 100vw, 1026px"
           srcSet={`
-        /drawings/${filename}-800.jpg 800w,
-        /drawings/${filename}-1026.jpg 1026w
+          ${drawingUrl}?&w=800 800w,
+          ${drawingUrl}?&w=1026 1026w
         `}
           alt={alt}
           width={imageWidth}
           height={imageHeight}
           className="fixed-ratio-content"
-          src={`/drawings/${filename}-1026.jpg 1026w`}
+          src={`${drawingUrl}?&w=1026 1026w`}
         />
       </noscript>
     </picture>

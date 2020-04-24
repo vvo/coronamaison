@@ -1,7 +1,9 @@
 {
   "env": {},
   "build": {
-    "env": {}
+    "env": {
+      "DRAWINGS_BASE_URL": "https://media.coronamaison.net/i"
+    }
   },
   "github": {
     "silent": true
