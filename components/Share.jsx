@@ -31,12 +31,7 @@ export default function Share({ url, title, description, lang }) {
         <EmailShareButton className="mx-1" url={url} subject={title}>
           <EmailIcon size={32} round={true} />
         </EmailShareButton>
-        <TwitterShareButton
-          className="mx-1"
-          url={url}
-          title={title}
-          via={"Coronamaison"}
-        >
+        <TwitterShareButton className="mx-1" url={url} title={title}>
           <TwitterIcon size={32} round={true} />
         </TwitterShareButton>
         <LinkedinShareButton
