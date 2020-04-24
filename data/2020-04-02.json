@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1245717059335577610",
     "username": "Gally",
-    "likes": 2125,
+    "likes": 2122,
     "date": "2020-04-02T16:17:45.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 650
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1245753710648713218",
     "username": "LesLorraine",
-    "likes": 284,
+    "likes": 282,
     "date": "2020-04-02T18:43:24.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 651
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1245762512773144576",
     "username": "nogrenouille",
-    "likes": 52,
+    "likes": 51,
     "date": "2020-04-02T19:18:22.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 848
@@ -109,15 +109,6 @@
   },
   {
     "source": "twitter",
-    "id": "1245484043182825474",
-    "username": "NishiMarj",
-    "likes": 7,
-    "date": "2020-04-02T00:51:50.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 643
-  },
-  {
-    "source": "twitter",
     "id": "1245481094331469824",
     "username": "cry_alot_",
     "likes": 7,
@@ -142,6 +133,15 @@
     "date": "2020-04-02T12:20:03.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 900
+  },
+  {
+    "source": "twitter",
+    "id": "1245484043182825474",
+    "username": "NishiMarj",
+    "likes": 6,
+    "date": "2020-04-02T00:51:50.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 643
   },
   {
     "source": "twitter",

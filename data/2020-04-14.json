@@ -10,15 +10,6 @@
   },
   {
     "source": "twitter",
-    "id": "1250127648971464705",
-    "username": "Amelieben",
-    "likes": 3,
-    "date": "2020-04-14T20:23:52.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
-  },
-  {
-    "source": "twitter",
     "id": "1250095700031025155",
     "username": "veroche78",
     "likes": 3,
@@ -34,6 +25,15 @@
     "date": "2020-04-14T21:14:08.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 824
+  },
+  {
+    "source": "twitter",
+    "id": "1250127648971464705",
+    "username": "Amelieben",
+    "likes": 2,
+    "date": "2020-04-14T20:23:52.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "source": "twitter",

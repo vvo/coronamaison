@@ -1,12 +1,7 @@
 {
-  "env": {
-    "APP_ENV": "production"
-  },
+  "env": {},
   "build": {
-    "env": {
-      "DRAWINGS_BASE_URL": "https://media.coronamaison.net/i",
-      "APP_ENV": "production"
-    }
+    "env": {}
   },
   "github": {
     "silent": true

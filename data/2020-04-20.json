@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1252214775704170499",
     "username": "ShaddadHala",
-    "likes": 19,
+    "likes": 13,
     "date": "2020-04-20T14:37:22.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 768
@@ -21,19 +21,10 @@
     "source": "twitter",
     "id": "1252185492692578310",
     "username": "Lucie__Roche",
-    "likes": 5,
+    "likes": 3,
     "date": "2020-04-20T12:41:00.000+02:00",
     "imageWidth": 1122,
     "imageHeight": 794
-  },
-  {
-    "source": "twitter",
-    "id": "1252282745461649413",
-    "username": "veroche78",
-    "likes": 4,
-    "date": "2020-04-20T19:07:27.000+02:00",
-    "imageWidth": 1024,
-    "imageHeight": 768
   },
   {
     "source": "twitter",
@@ -43,6 +34,15 @@
     "date": "2020-04-20T10:35:06.000+02:00",
     "imageWidth": 1200,
     "imageHeight": 901
+  },
+  {
+    "source": "twitter",
+    "id": "1252282745461649413",
+    "username": "veroche78",
+    "likes": 0,
+    "date": "2020-04-20T19:07:27.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 768
   },
   {
     "source": "twitter",

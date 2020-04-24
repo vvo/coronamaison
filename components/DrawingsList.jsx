@@ -4,10 +4,10 @@ import HandDrawnLine from "svg/HandDrawnLine.svg";
 
 import DrawingItem from "components/DrawingItem";
 
-export default function DrawingsList({ drawings, lang }) {
+export default function DrawingsList({ drawings }) {
   return drawings.map((drawing) => (
     <div key={`${drawing.source}-${drawing.id}`} className="mt-8 mb-12 pt-12">
-      <DrawingItem {...drawing} lang={lang} />
+      <DrawingItem {...drawing} />
       <HandDrawnLine
         className="text-yellow-700 h-2 opacity-50 mx-auto"
         style={{ maxWidth: "80%" }}
@@ -18,5 +18,4 @@ export default function DrawingsList({ drawings, lang }) {
 
 DrawingsList.propTypes = {
   drawings: PropTypes.arrayOf(PropTypes.object),
-  lang: PropTypes.string,
 };

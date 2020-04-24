@@ -20,10 +20,10 @@ import {
   WhatsappIcon,
 } from "react-share";
 
-export default function Share({ url, title, description, lang }) {
+export default function Share({ url, title, description }) {
   return (
     <div className="my-4 text-center text-sm">
-      {lang === "en" ? "Share this page:" : "Partage cette page :"}
+      Partage cette page :
       <div className="flex justify-center items-center">
         <FacebookShareButton className="mx-1" url={url} quote={title}>
           <FacebookIcon size={32} round={true} />
@@ -31,7 +31,12 @@ export default function Share({ url, title, description, lang }) {
         <EmailShareButton className="mx-1" url={url} subject={title}>
           <EmailIcon size={32} round={true} />
         </EmailShareButton>
-        <TwitterShareButton className="mx-1" url={url} title={title}>
+        <TwitterShareButton
+          className="mx-1"
+          url={url}
+          title={title}
+          via={"Coronamaison"}
+        >
           <TwitterIcon size={32} round={true} />
         </TwitterShareButton>
         <LinkedinShareButton
@@ -64,5 +69,4 @@ Share.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
-  lang: PropTypes.string,
 };

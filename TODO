@@ -4,15 +4,12 @@ Todo:
   ☐ [Good contribution] add search by author with Algolia
     It should be possible to search by author name. Most authors are trying to find their drawings again so that would be nice to have that
     The rendering should be the same as the date listings so a lot can be reused with some refactoring I guess
+  ☐ [Good contribution] English version
   ☐ [Good contribution] Add prev/next links on listings like dates
-  ☐ [Good contribution] Language selection should work this way:
-    - on first visit, without cookies, use browser language to redirect to /en or stay on /
-    - when user changes language (click on FR/EN), save language in cookies (😱 GDPR)
-    - when user click on FR/EN, ideally we should stay on the same page but just change the language (add or remove /en)
-    - good example here: https://github.com/kyle-ssg/nextjs-redux/blob/ddb24ec4f6d742bd1dd8220c2e3e9c7ce322eea3/project/api.js#L27 on how to do it properly
-    - follow https://github.com/zeit/next.js/issues/9160 for the right way (once released) on how to do it
-  ☐ New drawings should be automatically uploaded without having to provide a date (if feasible)
     We have roughly 30% of visitors that are not French
+  ☐ [Good contribution] Host drawings and coloring pages on Cloudinary
+    Currently we optimize and store all images in the repository and on zeit/now. zeit/now has a 10,000 deployment files limitation. We're reaching this limit and will soon no more be able to push to production. We should upload drawings and coloring pages to cloudinary instead but keeping the drawings and coloringpages in the repository and ignoring them in `.nowignore`
+    Keeping the drawings in the repository is important as the optimization and coloring pages generation takes a lot of time and can't be done at build time.
   ☐ [Good contribution] Better menu, we're reaching so many dates that the menu starts to be hard to use. I would prefer to have the current month always opened and have other months folded.
   ☐ [Good contribution] Add a random items page, this has been asked by project authors (Tim) as a way to discover images easily. Not sure what's the best way to do this though since the selection needs to be made at runtime, not buildtime. Maybe:
     Generate a specific stripped down drawingsById.json, minify it
@@ -23,16 +20,10 @@ Todo:
   ☐ [UI] Go up button / or sticky sidebar
   ☐ Credits all the tools used on the website (mkbitmap)
   Project:
+    ✔ README add instructions on how to run it yourself @done(20-04-19 09:06)
     ☐ [Chore] We can get rid of the source information, it will always be twitter
     ☐ Go with TypeScript, mostly I am curious about the dev editing experience in TypeScript
 Archive:
-  ✔ Remove useless image conversions in prepareData @done(20-04-24 17:29) @project(Todo)
-  ✔ [Good contribution] English version @done(20-04-24 17:35) @project(Todo)
-  ✔ [Good contribution] Host drawings and coloring pages on Cloudinary/cdn @done(20-04-24 17:36) @project(Todo)
-    This was done but using OVH cloud
-    Currently we optimize and store all images in the repository and on zeit/now. zeit/now has a 10,000 deployment files limitation. We're reaching this limit and will soon no more be able to push to production. We should upload drawings and coloring pages to cloudinary instead but keeping the drawings and coloringpages in the repository and ignoring them in `.nowignore`
-    Keeping the drawings in the repository is important as the optimization and coloring pages generation takes a lot of time and can't be done at build time.
-  ✔ README add instructions on how to run it yourself @done(20-04-19 09:06) @project(Todo.Project)
   ✔ Add a drawing page with share buttons, original tweet, version à colorier @done(20-04-07 15:00) @project(Todo)
   ✔ Add alt description and titles everywhere @done(20-04-07 15:00) @project(Todo)
   ✔ In general, add more of "CoronaMaison" keyword (double check pages) @done(20-04-07 15:00) @project(Todo)

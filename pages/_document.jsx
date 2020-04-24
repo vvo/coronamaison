@@ -4,14 +4,12 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    const maybeLang = ctx.pathname.split("/")[1];
-    return { ...initialProps, lang: maybeLang === "en" ? "en" : "fr" };
+    return { ...initialProps, language: ctx.query.language };
   }
 
-  // just in case, you can't use render({lang}) here, it's a class component
   render() {
     return (
-      <Html className="scrollJumpFix" lang={this.props.lang}>
+      <Html className="scrollJumpFix" lang="fr">
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />

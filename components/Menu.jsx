@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Link from "next/link";
-
 import CloseOverlayIcon from "svg/CloseOverlay.svg";
 
 import MenuIcon from "svg/Menu.svg";
@@ -9,7 +7,7 @@ import HandDrawnLine from "svg/HandDrawnLine.svg";
 
 import MenuItem from "components/MenuItem";
 
-export default function Menu({ allDates, lang }) {
+export default function Menu({ allDates }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -33,11 +31,7 @@ export default function Menu({ allDates, lang }) {
             className="absolute inset-0 bg-gray-600 opacity-75"
           />
           <div className="absolute h-full inset-y-0 inset-left-0 w-30 rice border-right border-r-2 border-yellow-900 overflow-y-auto">
-            <Nav
-              allDates={allDates}
-              toggleSidebar={toggleSidebar}
-              lang={lang}
-            />
+            <Nav allDates={allDates} toggleSidebar={toggleSidebar} />
           </div>
           <div className="absolute top-0 p-1" style={{ left: "11.5rem" }}>
             <button
@@ -59,64 +53,35 @@ export default function Menu({ allDates, lang }) {
         </div>
       )}
       <div className="hidden xl:col-span-2 xl:block">
-        <Nav allDates={allDates} lang={lang} />
+        <Nav allDates={allDates} />
       </div>
     </>
   );
 }
 
-function Nav({ allDates, toggleSidebar, lang }) {
+function Nav({ allDates, toggleSidebar }) {
   return (
     <nav className="px-3 pt-4">
-      <MenuItem
-        href={lang === "en" ? "/en" : "/"}
-        toggleSidebar={toggleSidebar}
-      >
+      <MenuItem href="/" toggleSidebar={toggleSidebar}>
         📈 Top 50
       </MenuItem>
-      {lang === "en" ? (
-        <MenuItem href="/en/i-want-to-draw" toggleSidebar={toggleSidebar}>
-          🙋‍♀️ I want to draw !
-        </MenuItem>
-      ) : (
-        <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
-          🙋‍♀️ Je veux dessiner !
-        </MenuItem>
-      )}
-      {lang === "en" ? (
-        <MenuItem href="/en/about" toggleSidebar={toggleSidebar}>
-          🤔 About
-        </MenuItem>
-      ) : (
-        <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
-          🤔 À propos
-        </MenuItem>
-      )}
-      <Link href="/">
-        <a className="text-xl text-blue-800 font-cursive hover:text-twitter">
-          FR
-        </a>
-      </Link>{" "}
-      /{" "}
-      <Link href="/en">
-        <a className="text-xl text-blue-800 font-cursive hover:text-twitter">
-          EN
-        </a>
-      </Link>
+
+      <MenuItem href="/je-veux-dessiner" toggleSidebar={toggleSidebar}>
+        🙋‍♀️ Je veux dessiner !
+      </MenuItem>
+
+      <MenuItem href="/a-propos" toggleSidebar={toggleSidebar}>
+        🤔 À propos
+      </MenuItem>
+
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+
       {allDates.map((date, dateIndex) => {
         const { day, month, year, nbDrawings } = date;
-        let as = `/${year}/${month}/${day}`;
-        if (lang === "en") {
-          as = `/en/${year}/${month}/${day}`;
-        }
+        const as = `/${year}/${month}/${day}`;
         return (
           <MenuItem
-            href={
-              lang === "en"
-                ? `/en/[year]/[month]/[day]`
-                : `/[year]/[month]/[day]`
-            }
+            href="/[year]/[month]/[day]"
             as={as}
             key={as}
             toggleSidebar={toggleSidebar}
@@ -126,12 +91,14 @@ function Nav({ allDates, toggleSidebar, lang }) {
           </MenuItem>
         );
       })}
+
       <HandDrawnLine className="text-yellow-700 my-4 h-2 w-32 opacity-50 mx-auto" />
+
       <a
         href="https://simpleanalytics.com/coronamaison.net"
         className="block text-xl text-blue-800 font-cursive hover:text-twitter"
       >
-        {lang === "en" ? `Analytics` : `Statistiques`}
+        Statistiques
       </a>
     </nav>
   );
@@ -140,10 +107,8 @@ function Nav({ allDates, toggleSidebar, lang }) {
 Nav.propTypes = {
   allDates: PropTypes.arrayOf(PropTypes.object),
   toggleSidebar: PropTypes.func,
-  lang: PropTypes.string,
 };
 
 Menu.propTypes = {
   allDates: PropTypes.arrayOf(PropTypes.object),
-  lang: PropTypes.string,
 };

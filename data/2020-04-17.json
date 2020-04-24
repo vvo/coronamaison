@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1251068347858509825",
     "username": "AnaisDefever",
-    "likes": 67,
+    "likes": 62,
     "date": "2020-04-17T10:41:52.000+02:00",
     "imageWidth": 1039,
     "imageHeight": 559
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1251184261383753729",
     "username": "Taken0w",
-    "likes": 46,
+    "likes": 44,
     "date": "2020-04-17T18:22:28.000+02:00",
     "imageWidth": 1199,
     "imageHeight": 848
@@ -55,21 +55,21 @@
   },
   {
     "source": "twitter",
-    "id": "1251199321376260099",
-    "username": "rionduv",
-    "likes": 1,
-    "date": "2020-04-17T19:22:19.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 645
-  },
-  {
-    "source": "twitter",
     "id": "1251184344791756802",
     "username": "gaulard14",
     "likes": 1,
     "date": "2020-04-17T18:22:48.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 768
+  },
+  {
+    "source": "twitter",
+    "id": "1251199321376260099",
+    "username": "rionduv",
+    "likes": 0,
+    "date": "2020-04-17T19:22:19.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 645
   },
   {
     "source": "twitter",

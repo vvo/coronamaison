@@ -20,17 +20,12 @@ If you want to run this project locally, you need:
 - [overmind](https://github.com/DarthSim/overmind): `brew install overmind` to easily launch the project
 - [yarn](https://classic.yarnpkg.com/en/): https://classic.yarnpkg.com/en/docs/install/#alternatives-stable
 - [Node.js](https://nodejs.org/en/): https://github.com/nvm-sh/nvm
-
-If you want to run the data retrieval mechanisms, you will need:
-
-- [pngquant](https://pngquant.org/): `brew install pngquant` for coloring pages optimization
-- [Potrace](http://potrace.sourceforge.net/): `brew install potrace` for coloring pages generation
-- `convert` for coloring pages generation
-- [pngout](http://advsys.net/ken/utils.htm): brew install jonof/kenutils/pngout for coloring pages optimization
+- [pngquant](https://pngquant.org/): `brew install pngquant`
+- [Potrace](http://potrace.sourceforge.net/): `brew install potrace`
+- `convert`
+- [pngout](http://advsys.net/ken/utils.htm): brew install jonof/kenutils/pngout
 - A [Twitter OAuth 2.0 bearer token](https://developer.twitter.com/en/docs/basics/authentication/oauth-2-0/application-only) with Search Tweets 30 days (Sandbox) free subscription and a dev environment created (named `dev`). You can get this bearer token manually in a terminal with a curl command following the guide from Twitter. We're not using any Twitter API client because they were not working for us.
-- A `.env` file with:
-  - the Twitter bearer token in `SECRET_TWITTER_BEARER_TOKEN`
-  - `SECRET_OVH_CLOUD_USERNAME`, `SECRET_OVH_CLOUD_PASSWORD`, `SECRET_OVH_CLOUD_TENANTID` to upload drawings to https://media.coronamaison.net
+- A `.env` file with the Twitter bearer token in `SECRET_TWITTER_BEARER_TOKEN`
 
 ## How to use
 
@@ -62,9 +57,7 @@ overmind run yarn prepareData
 overmind s
 # 5. regenerate data files
 overmind run yarn prepareData
-# 6. upload new assets to media.coronamaison.net
-DATE=2020-04-19 overmind run yarn uploadMedia
-# 7. You're good to go, you can push to production or open a PR with updated drawings
+# 6. You're good to go, you can push to production or open a PR with updated drawings
 ```
 
 ## How to help
@@ -75,7 +68,7 @@ Use the [file TODO](./TODO) and choose a subject, open an issue or [DM me on Twi
 
 If you'd like to contribute, there's a good chance you will have to hook your code to the `prepareData` script. Since this script is already big, you can either do that or just create a different script that would (for example) handle: search data synchronization, pushing images to Cloudinary etc... All you have to do is read every JSON file from 2020-\*.json or the `data/drawingsById.json` file which contains all the current drawings. You should not use the file `data/drawings.json` since it's the raw, unfiltered data of all #CoronaMaison tweets.
 
-## Manual coloring pages optimization
+## Manual coloring pages
 
 From time to time people will send coloring pages manually to me or on twitter. When this happens, you need to download the image locally, rename it to `twitter-${id}.jpg`, `id` being the original tweet id (not the one from the coloring page for example) and then run this command:
 
