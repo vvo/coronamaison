@@ -5,11 +5,7 @@ import Layout from "components/Layout";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <Layout
-      allDates={pageProps.allDates}
-      nbDrawings={pageProps.nbDrawings}
-      lastUpdate={pageProps.lastUpdate}
-    >
+    <Layout lang={pageProps.lang || "fr"}>
       <Component {...pageProps} />
     </Layout>
   );

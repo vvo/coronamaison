@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1239872825013477383",
     "username": "Mael_Biskotz",
-    "likes": 543,
+    "likes": 542,
     "date": "2020-03-17T12:14:51.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1240034059847335936",
     "username": "brfab71200",
-    "likes": 418,
+    "likes": 417,
     "date": "2020-03-17T22:55:33.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 641
@@ -57,7 +57,7 @@
     "source": "twitter",
     "id": "1240044145412014082",
     "username": "cirquedepapier",
-    "likes": 396,
+    "likes": 398,
     "date": "2020-03-17T23:35:37.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 668
@@ -93,7 +93,7 @@
     "source": "twitter",
     "id": "1240046383446601730",
     "username": "eemmaaccarree",
-    "likes": 343,
+    "likes": 342,
     "date": "2020-03-17T23:44:31.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 637
@@ -460,6 +460,15 @@
   },
   {
     "source": "twitter",
+    "id": "1239963903863341057",
+    "username": "acrylicdread",
+    "likes": 28,
+    "date": "2020-03-17T18:16:46.000+01:00",
+    "imageWidth": 1200,
+    "imageHeight": 679
+  },
+  {
+    "source": "twitter",
     "id": "1239945990150422529",
     "username": "Trukchosemachin",
     "likes": 28,
@@ -493,15 +502,6 @@
     "date": "2020-03-17T21:18:28.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 848
-  },
-  {
-    "source": "twitter",
-    "id": "1239963903863341057",
-    "username": "acrylicdread",
-    "likes": 27,
-    "date": "2020-03-17T18:16:46.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 679
   },
   {
     "source": "twitter",
@@ -664,15 +664,6 @@
     "date": "2020-03-17T14:46:32.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 885
-  },
-  {
-    "source": "twitter",
-    "id": "1239691067345297414",
-    "username": "AliciaJCQ",
-    "likes": 11,
-    "date": "2020-03-17T00:12:37.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 635
   },
   {
     "source": "twitter",
