@@ -14,17 +14,17 @@
     "username": "Allaxel_AA",
     "likes": 88,
     "date": "2020-04-11T17:18:13.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 701
+    "imageWidth": 1520,
+    "imageHeight": 888
   },
   {
     "source": "twitter",
     "id": "1248966352053964802",
     "username": "HeleneLeDauphin",
-    "likes": 53,
+    "likes": 54,
     "date": "2020-04-11T15:29:17.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 647
+    "imageWidth": 4096,
+    "imageHeight": 2209
   },
   {
     "source": "twitter",
@@ -41,14 +41,14 @@
     "username": "federica_dL",
     "likes": 7,
     "date": "2020-04-11T23:31:13.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 879
+    "imageWidth": 2048,
+    "imageHeight": 1500
   },
   {
     "source": "twitter",
     "id": "1249011717276946436",
     "username": "veroche78",
-    "likes": 4,
+    "likes": 5,
     "date": "2020-04-11T18:29:33.000+02:00",
     "imageWidth": 1024,
     "imageHeight": 767
@@ -59,8 +59,8 @@
     "username": "liskarria",
     "likes": 4,
     "date": "2020-04-11T18:14:57.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2064,
+    "imageHeight": 1548
   },
   {
     "source": "twitter",
@@ -68,8 +68,17 @@
     "username": "Violalto_",
     "likes": 4,
     "date": "2020-04-11T02:32:08.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
+  },
+  {
+    "source": "twitter",
+    "id": "1249013302367334400",
+    "username": "Nayill63",
+    "likes": 2,
+    "date": "2020-04-11T18:35:51.000+02:00",
+    "imageWidth": 1489,
+    "imageHeight": 1080
   },
   {
     "source": "twitter",
@@ -82,21 +91,12 @@
   },
   {
     "source": "twitter",
-    "id": "1249013302367334400",
-    "username": "Nayill63",
-    "likes": 1,
-    "date": "2020-04-11T18:35:51.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 870
-  },
-  {
-    "source": "twitter",
     "id": "1248966877960904704",
     "username": "fredfactory",
     "likes": 1,
     "date": "2020-04-11T15:31:23.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 826
+    "imageWidth": 2572,
+    "imageHeight": 1770
   },
   {
     "source": "twitter",
@@ -104,7 +104,7 @@
     "username": "BjfContact",
     "likes": 1,
     "date": "2020-04-11T10:36:42.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 713
+    "imageWidth": 2132,
+    "imageHeight": 1266
   }
 ]

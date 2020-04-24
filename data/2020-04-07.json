@@ -5,8 +5,8 @@
     "username": "_No0n__",
     "likes": 63,
     "date": "2020-04-07T17:36:07.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 778
+    "imageWidth": 1937,
+    "imageHeight": 1256
   },
   {
     "source": "twitter",
@@ -14,8 +14,8 @@
     "username": "effoworld",
     "likes": 32,
     "date": "2020-04-07T21:41:03.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 642
+    "imageWidth": 2048,
+    "imageHeight": 1096
   },
   {
     "source": "twitter",
@@ -23,8 +23,8 @@
     "username": "Sofloan",
     "likes": 25,
     "date": "2020-04-07T15:08:34.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 670
+    "imageWidth": 4096,
+    "imageHeight": 2287
   },
   {
     "source": "twitter",
@@ -32,8 +32,8 @@
     "username": "lena_vi0n",
     "likes": 9,
     "date": "2020-04-07T14:55:24.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 921
+    "imageWidth": 3231,
+    "imageHeight": 2480
   },
   {
     "source": "twitter",
@@ -41,8 +41,8 @@
     "username": "JMD_jean_marc",
     "likes": 7,
     "date": "2020-04-07T19:12:37.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -64,6 +64,15 @@
   },
   {
     "source": "twitter",
+    "id": "1247605736374484999",
+    "username": "veroche78",
+    "likes": 4,
+    "date": "2020-04-07T21:22:41.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 768
+  },
+  {
+    "source": "twitter",
     "id": "1247569678521765888",
     "username": "Boolbinos",
     "likes": 4,
@@ -73,21 +82,12 @@
   },
   {
     "source": "twitter",
-    "id": "1247605736374484999",
-    "username": "veroche78",
-    "likes": 3,
-    "date": "2020-04-07T21:22:41.000+02:00",
-    "imageWidth": 1024,
-    "imageHeight": 768
-  },
-  {
-    "source": "twitter",
     "id": "1247491946827993088",
     "username": "zeldaetloulou",
     "likes": 3,
     "date": "2020-04-07T13:50:32.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 649
+    "imageWidth": 2048,
+    "imageHeight": 1108
   },
   {
     "source": "twitter",
@@ -113,8 +113,8 @@
     "username": "zeldaetloulou",
     "likes": 2,
     "date": "2020-04-07T13:50:53.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 650
+    "imageWidth": 2048,
+    "imageHeight": 1110
   },
   {
     "source": "twitter",
@@ -122,8 +122,8 @@
     "username": "mllemonalisa",
     "likes": 1,
     "date": "2020-04-07T22:20:02.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 682
+    "imageWidth": 2048,
+    "imageHeight": 1164
   },
   {
     "source": "twitter",
@@ -131,8 +131,8 @@
     "username": "bossu_julie",
     "likes": 1,
     "date": "2020-04-07T20:38:13.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 647
+    "imageWidth": 1224,
+    "imageHeight": 660
   },
   {
     "source": "twitter",
@@ -140,8 +140,8 @@
     "username": "simonlebon_",
     "likes": 1,
     "date": "2020-04-07T14:26:37.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 785
+    "imageWidth": 1600,
+    "imageHeight": 1046
   },
   {
     "source": "twitter",
@@ -149,8 +149,8 @@
     "username": "DocCAUE67",
     "likes": 1,
     "date": "2020-04-07T11:40:22.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 678
+    "imageWidth": 1497,
+    "imageHeight": 846
   },
   {
     "source": "twitter",

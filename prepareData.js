@@ -105,7 +105,8 @@ async function run() {
       id: drawing.id_str,
       username: drawing.user.screen_name,
       likes: drawing.retweet_count + drawing.favorite_count,
-      originalImage: drawing.extended_entities.media[0].media_url_https,
+      originalImage:
+        drawing.extended_entities.media[0].media_url_https + "?name=orig",
       date: date.toISO(),
     };
   });
@@ -132,7 +133,7 @@ async function run() {
 
     const jpgOriginalImagePath = path.join(
       originalDrawingsFolder,
-      `${filename}`,
+      `${filename}.jpg`,
     );
 
     await mkdirp(originalDrawingsFolder);
@@ -174,13 +175,18 @@ async function run() {
           );
         });
 
-        if (await fileExists(jpgOriginalImagePath)) {
-          fs.createReadStream(jpgOriginalImagePath).pipe(sharpStream);
-        } else {
-          got.stream(formattedDrawing.originalImage).pipe(sharpStream);
-        }
+        await new Promise((resolve, reject) => {
+          fileExists(jpgOriginalImagePath).then((alreadyDownloaded) => {
+            const readStream = alreadyDownloaded
+              ? fs.createReadStream(jpgOriginalImagePath)
+              : got.stream(formattedDrawing.originalImage);
 
-        await Promise.all(promises);
+            readStream.pipe(sharpStream);
+            readStream.once("error", reject);
+
+            Promise.all(promises).then(resolve).catch(reject);
+          });
+        });
       } catch (e) {
         // when there's a 404, image is still created so we delete it and returns
         if (e.name === "HTTPError") {
@@ -250,7 +256,7 @@ async function run() {
       console.log("generating thumbnail for", filename);
       try {
         await sqip({
-          input: `${jpgPublicBasePath}-800.jpg`,
+          input: `${jpgPublicBasePath}-1026.jpg`,
           output: thumbnailPath,
           plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
         });

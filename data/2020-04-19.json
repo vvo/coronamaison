@@ -5,8 +5,8 @@
     "username": "00W600",
     "likes": 12,
     "date": "2020-04-19T13:11:59.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -14,8 +14,8 @@
     "username": "vvoyer",
     "likes": 11,
     "date": "2020-04-19T18:58:43.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -23,8 +23,8 @@
     "username": "ToonukiComics",
     "likes": 9,
     "date": "2020-04-19T05:23:17.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 1600,
+    "imageHeight": 900
   },
   {
     "source": "twitter",
@@ -32,8 +32,8 @@
     "username": "jeffpoulin",
     "likes": 8,
     "date": "2020-04-19T04:12:10.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 739
+    "imageWidth": 2732,
+    "imageHeight": 1683
   },
   {
     "source": "twitter",
@@ -50,8 +50,8 @@
     "username": "CauxDavid1",
     "likes": 1,
     "date": "2020-04-19T15:42:31.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 861
+    "imageWidth": 3402,
+    "imageHeight": 2442
   },
   {
     "source": "twitter",
@@ -59,8 +59,8 @@
     "username": "ynn_nsln",
     "likes": 1,
     "date": "2020-04-19T15:00:57.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -68,8 +68,8 @@
     "username": "CauxDavid1",
     "likes": 1,
     "date": "2020-04-19T14:11:49.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 854
+    "imageWidth": 3408,
+    "imageHeight": 2424
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "houdynyx",
     "likes": 0,
     "date": "2020-04-19T18:14:08.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 2048,
+    "imageHeight": 1152
   },
   {
     "source": "twitter",
@@ -86,8 +86,8 @@
     "username": "dominiqueoger4",
     "likes": 0,
     "date": "2020-04-19T16:32:54.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 848
+    "imageWidth": 3508,
+    "imageHeight": 2480
   },
   {
     "source": "twitter",
@@ -95,8 +95,8 @@
     "username": "Cuisse_de_Poiro",
     "likes": 0,
     "date": "2020-04-19T15:09:32.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 848
+    "imageWidth": 2048,
+    "imageHeight": 1448
   },
   {
     "source": "twitter",
@@ -104,7 +104,7 @@
     "username": "ynn_nsln",
     "likes": 0,
     "date": "2020-04-19T14:59:50.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 1600,
+    "imageHeight": 1200
   }
 ]

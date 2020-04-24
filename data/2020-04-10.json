@@ -5,8 +5,8 @@
     "username": "Tyron_Gearing",
     "likes": 202,
     "date": "2020-04-10T19:15:48.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 638
+    "imageWidth": 1600,
+    "imageHeight": 850
   },
   {
     "source": "twitter",
@@ -14,8 +14,8 @@
     "username": "Kenshiante",
     "likes": 25,
     "date": "2020-04-10T16:15:48.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 2048,
+    "imageHeight": 1152
   },
   {
     "source": "twitter",
@@ -23,17 +23,17 @@
     "username": "El1seD",
     "likes": 8,
     "date": "2020-04-10T16:14:20.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 651
+    "imageWidth": 2048,
+    "imageHeight": 1111
   },
   {
     "source": "twitter",
     "id": "1248633323917901824",
     "username": "AnglieSzczepan1",
-    "likes": 6,
+    "likes": 7,
     "date": "2020-04-10T17:25:57.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 862
+    "imageWidth": 3380,
+    "imageHeight": 2427
   },
   {
     "source": "twitter",
@@ -50,17 +50,17 @@
     "username": "chrissoune",
     "likes": 4,
     "date": "2020-04-10T20:33:49.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 862
+    "imageWidth": 1534,
+    "imageHeight": 1102
   },
   {
     "source": "twitter",
     "id": "1248659428301299713",
     "username": "Alex_neeves",
-    "likes": 3,
+    "likes": 4,
     "date": "2020-04-10T19:09:41.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 618
+    "imageWidth": 2292,
+    "imageHeight": 1181
   },
   {
     "source": "twitter",
@@ -68,8 +68,8 @@
     "username": "m_jude2000",
     "likes": 1,
     "date": "2020-04-10T23:25:04.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 825
+    "imageWidth": 1280,
+    "imageHeight": 880
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "sovalbib",
     "likes": 1,
     "date": "2020-04-10T15:56:57.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 4033,
+    "imageHeight": 2269
   },
   {
     "source": "twitter",
@@ -86,7 +86,7 @@
     "username": "RobertYanis4",
     "likes": 1,
     "date": "2020-04-10T09:48:03.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 4032,
+    "imageHeight": 3024
   }
 ]

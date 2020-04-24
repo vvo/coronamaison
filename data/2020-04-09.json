@@ -14,8 +14,8 @@
     "username": "rpenasa",
     "likes": 22,
     "date": "2020-04-09T19:48:07.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -23,8 +23,8 @@
     "username": "Wilfrid_",
     "likes": 5,
     "date": "2020-04-09T02:29:22.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 743
+    "imageWidth": 2000,
+    "imageHeight": 1239
   },
   {
     "source": "twitter",
@@ -32,8 +32,17 @@
     "username": "SarahNguyenTha1",
     "likes": 4,
     "date": "2020-04-09T11:52:07.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
+  },
+  {
+    "source": "twitter",
+    "id": "1248313589531922433",
+    "username": "veroche78",
+    "likes": 3,
+    "date": "2020-04-09T20:15:26.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 768
   },
   {
     "source": "twitter",
@@ -41,8 +50,8 @@
     "username": "Alexand83655602",
     "likes": 3,
     "date": "2020-04-09T12:09:13.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 600
+    "imageWidth": 2048,
+    "imageHeight": 1024
   },
   {
     "source": "twitter",
@@ -50,17 +59,8 @@
     "username": "EfectoDelOrden",
     "likes": 3,
     "date": "2020-04-09T07:45:49.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 919
-  },
-  {
-    "source": "twitter",
-    "id": "1248313589531922433",
-    "username": "veroche78",
-    "likes": 2,
-    "date": "2020-04-09T20:15:26.000+02:00",
-    "imageWidth": 1024,
-    "imageHeight": 768
+    "imageWidth": 2048,
+    "imageHeight": 1568
   },
   {
     "source": "twitter",
@@ -68,8 +68,17 @@
     "username": "Clo5h17dessinj1",
     "likes": 2,
     "date": "2020-04-09T16:39:56.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 870
+    "imageWidth": 3497,
+    "imageHeight": 2536
+  },
+  {
+    "source": "twitter",
+    "id": "1248228831187648519",
+    "username": "fredfactory",
+    "likes": 1,
+    "date": "2020-04-09T14:38:38.000+02:00",
+    "imageWidth": 1600,
+    "imageHeight": 1132
   },
   {
     "source": "twitter",
@@ -77,8 +86,8 @@
     "username": "VeroGeekmo",
     "likes": 1,
     "date": "2020-04-09T13:34:52.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 816
+    "imageWidth": 1414,
+    "imageHeight": 962
   },
   {
     "source": "twitter",
@@ -91,20 +100,11 @@
   },
   {
     "source": "twitter",
-    "id": "1248228831187648519",
-    "username": "fredfactory",
-    "likes": 0,
-    "date": "2020-04-09T14:38:38.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 849
-  },
-  {
-    "source": "twitter",
     "id": "1248168658448388096",
     "username": "m_jude2000",
     "likes": 0,
     "date": "2020-04-09T10:39:32.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 787
+    "imageWidth": 1341,
+    "imageHeight": 880
   }
 ]
