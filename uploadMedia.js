@@ -1,13 +1,4 @@
-/**
-  Usage with env var :
-
-  USERNAME required
-  PASSWORD required
-  TENANTID required
-  DATE optional
-  
-  $> USERNAME=xxxx PASSWORD=xxx TENANTID=xxxx DATE=2020-04-19 yarn uploadMedia
- */
+// See usage in README.md
 
 import path from "path";
 import { DateTime } from "luxon";
@@ -15,10 +6,10 @@ import OVHStorage from "node-ovh-storage";
 import drawingsById from "./data/drawingsById.json";
 
 const config = {
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD,
+  username: process.env.SECRET_OVH_CLOUD_USERNAME,
+  password: process.env.SECRET_OVH_CLOUD_PASSWORD,
   authURL: "https://auth.cloud.ovh.net/v3",
-  tenantId: process.env.TENANTID,
+  tenantId: process.env.SECRET_OVH_CLOUD_TENANTID,
   region: "GRA",
 };
 const storage = new OVHStorage(config);

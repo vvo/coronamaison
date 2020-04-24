@@ -20,6 +20,7 @@ module.exports = withPlugins(
     },
     env: {
       APP_ENV: process.env.APP_ENV || "production",
+      DRAWINGS_BASE_URL: process.env.DRAWINGS_BASE_URL,
     },
   },
 );

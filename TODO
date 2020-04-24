@@ -1,11 +1,19 @@
 This file is maintained by https://github.com/fabiospampinato/vscode-todo-plus, you can edit it manually too. If you're interested by one of the items, create an issue with it and discuss it.
 
 Todo:
+  ✔ Remove useless image conversions in prepareData @done(20-04-24 17:29)
   ☐ [Good contribution] add search by author with Algolia
     It should be possible to search by author name. Most authors are trying to find their drawings again so that would be nice to have that
     The rendering should be the same as the date listings so a lot can be reused with some refactoring I guess
   ☐ [Good contribution] English version
   ☐ [Good contribution] Add prev/next links on listings like dates
+  ☐ [Good contribution] Language selection should work this way:
+    - on first visit, without cookies, use browser language to redirect to /en or stay on /
+    - when user changes language (click on FR/EN), save language in cookies (😱 GDPR)
+    - when user click on FR/EN, ideally we should stay on the same page but just change the language (add or remove /en)
+    - good example here: https://github.com/kyle-ssg/nextjs-redux/blob/ddb24ec4f6d742bd1dd8220c2e3e9c7ce322eea3/project/api.js#L27 on how to do it properly
+    - follow https://github.com/zeit/next.js/issues/9160 for the right way (once released) on how to do it
+  ☐ New drawings should be automatically uploaded without having to provide a date (if feasible)
     We have roughly 30% of visitors that are not French
   ☐ [Good contribution] Host drawings and coloring pages on Cloudinary
     Currently we optimize and store all images in the repository and on zeit/now. zeit/now has a 10,000 deployment files limitation. We're reaching this limit and will soon no more be able to push to production. We should upload drawings and coloring pages to cloudinary instead but keeping the drawings and coloringpages in the repository and ignoring them in `.nowignore`

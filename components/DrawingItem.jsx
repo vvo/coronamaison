@@ -23,7 +23,7 @@ export default function DrawingItem({
   const coloringPageUrl = `${process.env.DRAWINGS_BASE_URL}/coloringPages/${source}-${id}.png`;
   const avatarImage = `https://twitter-avatar.now.sh/${username}`;
 
-  const Drawing = ({ lang }) => {
+  const Drawing = () => {
     return (
       <LazyDrawing
         filename={`${source}-${id}`}

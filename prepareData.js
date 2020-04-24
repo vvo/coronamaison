@@ -143,8 +143,6 @@ async function run() {
 
     const jpgPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
 
-    const webpPublicBasePath = path.join(publicDrawingsFolder, `${filename}`);
-
     if (
       !(await fileExists(jpgOriginalImagePath)) ||
       process.env.REGENERATE_IMAGES === "true"
@@ -165,6 +163,7 @@ async function run() {
             .toFile(jpgOriginalImagePath),
         );
 
+        // we were previously generating more formats, thus we're using this convulated way of using sharp
         sizes.forEach((size) => {
           promises.push(
             sharpStream
@@ -173,16 +172,6 @@ async function run() {
               .jpeg({ quality: 80 })
               .toFile(`${jpgPublicBasePath}-${size}.jpg`),
           );
-
-          // promises.push(
-          //   sharpStream
-          //     .clone()
-          //     .resize({ width: size })
-          //     .webp({
-          //       quality: 80,
-          //     })
-          //     .toFile(`${webpPublicBasePath}-${size}.webp`),
-          // );
         });
 
         if (await fileExists(jpgOriginalImagePath)) {
@@ -206,7 +195,6 @@ async function run() {
               sizes.map((size) => {
                 return Promise.all([
                   fs.promises.unlink(`${jpgPublicBasePath}-${size}.jpg`),
-                  // fs.promises.unlink(`${webpPublicBasePath}-${size}.webp`),
                 ]);
               }),
             );
