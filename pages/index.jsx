@@ -12,7 +12,6 @@ export default function Home({ top50Drawings }) {
     "Ce site contient tous les dessins du hashtag #CoronaMaison publiés sur les réseaux sociaux. Ils sont organisés par date et popularité. Découvre-les !";
   const url = "https://coronamaison.net";
   const socialImage = `${url}/social.jpg`;
-
   return (
     <>
       <Head>
