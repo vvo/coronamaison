@@ -102,7 +102,7 @@
     "react-dom": "16.13.1",
     "react-share": "4.1.0",
     "react-tweet-embed": "1.2.2",
-    "recursive-readdir": "^2.2.2",
+    "recursive-readdir": "2.2.2",
     "sharp": "0.25.2",
     "sqip": "1.0.0-alpha.31",
     "sqip-cli": "1.0.0-alpha.35",
