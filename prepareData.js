@@ -5,6 +5,7 @@ import path from "path";
 import { promisify } from "util";
 import low from "lowdb";
 import FileSync from "lowdb/adapters/FileSync";
+import recursiveReadDir from "recursive-readdir";
 
 import async from "async";
 import { DateTime } from "luxon";
@@ -95,6 +96,7 @@ async function run() {
   const drawingsByDate = {};
   const drawingsById = {};
   const dataFolder = path.join(__dirname, "data");
+  const originalDrawingsFolder = path.join(__dirname, "data/originalDrawings");
 
   console.log("Formatting drawings objects");
   const formattedDrawings = drawings.map((drawing) => {
@@ -105,7 +107,8 @@ async function run() {
       id: drawing.id_str,
       username: drawing.user.screen_name,
       likes: drawing.retweet_count + drawing.favorite_count,
-      originalImage: drawing.extended_entities.media[0].media_url_https,
+      originalImage:
+        drawing.extended_entities.media[0].media_url_https + "?name=orig",
       date: date.toISO(),
     };
   });
@@ -116,9 +119,8 @@ async function run() {
       "yyyy-LL-dd",
     );
 
-    const originalDrawingsFolder = path.join(
-      __dirname,
-      "data/originalDrawings",
+    const originalDrawingsFolderForDate = path.join(
+      originalDrawingsFolder,
       formattedDate,
     );
     const manualColoringPagesFolder = path.join(
@@ -131,11 +133,11 @@ async function run() {
     const filename = `${formattedDrawing.source}-${formattedDrawing.id}`;
 
     const jpgOriginalImagePath = path.join(
-      originalDrawingsFolder,
-      `${filename}`,
+      originalDrawingsFolderForDate,
+      `${filename}.jpg`,
     );
 
-    await mkdirp(originalDrawingsFolder);
+    await mkdirp(originalDrawingsFolderForDate);
     await mkdirp(publicDrawingsFolder);
     await mkdirp(thumbnailsFolder);
     await mkdirp(coloringPagesFolder);
@@ -159,7 +161,12 @@ async function run() {
         promises.push(
           sharpStream
             .clone()
-            .jpeg({ quality: 100 })
+            .resize({
+              width: 2560,
+              fit: "inside",
+              withoutEnlargement: true, // will only resize images if bigger than 2560
+            })
+            .jpeg({ quality: 90 })
             .toFile(jpgOriginalImagePath),
         );
 
@@ -174,13 +181,18 @@ async function run() {
           );
         });
 
-        if (await fileExists(jpgOriginalImagePath)) {
-          fs.createReadStream(jpgOriginalImagePath).pipe(sharpStream);
-        } else {
-          got.stream(formattedDrawing.originalImage).pipe(sharpStream);
-        }
+        await new Promise((resolve, reject) => {
+          fileExists(jpgOriginalImagePath).then((alreadyDownloaded) => {
+            const readStream = alreadyDownloaded
+              ? fs.createReadStream(jpgOriginalImagePath)
+              : got.stream(formattedDrawing.originalImage);
 
-        await Promise.all(promises);
+            readStream.pipe(sharpStream);
+            readStream.once("error", reject);
+
+            Promise.all(promises).then(resolve).catch(reject);
+          });
+        });
       } catch (e) {
         // when there's a 404, image is still created so we delete it and returns
         if (e.name === "HTTPError") {
@@ -250,7 +262,7 @@ async function run() {
       console.log("generating thumbnail for", filename);
       try {
         await sqip({
-          input: `${jpgPublicBasePath}-800.jpg`,
+          input: `${jpgPublicBasePath}-1026.jpg`,
           output: thumbnailPath,
           plugins: ["sqip-plugin-pixels", "sqip-plugin-svgo"],
         });
@@ -284,7 +296,7 @@ async function run() {
     return true;
   });
 
-  async.eachLimit(formattedDrawings, 2, worker, (err) => {
+  async.eachLimit(formattedDrawings, 2, worker, async (err) => {
     if (err) {
       throw err;
     }
@@ -340,6 +352,20 @@ async function run() {
       JSON.stringify(allDates, null, 2),
     );
 
+    // clean original drawings folder just in case there are leftovers
+    const allOriginalDrawingsFiles = await recursiveReadDir(
+      originalDrawingsFolder,
+    );
+
+    allOriginalDrawingsFiles.forEach((filePath) => {
+      const fileName = path.basename(filePath);
+      const drawingId = fileName.split("-")[1].split(".")[0];
+      if (drawingsById[drawingId] === undefined) {
+        fs.unlinkSync(filePath);
+      }
+    });
+
+    // write state
     const now = DateTime.local().setLocale("fr");
     fs.writeFileSync(
       path.join(dataFolder, "state.json"),

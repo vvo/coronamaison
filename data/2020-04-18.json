@@ -5,8 +5,8 @@
     "username": "SaraLou20",
     "likes": 14,
     "date": "2020-04-18T12:32:23.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 851
+    "imageWidth": 2048,
+    "imageHeight": 1452
   },
   {
     "source": "twitter",
@@ -23,8 +23,8 @@
     "username": "DemainBelle",
     "likes": 4,
     "date": "2020-04-18T12:51:49.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 918
+    "imageWidth": 1334,
+    "imageHeight": 1020
   },
   {
     "source": "twitter",
@@ -32,8 +32,8 @@
     "username": "KikLodge",
     "likes": 3,
     "date": "2020-04-18T19:12:36.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -41,8 +41,8 @@
     "username": "KikLodge",
     "likes": 2,
     "date": "2020-04-18T19:13:54.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -50,8 +50,8 @@
     "username": "KikLodge",
     "likes": 2,
     "date": "2020-04-18T19:12:02.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -59,8 +59,8 @@
     "username": "KlnNui",
     "likes": 1,
     "date": "2020-04-18T21:47:30.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 641
+    "imageWidth": 1230,
+    "imageHeight": 657
   },
   {
     "source": "twitter",
@@ -68,8 +68,8 @@
     "username": "KikLodge",
     "likes": 1,
     "date": "2020-04-18T19:14:54.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "sschvx",
     "likes": 1,
     "date": "2020-04-18T14:34:48.000+02:00",
-    "imageWidth": 1199,
-    "imageHeight": 657
+    "imageWidth": 2048,
+    "imageHeight": 1122
   },
   {
     "source": "twitter",
@@ -95,7 +95,7 @@
     "username": "Season1",
     "likes": 0,
     "date": "2020-04-18T12:30:04.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   }
 ]

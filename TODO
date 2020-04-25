@@ -23,9 +23,12 @@ Todo:
   ☐ [UI] Go up button / or sticky sidebar
   ☐ Credits all the tools used on the website (mkbitmap)
   Project:
-    ☐ [Chore] We can get rid of the source information, it will always be twitter
-    ☐ Go with TypeScript, mostly I am curious about the dev editing experience in TypeScript
+    ☐ [Chore] We can get rid of the `source` information, it will always be twitter
 Archive:
+  ✔ Cleaning script: delete all originalDrawings and public/ files that are not in drawingsById.json. Leftovers from previous scripts. @done(20-04-25 17:32) @project(Todo)
+  ✘ In dev, when deleting/selecting drawings, delete the underlying image otherwise it stays here @cancelled(20-04-25 17:32) @project(Todo)
+    handled in prepareData
+  ✘ Go with TypeScript, mostly I am curious about the dev editing experience in TypeScript @cancelled(20-04-24 22:31) @project(Todo.Project)
   ✔ Remove useless image conversions in prepareData @done(20-04-24 17:29) @project(Todo)
   ✔ [Good contribution] English version @done(20-04-24 17:35) @project(Todo)
   ✔ [Good contribution] Host drawings and coloring pages on Cloudinary/cdn @done(20-04-24 17:36) @project(Todo)

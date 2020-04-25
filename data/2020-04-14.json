@@ -5,8 +5,8 @@
     "username": "LaChipouille",
     "likes": 20,
     "date": "2020-04-14T16:17:52.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 848
+    "imageWidth": 2560,
+    "imageHeight": 1810
   },
   {
     "source": "twitter",
@@ -14,8 +14,8 @@
     "username": "Amelieben",
     "likes": 3,
     "date": "2020-04-14T20:23:52.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 675
+    "imageWidth": 2048,
+    "imageHeight": 1152
   },
   {
     "source": "twitter",
@@ -32,8 +32,8 @@
     "username": "Manon_Rnri",
     "likes": 2,
     "date": "2020-04-14T21:14:08.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 824
+    "imageWidth": 2048,
+    "imageHeight": 1406
   },
   {
     "source": "twitter",
@@ -41,8 +41,8 @@
     "username": "Nayill63",
     "likes": 1,
     "date": "2020-04-14T19:29:25.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 830
+    "imageWidth": 2048,
+    "imageHeight": 1417
   },
   {
     "source": "twitter",
@@ -68,8 +68,8 @@
     "username": "DocCAUE67",
     "likes": 0,
     "date": "2020-04-14T10:21:28.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 602
+    "imageWidth": 1280,
+    "imageHeight": 642
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "dianegarnault",
     "likes": 0,
     "date": "2020-04-14T10:17:24.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 2048,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -86,7 +86,7 @@
     "username": "veroche78",
     "likes": 0,
     "date": "2020-04-14T08:25:14.000+02:00",
-    "imageWidth": 1200,
-    "imageHeight": 900
+    "imageWidth": 1600,
+    "imageHeight": 1200
   }
 ]
