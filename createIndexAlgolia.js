@@ -1,5 +1,4 @@
 // For the default version
-import { DateTime } from "luxon";
 import algoliasearch from "algoliasearch";
 import drawingsById from "./data/drawingsById.json";
 
