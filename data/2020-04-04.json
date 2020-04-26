@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1246447876714135552",
     "username": "Joe__Hume",
-    "likes": 2115,
+    "likes": 2112,
     "date": "2020-04-04T16:41:46.000+02:00",
     "imageWidth": 2048,
     "imageHeight": 1364
@@ -23,8 +23,8 @@
     "username": "pataluc",
     "likes": 93,
     "date": "2020-04-04T11:13:23.000+02:00",
-    "imageWidth": 4032,
-    "imageHeight": 3024
+    "imageWidth": 2560,
+    "imageHeight": 1920
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "veroche78",
     "likes": 8,
     "date": "2020-04-04T11:39:22.000+02:00",
-    "imageWidth": 3264,
-    "imageHeight": 2448
+    "imageWidth": 2560,
+    "imageHeight": 1920
   },
   {
     "source": "twitter",
@@ -104,8 +104,8 @@
     "username": "BloodyM18992325",
     "likes": 7,
     "date": "2020-04-04T11:40:25.000+02:00",
-    "imageWidth": 4096,
-    "imageHeight": 3072
+    "imageWidth": 2560,
+    "imageHeight": 1920
   },
   {
     "source": "twitter",
@@ -113,8 +113,8 @@
     "username": "RolandAlexandre",
     "likes": 5,
     "date": "2020-04-04T21:17:05.000+02:00",
-    "imageWidth": 4096,
-    "imageHeight": 2232
+    "imageWidth": 2560,
+    "imageHeight": 1395
   },
   {
     "source": "twitter",
@@ -167,7 +167,7 @@
     "username": "BloodyM18992325",
     "likes": 0,
     "date": "2020-04-04T13:40:38.000+02:00",
-    "imageWidth": 4096,
-    "imageHeight": 3072
+    "imageWidth": 2560,
+    "imageHeight": 1920
   }
 ]

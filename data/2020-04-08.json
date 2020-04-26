@@ -5,8 +5,8 @@
     "username": "Sofloan",
     "likes": 40,
     "date": "2020-04-08T11:10:15.000+02:00",
-    "imageWidth": 4096,
-    "imageHeight": 2287
+    "imageWidth": 2560,
+    "imageHeight": 1429
   },
   {
     "source": "twitter",
@@ -50,8 +50,8 @@
     "username": "dominiqueoger4",
     "likes": 3,
     "date": "2020-04-08T16:38:44.000+02:00",
-    "imageWidth": 3508,
-    "imageHeight": 2480
+    "imageWidth": 2560,
+    "imageHeight": 1810
   },
   {
     "source": "twitter",
@@ -95,8 +95,8 @@
     "username": "FillaudJean",
     "likes": 2,
     "date": "2020-04-08T12:27:30.000+02:00",
-    "imageWidth": 4000,
-    "imageHeight": 3008
+    "imageWidth": 2560,
+    "imageHeight": 1925
   },
   {
     "source": "twitter",
@@ -104,8 +104,8 @@
     "username": "FillaudJean",
     "likes": 1,
     "date": "2020-04-08T12:25:11.000+02:00",
-    "imageWidth": 4000,
-    "imageHeight": 3008
+    "imageWidth": 2560,
+    "imageHeight": 1925
   },
   {
     "source": "twitter",
@@ -113,8 +113,8 @@
     "username": "FillaudJean",
     "likes": 1,
     "date": "2020-04-08T12:21:30.000+02:00",
-    "imageWidth": 3889,
-    "imageHeight": 2924
+    "imageWidth": 2560,
+    "imageHeight": 1925
   },
   {
     "source": "twitter",
@@ -131,7 +131,7 @@
     "username": "marie_stum",
     "likes": 0,
     "date": "2020-04-08T15:39:14.000+02:00",
-    "imageWidth": 2732,
-    "imageHeight": 1751
+    "imageWidth": 2560,
+    "imageHeight": 1641
   }
 ]

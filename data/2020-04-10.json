@@ -32,8 +32,8 @@
     "username": "AnglieSzczepan1",
     "likes": 7,
     "date": "2020-04-10T17:25:57.000+02:00",
-    "imageWidth": 3380,
-    "imageHeight": 2427
+    "imageWidth": 2560,
+    "imageHeight": 1838
   },
   {
     "source": "twitter",
@@ -77,8 +77,8 @@
     "username": "sovalbib",
     "likes": 1,
     "date": "2020-04-10T15:56:57.000+02:00",
-    "imageWidth": 4033,
-    "imageHeight": 2269
+    "imageWidth": 2560,
+    "imageHeight": 1440
   },
   {
     "source": "twitter",
@@ -86,7 +86,7 @@
     "username": "RobertYanis4",
     "likes": 1,
     "date": "2020-04-10T09:48:03.000+02:00",
-    "imageWidth": 4032,
-    "imageHeight": 3024
+    "imageWidth": 2560,
+    "imageHeight": 1920
   }
 ]
