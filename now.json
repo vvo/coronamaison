@@ -5,6 +5,9 @@
   "build": {
     "env": {
       "DRAWINGS_BASE_URL": "https://media.coronamaison.net/i",
+      "ALGOLIA_APPLICATION_ID": "8G5RMQNTQ8",
+      "ALGOLIA_SEARCH_ONLY_API_KEY": "61aaaffbaec28ef141f5afdff5e8fdcc",
+      "ALGOLIA_INDEX_NAME": "coronamaison",
       "APP_ENV": "production"
     }
   },

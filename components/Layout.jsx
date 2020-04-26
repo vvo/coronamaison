@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import Menu from "components/Menu";
+import Search from "components/Search";
 
 const allDates = require("data/allDates.json");
 const { nbDrawings, lastUpdate } = require("data/state.json");
@@ -25,7 +26,9 @@ export default function Layout({ children, lang }) {
 
         <Menu allDates={allDates} lang={lang} />
 
-        <main className="xl:col-span-10 xl:px-5">{children}</main>
+        <main className="xl:col-span-10 xl:px-5">
+          <Search lang={lang}>{children}</Search>
+        </main>
 
         <footer className="py-6 xl:col-start-3 xl:col-span-10">
           <p className="text-right italic text-sm">

@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "build": "NODE_ICU_DATA=node_modules/full-icu next build",
-    "createIndex": "babel-node --presets @babel/preset-env createIndexAlgolia.js",
     "dev": "next dev",
     "findDrawings": "babel-node --presets @babel/preset-env findDrawings.js",
     "format": "prettier --write '**/*.*' && eslint . --fix",
+    "indexDrawings": "babel-node --presets @babel/preset-env indexDrawings.js",
     "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",
     "prepareData": "babel-node --presets @babel/preset-env prepareData.js",
     "start": "next start",

@@ -21,6 +21,9 @@ module.exports = withPlugins(
     env: {
       APP_ENV: process.env.APP_ENV || "production",
       DRAWINGS_BASE_URL: process.env.DRAWINGS_BASE_URL,
+      ALGOLIA_APPLICATION_ID: process.env.ALGOLIA_APPLICATION_ID,
+      ALGOLIA_SEARCH_ONLY_API_KEY: process.env.ALGOLIA_SEARCH_ONLY_API_KEY,
+      ALGOLIA_INDEX_NAME: process.env.ALGOLIA_INDEX_NAME,
     },
   },
 );
