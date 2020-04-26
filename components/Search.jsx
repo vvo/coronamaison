@@ -29,6 +29,7 @@ export default function Search({ lang, children }) {
 
   // eslint-disable-next-line react/prop-types
   const Hits = ({ hits }) =>
+    // eslint-disable-next-line react/prop-types
     hits.length === 0 ? (
       lang === "en" ? (
         "No result"
