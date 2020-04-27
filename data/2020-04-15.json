@@ -55,21 +55,21 @@
   },
   {
     "source": "twitter",
+    "id": "1250404367292862466",
+    "username": "cath_mayer",
+    "likes": 4,
+    "date": "2020-04-15T14:43:27.000+02:00",
+    "imageWidth": 2048,
+    "imageHeight": 1184
+  },
+  {
+    "source": "twitter",
     "id": "1250187912605585411",
     "username": "Halba_1951",
     "likes": 4,
     "date": "2020-04-15T00:23:20.000+02:00",
     "imageWidth": 2048,
     "imageHeight": 1118
-  },
-  {
-    "source": "twitter",
-    "id": "1250404367292862466",
-    "username": "cath_mayer",
-    "likes": 3,
-    "date": "2020-04-15T14:43:27.000+02:00",
-    "imageWidth": 2048,
-    "imageHeight": 1184
   },
   {
     "source": "twitter",

@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1244589444923043841",
     "username": "antwon_lehko",
-    "likes": 942,
+    "likes": 943,
     "date": "2020-03-30T13:37:01.000+02:00",
     "imageWidth": 2047,
     "imageHeight": 1100
@@ -181,21 +181,21 @@
   },
   {
     "source": "twitter",
+    "id": "1244655473040777218",
+    "username": "YuiBlurp",
+    "likes": 8,
+    "date": "2020-03-30T17:59:24.000+02:00",
+    "imageWidth": 1573,
+    "imageHeight": 871
+  },
+  {
+    "source": "twitter",
     "id": "1244616766589931529",
     "username": "expat_rody",
     "likes": 8,
     "date": "2020-03-30T15:25:35.000+02:00",
     "imageWidth": 1598,
     "imageHeight": 1115
-  },
-  {
-    "source": "twitter",
-    "id": "1244655473040777218",
-    "username": "YuiBlurp",
-    "likes": 7,
-    "date": "2020-03-30T17:59:24.000+02:00",
-    "imageWidth": 1573,
-    "imageHeight": 871
   },
   {
     "source": "twitter",

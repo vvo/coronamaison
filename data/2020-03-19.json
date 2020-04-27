@@ -129,7 +129,7 @@
     "source": "twitter",
     "id": "1240566398784548864",
     "username": "Emisiala",
-    "likes": 37,
+    "likes": 38,
     "date": "2020-03-19T10:10:52.000+01:00",
     "imageWidth": 1024,
     "imageHeight": 704
@@ -505,6 +505,15 @@
   },
   {
     "source": "twitter",
+    "id": "1240597938872729600",
+    "username": "TheJurisGeek",
+    "likes": 5,
+    "date": "2020-03-19T12:16:12.000+01:00",
+    "imageWidth": 1080,
+    "imageHeight": 607
+  },
+  {
+    "source": "twitter",
     "id": "1240768709423177729",
     "username": "BorisSemeniako",
     "likes": 4,
@@ -529,15 +538,6 @@
     "date": "2020-03-19T21:14:19.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 751
-  },
-  {
-    "source": "twitter",
-    "id": "1240597938872729600",
-    "username": "TheJurisGeek",
-    "likes": 4,
-    "date": "2020-03-19T12:16:12.000+01:00",
-    "imageWidth": 1080,
-    "imageHeight": 607
   },
   {
     "source": "twitter",

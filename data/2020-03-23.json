@@ -217,21 +217,21 @@
   },
   {
     "source": "twitter",
-    "id": "1242199917973712899",
-    "username": "konstadina_n",
-    "likes": 16,
-    "date": "2020-03-23T22:21:54.000+01:00",
-    "imageWidth": 1199,
-    "imageHeight": 800
-  },
-  {
-    "source": "twitter",
     "id": "1242171553334341634",
     "username": "IMaternus",
     "likes": 16,
     "date": "2020-03-23T20:29:11.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 647
+  },
+  {
+    "source": "twitter",
+    "id": "1242199917973712899",
+    "username": "konstadina_n",
+    "likes": 14,
+    "date": "2020-03-23T22:21:54.000+01:00",
+    "imageWidth": 1199,
+    "imageHeight": 800
   },
   {
     "source": "twitter",

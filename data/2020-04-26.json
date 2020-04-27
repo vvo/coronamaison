@@ -1,0 +1,65 @@
+[
+  {
+    "source": "twitter",
+    "id": "1254381941824028672",
+    "username": "armandFTV",
+    "likes": 2,
+    "date": "2020-04-26T14:08:54.000+02:00",
+    "imageWidth": 1918,
+    "imageHeight": 1129
+  },
+  {
+    "source": "twitter",
+    "id": "1254417632855498758",
+    "username": "laclefstgermain",
+    "likes": 1,
+    "date": "2020-04-26T16:30:44.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1896
+  },
+  {
+    "source": "twitter",
+    "id": "1254321200223969281",
+    "username": "MillionSandra1",
+    "likes": 1,
+    "date": "2020-04-26T10:07:32.000+02:00",
+    "imageWidth": 1128,
+    "imageHeight": 634
+  },
+  {
+    "source": "twitter",
+    "id": "1254435098415505410",
+    "username": "pierblan",
+    "likes": 0,
+    "date": "2020-04-26T17:40:08.000+02:00",
+    "imageWidth": 1698,
+    "imageHeight": 1177
+  },
+  {
+    "source": "twitter",
+    "id": "1254386323164672001",
+    "username": "MillionSandra1",
+    "likes": 0,
+    "date": "2020-04-26T14:26:19.000+02:00",
+    "imageWidth": 1131,
+    "imageHeight": 660
+  },
+  {
+    "source": "twitter",
+    "id": "1254320976382365696",
+    "username": "MillionSandra1",
+    "likes": 0,
+    "date": "2020-04-26T10:06:39.000+02:00",
+    "imageWidth": 1128,
+    "imageHeight": 634
+  },
+  {
+    "source": "twitter",
+    "id": "1254291846026661889",
+    "username": "dominiqueoger4",
+    "likes": 0,
+    "date": "2020-04-26T08:10:54.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1810
+  }
+]
