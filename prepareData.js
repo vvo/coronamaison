@@ -45,7 +45,8 @@ const deletedTweets = deletes.value();
 async function run() {
   const drawingsFromDatabase = db
     .get("drawings")
-    .filter(({ id_str }) => !deletedTweets.includes(id_str));
+    .filter(({ id_str }) => !deletedTweets.includes(id_str))
+    .uniqBy("id_str");
 
   // First let's update RT + likes count for every drawing
   const drawingsGroupsOf100 = drawingsFromDatabase.chunk(100);
