@@ -24,7 +24,7 @@ export default function Share({ url, title, description, lang }) {
   return (
     <div className="my-4 text-center text-sm">
       {lang === "en" ? "Share this page:" : "Partage cette page :"}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center flex-wrap">
         <FacebookShareButton className="mx-1" url={url} quote={title}>
           <FacebookIcon size={32} round={true} />
         </FacebookShareButton>

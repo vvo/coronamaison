@@ -41,8 +41,12 @@ export default function Search({ lang, children }) {
     );
   const CustomHits = connectHits(Hits);
 
-  const Results = connectStateResults(({ searchState }) =>
-    searchState && searchState.query ? <CustomHits /> : children,
+  const Results = connectStateResults(({ searchState, isSearchStalled }) =>
+    searchState && searchState.query && isSearchStalled !== true ? (
+      <CustomHits />
+    ) : (
+      children
+    ),
   );
 
   return (
@@ -50,7 +54,7 @@ export default function Search({ lang, children }) {
       indexName={process.env.ALGOLIA_INDEX_NAME}
       searchClient={searchClient}
     >
-      <div className="relative mb-4">
+      <div className="relative mb-4 mt-6">
         <SearchBox
           translations={{
             placeholder:

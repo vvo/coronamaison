@@ -26,7 +26,7 @@ export default function Layout({ children, lang }) {
 
         <Menu allDates={allDates} lang={lang} />
 
-        <main className="xl:col-span-10 xl:px-5">
+        <main className="xl:col-span-10 xl:px-5 px-2">
           <Search lang={lang}>{children}</Search>
         </main>
 
