@@ -31,6 +31,7 @@ If you want to run the data retrieval mechanisms, you will need:
 - A `.env` file with:
   - the Twitter bearer token in `SECRET_TWITTER_BEARER_TOKEN`
   - `SECRET_OVH_CLOUD_USERNAME`, `SECRET_OVH_CLOUD_PASSWORD`, `SECRET_OVH_CLOUD_TENANTID` to upload drawings to https://media.coronamaison.net
+  - `SECRET_ALGOLIA_ADMIN_API_KEY` To index drawings into Algolia
 
 ## How to use
 
@@ -64,7 +65,9 @@ overmind s
 overmind run yarn prepareData
 # 6. upload new assets to media.coronamaison.net
 DATE=2020-04-19 overmind run yarn uploadMedia
-# 7. You're good to go, you can push to production or open a PR with updated drawings
+# 7. update Algolia index
+overmind run yarn indexDrawings
+# 8. You're good to go, you can push to production or open a PR with updated drawings
 ```
 
 ## How to help
