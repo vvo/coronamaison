@@ -21,10 +21,19 @@
     "source": "twitter",
     "id": "1254064522014404608",
     "username": "MillionSandra1",
-    "likes": 1,
+    "likes": 2,
     "date": "2020-04-25T17:07:36.000+02:00",
     "imageWidth": 1122,
     "imageHeight": 640
+  },
+  {
+    "source": "twitter",
+    "id": "1253806170550292481",
+    "username": "Choupyto2",
+    "likes": 2,
+    "date": "2020-04-25T00:01:00.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1536
   },
   {
     "source": "twitter",
@@ -52,15 +61,6 @@
     "date": "2020-04-25T09:57:16.000+02:00",
     "imageWidth": 2560,
     "imageHeight": 1839
-  },
-  {
-    "source": "twitter",
-    "id": "1253806170550292481",
-    "username": "Choupyto2",
-    "likes": 1,
-    "date": "2020-04-25T00:01:00.000+02:00",
-    "imageWidth": 2560,
-    "imageHeight": 1536
   },
   {
     "source": "twitter",

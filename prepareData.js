@@ -98,6 +98,13 @@ async function run() {
   const drawingsById = {};
   const dataFolder = path.join(__dirname, "data");
   const originalDrawingsFolder = path.join(__dirname, "data/originalDrawings");
+  const manualColoringPagesFolder = path.join(
+    __dirname,
+    "data/manualColoringPages",
+  );
+  const publicDrawingsFolder = path.join(__dirname, "public/drawings");
+  const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
+  const coloringPagesFolder = path.join(__dirname, "public/coloringPages");
 
   console.log("Formatting drawings objects");
   const formattedDrawings = drawings.map((drawing) => {
@@ -124,13 +131,6 @@ async function run() {
       originalDrawingsFolder,
       formattedDate,
     );
-    const manualColoringPagesFolder = path.join(
-      __dirname,
-      "data/manualColoringPages",
-    );
-    const publicDrawingsFolder = path.join(__dirname, "public/drawings");
-    const thumbnailsFolder = path.join(__dirname, "public/thumbnails");
-    const coloringPagesFolder = path.join(__dirname, "public/coloringPages");
     const filename = `${formattedDrawing.source}-${formattedDrawing.id}`;
 
     const jpgOriginalImagePath = path.join(
@@ -353,7 +353,7 @@ async function run() {
       JSON.stringify(allDates, null, 2),
     );
 
-    // clean original drawings folder just in case there are leftovers
+    // clean drawings folders just in case there are leftovers
     const allOriginalDrawingsFiles = await recursiveReadDir(
       originalDrawingsFolder,
     );
@@ -361,6 +361,36 @@ async function run() {
     allOriginalDrawingsFiles.forEach((filePath) => {
       const fileName = path.basename(filePath);
       const drawingId = fileName.split("-")[1].split(".")[0];
+      if (drawingsById[drawingId] === undefined) {
+        fs.unlinkSync(filePath);
+      }
+    });
+
+    const allColoringPagesFiles = await recursiveReadDir(coloringPagesFolder);
+
+    allColoringPagesFiles.forEach((filePath) => {
+      const fileName = path.basename(filePath);
+      const drawingId = fileName.split("-")[1].split(".")[0];
+      if (drawingsById[drawingId] === undefined) {
+        fs.unlinkSync(filePath);
+      }
+    });
+
+    const allThumbnailsFiles = await recursiveReadDir(thumbnailsFolder);
+
+    allThumbnailsFiles.forEach((filePath) => {
+      const fileName = path.basename(filePath);
+      const drawingId = fileName.split("-")[1].split(".")[0];
+      if (drawingsById[drawingId] === undefined) {
+        fs.unlinkSync(filePath);
+      }
+    });
+
+    const allPublicDrawingsFiles = await recursiveReadDir(publicDrawingsFolder);
+
+    allPublicDrawingsFiles.forEach((filePath) => {
+      const fileName = path.basename(filePath);
+      const drawingId = fileName.split("-")[1];
       if (drawingsById[drawingId] === undefined) {
         fs.unlinkSync(filePath);
       }

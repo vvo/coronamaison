@@ -55,6 +55,15 @@
   },
   {
     "source": "twitter",
+    "id": "1251443090927353857",
+    "username": "StreetArtRock",
+    "likes": 2,
+    "date": "2020-04-18T11:30:58.000+02:00",
+    "imageWidth": 1080,
+    "imageHeight": 697
+  },
+  {
+    "source": "twitter",
     "id": "1251598247979859970",
     "username": "KlnNui",
     "likes": 1,
@@ -79,15 +88,6 @@
     "date": "2020-04-18T14:34:48.000+02:00",
     "imageWidth": 2048,
     "imageHeight": 1122
-  },
-  {
-    "source": "twitter",
-    "id": "1251443090927353857",
-    "username": "StreetArtRock",
-    "likes": 1,
-    "date": "2020-04-18T11:30:58.000+02:00",
-    "imageWidth": 1080,
-    "imageHeight": 697
   },
   {
     "source": "twitter",
