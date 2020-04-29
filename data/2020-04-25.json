@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1254099839589244928",
     "username": "gsmlawyer",
-    "likes": 12,
+    "likes": 13,
     "date": "2020-04-25T19:27:56.000+02:00",
     "imageWidth": 2048,
     "imageHeight": 1486
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1254077918776635392",
     "username": "Silenca97",
-    "likes": 6,
+    "likes": 7,
     "date": "2020-04-25T18:00:50.000+02:00",
     "imageWidth": 2016,
     "imageHeight": 1080
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1254064522014404608",
     "username": "MillionSandra1",
-    "likes": 2,
+    "likes": 3,
     "date": "2020-04-25T17:07:36.000+02:00",
     "imageWidth": 1122,
     "imageHeight": 640
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1253806170550292481",
     "username": "Choupyto2",
-    "likes": 2,
+    "likes": 3,
     "date": "2020-04-25T00:01:00.000+02:00",
     "imageWidth": 2560,
     "imageHeight": 1536
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1254054775034953729",
     "username": "OclairetteLune",
-    "likes": 1,
+    "likes": 2,
     "date": "2020-04-25T16:28:52.000+02:00",
     "imageWidth": 1292,
     "imageHeight": 552
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1254054414731685889",
     "username": "OclairetteLune",
-    "likes": 1,
+    "likes": 2,
     "date": "2020-04-25T16:27:26.000+02:00",
     "imageWidth": 1029,
     "imageHeight": 552
@@ -57,10 +57,19 @@
     "source": "twitter",
     "id": "1253956228746805248",
     "username": "PredaJonathan",
-    "likes": 1,
+    "likes": 2,
     "date": "2020-04-25T09:57:16.000+02:00",
     "imageWidth": 2560,
     "imageHeight": 1839
+  },
+  {
+    "source": "twitter",
+    "id": "1254054969956872193",
+    "username": "OclairetteLune",
+    "likes": 1,
+    "date": "2020-04-25T16:29:38.000+02:00",
+    "imageWidth": 1029,
+    "imageHeight": 552
   },
   {
     "source": "twitter",
@@ -70,14 +79,5 @@
     "date": "2020-04-25T23:12:15.000+02:00",
     "imageWidth": 2502,
     "imageHeight": 1779
-  },
-  {
-    "source": "twitter",
-    "id": "1254054969956872193",
-    "username": "OclairetteLune",
-    "likes": 0,
-    "date": "2020-04-25T16:29:38.000+02:00",
-    "imageWidth": 1029,
-    "imageHeight": 552
   }
 ]

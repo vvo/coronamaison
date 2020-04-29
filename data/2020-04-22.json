@@ -21,10 +21,19 @@
     "source": "twitter",
     "id": "1253060156621041664",
     "username": "CyrilBeuque",
-    "likes": 1,
+    "likes": 2,
     "date": "2020-04-22T22:36:36.000+02:00",
     "imageWidth": 2224,
     "imageHeight": 1668
+  },
+  {
+    "source": "twitter",
+    "id": "1253017953550979073",
+    "username": "PoncinGwladys",
+    "likes": 2,
+    "date": "2020-04-22T19:48:54.000+02:00",
+    "imageWidth": 2338,
+    "imageHeight": 1700
   },
   {
     "source": "twitter",
@@ -46,15 +55,6 @@
   },
   {
     "source": "twitter",
-    "id": "1253017953550979073",
-    "username": "PoncinGwladys",
-    "likes": 1,
-    "date": "2020-04-22T19:48:54.000+02:00",
-    "imageWidth": 2338,
-    "imageHeight": 1700
-  },
-  {
-    "source": "twitter",
     "id": "1253015039797321729",
     "username": "PoncinGwladys",
     "likes": 1,
@@ -70,6 +70,15 @@
     "date": "2020-04-22T16:06:38.000+02:00",
     "imageWidth": 2048,
     "imageHeight": 1505
+  },
+  {
+    "source": "twitter",
+    "id": "1252885542255177730",
+    "username": "fabb_rik",
+    "likes": 1,
+    "date": "2020-04-22T11:02:45.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1379
   },
   {
     "source": "twitter",
@@ -133,14 +142,5 @@
     "date": "2020-04-22T11:49:55.000+02:00",
     "imageWidth": 1300,
     "imageHeight": 732
-  },
-  {
-    "source": "twitter",
-    "id": "1252885542255177730",
-    "username": "fabb_rik",
-    "likes": 0,
-    "date": "2020-04-22T11:02:45.000+02:00",
-    "imageWidth": 2560,
-    "imageHeight": 1379
   }
 ]

@@ -118,6 +118,15 @@
   },
   {
     "source": "twitter",
+    "id": "1247459189624094728",
+    "username": "DocCAUE67",
+    "likes": 2,
+    "date": "2020-04-07T11:40:22.000+02:00",
+    "imageWidth": 1497,
+    "imageHeight": 846
+  },
+  {
+    "source": "twitter",
     "id": "1247620170123788288",
     "username": "mllemonalisa",
     "likes": 1,
@@ -142,15 +151,6 @@
     "date": "2020-04-07T14:26:37.000+02:00",
     "imageWidth": 1600,
     "imageHeight": 1046
-  },
-  {
-    "source": "twitter",
-    "id": "1247459189624094728",
-    "username": "DocCAUE67",
-    "likes": 1,
-    "date": "2020-04-07T11:40:22.000+02:00",
-    "imageWidth": 1497,
-    "imageHeight": 846
   },
   {
     "source": "twitter",
