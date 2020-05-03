@@ -19,6 +19,15 @@
   },
   {
     "source": "twitter",
+    "id": "1254320976382365696",
+    "username": "MillionSandra1",
+    "likes": 2,
+    "date": "2020-04-26T10:06:39.000+02:00",
+    "imageWidth": 1128,
+    "imageHeight": 634
+  },
+  {
+    "source": "twitter",
     "id": "1254386323164672001",
     "username": "MillionSandra1",
     "likes": 1,
@@ -43,15 +52,6 @@
     "date": "2020-04-26T17:40:08.000+02:00",
     "imageWidth": 1698,
     "imageHeight": 1177
-  },
-  {
-    "source": "twitter",
-    "id": "1254320976382365696",
-    "username": "MillionSandra1",
-    "likes": 0,
-    "date": "2020-04-26T10:06:39.000+02:00",
-    "imageWidth": 1128,
-    "imageHeight": 634
   },
   {
     "source": "twitter",

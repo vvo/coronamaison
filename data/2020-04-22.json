@@ -73,6 +73,15 @@
   },
   {
     "source": "twitter",
+    "id": "1252906412805623808",
+    "username": "gliimpermeabili",
+    "likes": 1,
+    "date": "2020-04-22T12:25:41.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1373
+  },
+  {
+    "source": "twitter",
     "id": "1252885542255177730",
     "username": "fabb_rik",
     "likes": 1,
@@ -97,15 +106,6 @@
     "date": "2020-04-22T12:28:19.000+02:00",
     "imageWidth": 2560,
     "imageHeight": 1389
-  },
-  {
-    "source": "twitter",
-    "id": "1252906412805623808",
-    "username": "gliimpermeabili",
-    "likes": 0,
-    "date": "2020-04-22T12:25:41.000+02:00",
-    "imageWidth": 2560,
-    "imageHeight": 1373
   },
   {
     "source": "twitter",
