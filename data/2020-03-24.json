@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1242583415335124995",
     "username": "LaMifflue",
-    "likes": 500,
+    "likes": 501,
     "date": "2020-03-24T23:45:46.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 637
@@ -66,7 +66,7 @@
     "source": "twitter",
     "id": "1242425225842737154",
     "username": "syhnlife",
-    "likes": 40,
+    "likes": 39,
     "date": "2020-03-24T13:17:11.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 748
@@ -228,7 +228,7 @@
     "source": "twitter",
     "id": "1242529997270761475",
     "username": "kl_m",
-    "likes": 13,
+    "likes": 14,
     "date": "2020-03-24T20:13:31.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 869
@@ -237,7 +237,7 @@
     "source": "twitter",
     "id": "1242409335499735041",
     "username": "MaracudJob",
-    "likes": 12,
+    "likes": 13,
     "date": "2020-03-24T12:14:03.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 718
@@ -325,6 +325,15 @@
   },
   {
     "source": "twitter",
+    "id": "1242554918994612232",
+    "username": "kl_m",
+    "likes": 3,
+    "date": "2020-03-24T21:52:32.000+01:00",
+    "imageWidth": 1200,
+    "imageHeight": 720
+  },
+  {
+    "source": "twitter",
     "id": "1242516190406356994",
     "username": "t0adscroak",
     "likes": 3,
@@ -358,15 +367,6 @@
     "date": "2020-03-24T22:41:30.000+01:00",
     "imageWidth": 675,
     "imageHeight": 1200
-  },
-  {
-    "source": "twitter",
-    "id": "1242554918994612232",
-    "username": "kl_m",
-    "likes": 2,
-    "date": "2020-03-24T21:52:32.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 720
   },
   {
     "source": "twitter",

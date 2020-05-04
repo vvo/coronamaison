@@ -10,6 +10,15 @@
   },
   {
     "source": "twitter",
+    "id": "1255155599383429120",
+    "username": "JamieArdor",
+    "likes": 4,
+    "date": "2020-04-28T17:23:09.000+02:00",
+    "imageWidth": 2048,
+    "imageHeight": 1082
+  },
+  {
+    "source": "twitter",
     "id": "1255073187651608584",
     "username": "MillionSandra1",
     "likes": 4,
@@ -25,15 +34,6 @@
     "date": "2020-04-28T19:13:24.000+02:00",
     "imageWidth": 1536,
     "imageHeight": 2048
-  },
-  {
-    "source": "twitter",
-    "id": "1255155599383429120",
-    "username": "JamieArdor",
-    "likes": 3,
-    "date": "2020-04-28T17:23:09.000+02:00",
-    "imageWidth": 2048,
-    "imageHeight": 1082
   },
   {
     "source": "twitter",
