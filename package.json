@@ -111,7 +111,7 @@
     "sqip-cli": "1.0.0-alpha.35",
     "sqip-plugin-pixels": "1.0.0-alpha.31",
     "sqip-plugin-svgo": "1.0.0-alpha.32",
-    "tailwindcss": "1.4.4",
+    "tailwindcss": "1.4.5",
     "vanilla-lazyload": "15.1.1"
   },
   "engines": {
