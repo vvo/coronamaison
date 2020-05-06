@@ -74,7 +74,7 @@
     "@next/bundle-analyzer": "9.3.6",
     "@prettier/plugin-xml": "0.7.2",
     "@svgr/webpack": "5.4.0",
-    "@types/luxon": "1.22.1",
+    "@types/luxon": "1.24.0",
     "algoliasearch": "4.2.0",
     "async": "3.2.0",
     "autoprefixer": "9.7.6",
