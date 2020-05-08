@@ -1,6 +1,13 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  purge: {
+    content: ["./components/**/*.jsx", "./pages/**/*.jsx"],
+    options: {
+      whitelist: ["twitter-tweet"],
+      whitelistPatternsChildren: [/^lazy/], // lazy loading classes are added dynamically by an external script
+    },
+  },
   theme: {
     extend: {
       fontFamily: {
