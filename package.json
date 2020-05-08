@@ -112,7 +112,7 @@
     "sqip-plugin-pixels": "1.0.0-alpha.31",
     "sqip-plugin-svgo": "1.0.0-alpha.32",
     "tailwindcss": "1.4.5",
-    "vanilla-lazyload": "15.1.1"
+    "vanilla-lazyload": "15.2.0"
   },
   "engines": {
     "node": "12.16.3",
