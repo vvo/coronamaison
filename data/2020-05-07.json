@@ -1,0 +1,38 @@
+[
+  {
+    "source": "twitter",
+    "id": "1258297772811472896",
+    "username": "PrincessHillust",
+    "likes": 5,
+    "date": "2020-05-07T09:29:01.000+02:00",
+    "imageWidth": 1024,
+    "imageHeight": 687
+  },
+  {
+    "source": "twitter",
+    "id": "1258396018967789571",
+    "username": "anne_barrat",
+    "likes": 1,
+    "date": "2020-05-07T15:59:25.000+02:00",
+    "imageWidth": 1600,
+    "imageHeight": 1013
+  },
+  {
+    "source": "twitter",
+    "id": "1258316301052850177",
+    "username": "BiblioLak",
+    "likes": 0,
+    "date": "2020-05-07T10:42:39.000+02:00",
+    "imageWidth": 1617,
+    "imageHeight": 796
+  },
+  {
+    "source": "twitter",
+    "id": "1258313273742671873",
+    "username": "ogilbert44",
+    "likes": 0,
+    "date": "2020-05-07T10:30:37.000+02:00",
+    "imageWidth": 1026,
+    "imageHeight": 545
+  }
+]

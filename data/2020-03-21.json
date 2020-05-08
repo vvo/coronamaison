@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1241463458698342414",
     "username": "penny_otter",
-    "likes": 129,
+    "likes": 128,
     "date": "2020-03-21T21:35:28.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 826
@@ -174,7 +174,7 @@
     "source": "twitter",
     "id": "1241342728597843968",
     "username": "chatongarou",
-    "likes": 39,
+    "likes": 38,
     "date": "2020-03-21T13:35:44.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 565
@@ -343,21 +343,21 @@
   },
   {
     "source": "twitter",
-    "id": "1241458533444603904",
-    "username": "ak_anneka",
-    "likes": 17,
-    "date": "2020-03-21T21:15:54.000+01:00",
-    "imageWidth": 1199,
-    "imageHeight": 848
-  },
-  {
-    "source": "twitter",
     "id": "1241461194101227523",
     "username": "JennLavandier",
     "likes": 17,
     "date": "2020-03-21T21:26:28.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 873
+  },
+  {
+    "source": "twitter",
+    "id": "1241458533444603904",
+    "username": "ak_anneka",
+    "likes": 17,
+    "date": "2020-03-21T21:15:54.000+01:00",
+    "imageWidth": 1199,
+    "imageHeight": 848
   },
   {
     "source": "twitter",
@@ -550,6 +550,15 @@
   },
   {
     "source": "twitter",
+    "id": "1241382879717986304",
+    "username": "roslynn_doma",
+    "likes": 7,
+    "date": "2020-03-21T16:15:16.000+01:00",
+    "imageWidth": 985,
+    "imageHeight": 521
+  },
+  {
+    "source": "twitter",
     "id": "1241365278409273344",
     "username": "capucinelav",
     "likes": 7,
@@ -601,15 +610,6 @@
     "date": "2020-03-21T16:32:10.000+01:00",
     "imageWidth": 1024,
     "imageHeight": 659
-  },
-  {
-    "source": "twitter",
-    "id": "1241382879717986304",
-    "username": "roslynn_doma",
-    "likes": 6,
-    "date": "2020-03-21T16:15:16.000+01:00",
-    "imageWidth": 985,
-    "imageHeight": 521
   },
   {
     "source": "twitter",

@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1241811930022588416",
     "username": "Jikriterium",
-    "likes": 185,
+    "likes": 186,
     "date": "2020-03-22T20:40:10.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1241747787055796226",
     "username": "Nico_Jak",
-    "likes": 78,
+    "likes": 79,
     "date": "2020-03-22T16:25:17.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 720
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1241670483650711552",
     "username": "CedricTaling",
-    "likes": 75,
+    "likes": 76,
     "date": "2020-03-22T11:18:07.000+01:00",
     "imageWidth": 1096,
     "imageHeight": 599
@@ -505,6 +505,15 @@
   },
   {
     "source": "twitter",
+    "id": "1241734905148702721",
+    "username": "roslynn_doma",
+    "likes": 2,
+    "date": "2020-03-22T15:34:06.000+01:00",
+    "imageWidth": 1199,
+    "imageHeight": 646
+  },
+  {
+    "source": "twitter",
     "id": "1241724324643561472",
     "username": "NekoFlashMusic",
     "likes": 2,
@@ -565,15 +574,6 @@
     "date": "2020-03-22T15:37:19.000+01:00",
     "imageWidth": 960,
     "imageHeight": 652
-  },
-  {
-    "source": "twitter",
-    "id": "1241734905148702721",
-    "username": "roslynn_doma",
-    "likes": 1,
-    "date": "2020-03-22T15:34:06.000+01:00",
-    "imageWidth": 1199,
-    "imageHeight": 646
   },
   {
     "source": "twitter",

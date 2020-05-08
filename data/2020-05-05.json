@@ -1,0 +1,29 @@
+[
+  {
+    "source": "twitter",
+    "id": "1257691138338828292",
+    "username": "Azazealle",
+    "likes": 0,
+    "date": "2020-05-05T17:18:28.000+02:00",
+    "imageWidth": 2048,
+    "imageHeight": 1526
+  },
+  {
+    "source": "twitter",
+    "id": "1257688233753939968",
+    "username": "edta_sornas",
+    "likes": 0,
+    "date": "2020-05-05T17:06:56.000+02:00",
+    "imageWidth": 1650,
+    "imageHeight": 1275
+  },
+  {
+    "source": "twitter",
+    "id": "1257442144492675075",
+    "username": "Karla42027520",
+    "likes": 0,
+    "date": "2020-05-05T00:49:04.000+02:00",
+    "imageWidth": 2268,
+    "imageHeight": 4032
+  }
+]
