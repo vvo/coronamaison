@@ -101,7 +101,7 @@
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-instantsearch-dom": "6.4.0",
+    "react-instantsearch-dom": "6.5.0",
     "react-share": "4.1.0",
     "react-tweet-embed": "1.2.2",
     "recursive-readdir": "2.2.2",
