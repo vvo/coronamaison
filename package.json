@@ -87,7 +87,7 @@
     "global": "4.4.0",
     "got": "11.1.4",
     "image-size": "0.8.3",
-    "imagemin-svgo": "7.1.0",
+    "imagemin-svgo": "8.0.0",
     "lodash": "4.17.15",
     "lowdb": "1.0.0",
     "luxon": "1.24.1",
