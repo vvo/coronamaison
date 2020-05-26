@@ -1,0 +1,29 @@
+[
+  {
+    "source": "twitter",
+    "id": "1259752963481972738",
+    "username": "estelleguemann",
+    "likes": 2,
+    "date": "2020-05-11T09:51:26.000+02:00",
+    "imageWidth": 2333,
+    "imageHeight": 1699
+  },
+  {
+    "source": "twitter",
+    "id": "1259743489132302337",
+    "username": "Phil_Kng",
+    "likes": 2,
+    "date": "2020-05-11T09:13:47.000+02:00",
+    "imageWidth": 979,
+    "imageHeight": 528
+  },
+  {
+    "source": "twitter",
+    "id": "1259752720568848384",
+    "username": "estelleguemann",
+    "likes": 1,
+    "date": "2020-05-11T09:50:28.000+02:00",
+    "imageWidth": 2333,
+    "imageHeight": 1699
+  }
+]

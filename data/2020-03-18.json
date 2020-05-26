@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1240292383369150464",
     "username": "neeljulien",
-    "likes": 9762,
+    "likes": 9739,
     "date": "2020-03-18T16:02:02.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 638
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1240346448606171136",
     "username": "LuppiChan",
-    "likes": 1605,
+    "likes": 1602,
     "date": "2020-03-18T19:36:52.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 656
@@ -21,7 +21,7 @@
     "source": "twitter",
     "id": "1240313959833636864",
     "username": "CharliePoppins",
-    "likes": 1041,
+    "likes": 1037,
     "date": "2020-03-18T17:27:46.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 640
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1240205647855181824",
     "username": "acupoftim",
-    "likes": 956,
+    "likes": 954,
     "date": "2020-03-18T10:17:23.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 637
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1240325773355073538",
     "username": "YeahCy",
-    "likes": 865,
+    "likes": 864,
     "date": "2020-03-18T18:14:43.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 687
@@ -75,7 +75,7 @@
     "source": "twitter",
     "id": "1240234953956360192",
     "username": "Nikesco_",
-    "likes": 119,
+    "likes": 117,
     "date": "2020-03-18T12:13:50.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 685
@@ -165,7 +165,7 @@
     "source": "twitter",
     "id": "1240366785431506945",
     "username": "l_asoleda",
-    "likes": 42,
+    "likes": 41,
     "date": "2020-03-18T20:57:41.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 653
@@ -210,7 +210,7 @@
     "source": "twitter",
     "id": "1240397593961791491",
     "username": "MokaCeless",
-    "likes": 29,
+    "likes": 30,
     "date": "2020-03-18T23:00:06.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 660
@@ -219,7 +219,7 @@
     "source": "twitter",
     "id": "1240379834804682752",
     "username": "dineuh1",
-    "likes": 29,
+    "likes": 28,
     "date": "2020-03-18T21:49:32.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 644
@@ -298,6 +298,15 @@
   },
   {
     "source": "twitter",
+    "id": "1240384212773023745",
+    "username": "Apolline8888",
+    "likes": 20,
+    "date": "2020-03-18T22:06:56.000+01:00",
+    "imageWidth": 1200,
+    "imageHeight": 778
+  },
+  {
+    "source": "twitter",
     "id": "1240374336705441792",
     "username": "jamincolors",
     "likes": 20,
@@ -313,15 +322,6 @@
     "date": "2020-03-18T09:52:58.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 826
-  },
-  {
-    "source": "twitter",
-    "id": "1240384212773023745",
-    "username": "Apolline8888",
-    "likes": 19,
-    "date": "2020-03-18T22:06:56.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 778
   },
   {
     "source": "twitter",

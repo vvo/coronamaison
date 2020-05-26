@@ -1,0 +1,29 @@
+[
+  {
+    "source": "twitter",
+    "id": "1261187552142393345",
+    "username": "paulechegoyen",
+    "likes": 15,
+    "date": "2020-05-15T08:51:58.000+02:00",
+    "imageWidth": 998,
+    "imageHeight": 997
+  },
+  {
+    "source": "twitter",
+    "id": "1261271362049630208",
+    "username": "IncorrigibleCam",
+    "likes": 1,
+    "date": "2020-05-15T14:25:00.000+02:00",
+    "imageWidth": 2559,
+    "imageHeight": 1826
+  },
+  {
+    "source": "twitter",
+    "id": "1261312302365761537",
+    "username": "CleyetL",
+    "likes": 0,
+    "date": "2020-05-15T17:07:41.000+02:00",
+    "imageWidth": 992,
+    "imageHeight": 532
+  }
+]

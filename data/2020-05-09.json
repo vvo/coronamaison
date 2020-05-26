@@ -1,0 +1,29 @@
+[
+  {
+    "source": "twitter",
+    "id": "1259212954332999683",
+    "username": "MOVINGONtogeth1",
+    "likes": 8,
+    "date": "2020-05-09T22:05:38.000+02:00",
+    "imageWidth": 2052,
+    "imageHeight": 1298
+  },
+  {
+    "source": "twitter",
+    "id": "1259176351040503810",
+    "username": "Elbak_Salmat",
+    "likes": 2,
+    "date": "2020-05-09T19:40:11.000+02:00",
+    "imageWidth": 1650,
+    "imageHeight": 1275
+  },
+  {
+    "source": "twitter",
+    "id": "1259099646426841088",
+    "username": "JeromeSindou",
+    "likes": 1,
+    "date": "2020-05-09T14:35:23.000+02:00",
+    "imageWidth": 1535,
+    "imageHeight": 990
+  }
+]
