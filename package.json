@@ -114,7 +114,7 @@
     "vanilla-lazyload": "16.1.0"
   },
   "engines": {
-    "node": "12.16.3",
+    "node": "12.x",
     "yarn": "1.22.4"
   },
   "renovate": {
