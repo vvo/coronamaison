@@ -1,0 +1,29 @@
+[
+  {
+    "source": "twitter",
+    "id": "1260813534990159874",
+    "username": "Casanovart83",
+    "likes": 9,
+    "date": "2020-05-14T08:05:46.000+02:00",
+    "imageWidth": 750,
+    "imageHeight": 577
+  },
+  {
+    "source": "twitter",
+    "id": "1260840887648694272",
+    "username": "CDIBrisson",
+    "likes": 7,
+    "date": "2020-05-14T09:54:27.000+02:00",
+    "imageWidth": 1200,
+    "imageHeight": 630
+  },
+  {
+    "source": "twitter",
+    "id": "1260929445809909762",
+    "username": "slof_app",
+    "likes": 1,
+    "date": "2020-05-14T15:46:21.000+02:00",
+    "imageWidth": 2560,
+    "imageHeight": 1349
+  }
+]

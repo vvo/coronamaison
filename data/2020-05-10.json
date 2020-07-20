@@ -1,0 +1,56 @@
+[
+  {
+    "source": "twitter",
+    "id": "1259489605457510403",
+    "username": "vanessa83400",
+    "likes": 6,
+    "date": "2020-05-10T16:24:56.000+02:00",
+    "imageWidth": 2048,
+    "imageHeight": 1099
+  },
+  {
+    "source": "twitter",
+    "id": "1259497802444484610",
+    "username": "celia_ald",
+    "likes": 4,
+    "date": "2020-05-10T16:57:31.000+02:00",
+    "imageWidth": 1660,
+    "imageHeight": 887
+  },
+  {
+    "source": "twitter",
+    "id": "1259567414498508806",
+    "username": "AlexForclaz",
+    "likes": 3,
+    "date": "2020-05-10T21:34:07.000+02:00",
+    "imageWidth": 1754,
+    "imageHeight": 1240
+  },
+  {
+    "source": "twitter",
+    "id": "1259548037359247363",
+    "username": "33Daphneis",
+    "likes": 2,
+    "date": "2020-05-10T20:17:08.000+02:00",
+    "imageWidth": 2048,
+    "imageHeight": 1536
+  },
+  {
+    "source": "twitter",
+    "id": "1259449618406035456",
+    "username": "GaletteTata",
+    "likes": 2,
+    "date": "2020-05-10T13:46:03.000+02:00",
+    "imageWidth": 2153,
+    "imageHeight": 1172
+  },
+  {
+    "source": "twitter",
+    "id": "1259449827529809920",
+    "username": "GaletteTata",
+    "likes": 1,
+    "date": "2020-05-10T13:46:52.000+02:00",
+    "imageWidth": 2222,
+    "imageHeight": 1628
+  }
+]

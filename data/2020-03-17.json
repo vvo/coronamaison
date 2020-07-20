@@ -3,7 +3,7 @@
     "source": "twitter",
     "id": "1239880340505837568",
     "username": "obgrmb",
-    "likes": 1792,
+    "likes": 1787,
     "date": "2020-03-17T12:44:43.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 650
@@ -12,7 +12,7 @@
     "source": "twitter",
     "id": "1239933069085245440",
     "username": "Fernandezcomics",
-    "likes": 888,
+    "likes": 884,
     "date": "2020-03-17T16:14:15.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 659
@@ -30,7 +30,7 @@
     "source": "twitter",
     "id": "1239872825013477383",
     "username": "Mael_Biskotz",
-    "likes": 539,
+    "likes": 536,
     "date": "2020-03-17T12:14:51.000+01:00",
     "imageWidth": 1029,
     "imageHeight": 708
@@ -39,7 +39,7 @@
     "source": "twitter",
     "id": "1239713657577263104",
     "username": "Codaart13",
-    "likes": 486,
+    "likes": 484,
     "date": "2020-03-17T01:42:23.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 899
@@ -48,7 +48,7 @@
     "source": "twitter",
     "id": "1240034059847335936",
     "username": "brfab71200",
-    "likes": 417,
+    "likes": 415,
     "date": "2020-03-17T22:55:33.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 641
@@ -57,7 +57,7 @@
     "source": "twitter",
     "id": "1240044145412014082",
     "username": "cirquedepapier",
-    "likes": 398,
+    "likes": 397,
     "date": "2020-03-17T23:35:37.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 668
@@ -84,7 +84,7 @@
     "source": "twitter",
     "id": "1239973499210330114",
     "username": "mina_perrichon",
-    "likes": 361,
+    "likes": 363,
     "date": "2020-03-17T18:54:54.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 755
@@ -111,7 +111,7 @@
     "source": "twitter",
     "id": "1239940584967725056",
     "username": "Fernandezcomics",
-    "likes": 140,
+    "likes": 139,
     "date": "2020-03-17T16:44:07.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 679
@@ -120,7 +120,7 @@
     "source": "twitter",
     "id": "1239995061749899266",
     "username": "DrawMichael_",
-    "likes": 138,
+    "likes": 137,
     "date": "2020-03-17T20:20:35.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 675
@@ -138,7 +138,7 @@
     "source": "twitter",
     "id": "1239870668637954049",
     "username": "CertesPas",
-    "likes": 102,
+    "likes": 101,
     "date": "2020-03-17T12:06:17.000+01:00",
     "imageWidth": 1063,
     "imageHeight": 769
@@ -165,7 +165,7 @@
     "source": "twitter",
     "id": "1239938798575849472",
     "username": "DiablePositif",
-    "likes": 91,
+    "likes": 92,
     "date": "2020-03-17T16:37:01.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 704
@@ -192,7 +192,7 @@
     "source": "twitter",
     "id": "1239873567388467206",
     "username": "artoffenrad",
-    "likes": 77,
+    "likes": 78,
     "date": "2020-03-17T12:17:48.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 848
@@ -228,7 +228,7 @@
     "source": "twitter",
     "id": "1239879362276667393",
     "username": "Decouvrir236Fm",
-    "likes": 63,
+    "likes": 62,
     "date": "2020-03-17T12:40:50.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 705
@@ -280,15 +280,6 @@
   },
   {
     "source": "twitter",
-    "id": "1239959696607510528",
-    "username": "CDessinatrice",
-    "likes": 49,
-    "date": "2020-03-17T18:00:03.000+01:00",
-    "imageWidth": 1199,
-    "imageHeight": 759
-  },
-  {
-    "source": "twitter",
     "id": "1239892638951710720",
     "username": "coucou__alex",
     "likes": 49,
@@ -307,12 +298,12 @@
   },
   {
     "source": "twitter",
-    "id": "1240031941128343553",
-    "username": "LoopTempura",
-    "likes": 47,
-    "date": "2020-03-17T22:47:08.000+01:00",
-    "imageWidth": 1200,
-    "imageHeight": 680
+    "id": "1239959696607510528",
+    "username": "CDessinatrice",
+    "likes": 48,
+    "date": "2020-03-17T18:00:03.000+01:00",
+    "imageWidth": 1199,
+    "imageHeight": 759
   },
   {
     "source": "twitter",
@@ -331,6 +322,15 @@
     "date": "2020-03-17T02:44:46.000+01:00",
     "imageWidth": 1199,
     "imageHeight": 651
+  },
+  {
+    "source": "twitter",
+    "id": "1240031941128343553",
+    "username": "LoopTempura",
+    "likes": 45,
+    "date": "2020-03-17T22:47:08.000+01:00",
+    "imageWidth": 1200,
+    "imageHeight": 680
   },
   {
     "source": "twitter",
@@ -660,7 +660,7 @@
     "source": "twitter",
     "id": "1239910996308885506",
     "username": "GTachenne",
-    "likes": 12,
+    "likes": 13,
     "date": "2020-03-17T14:46:32.000+01:00",
     "imageWidth": 1200,
     "imageHeight": 885
